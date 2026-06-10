@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Factory workshop illustration">
+  <defs>
+    <linearGradient id="bgf" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f2742"/><stop offset="1" stop-color="#081428"/></linearGradient>
+    <pattern id="gridf" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#1d3557" stroke-width="0.5"/></pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgf)"/>
+  <rect width="800" height="500" fill="url(#gridf)"/>
+  <!-- workshop building -->
+  <g fill="none" stroke="#3b82f6" stroke-width="1.5">
+    <path d="M50 380 L50 220 L250 130 L450 220 L650 130 L750 220 L750 380 Z"/>
+    <line x1="50" y1="380" x2="750" y2="380"/>
+    <!-- columns -->
+    <line x1="150" y1="380" x2="150" y2="200"/>
+    <line x1="250" y1="380" x2="250" y2="130"/>
+    <line x1="350" y1="380" x2="350" y2="175"/>
+    <line x1="450" y1="380" x2="450" y2="220"/>
+    <line x1="550" y1="380" x2="550" y2="175"/>
+    <line x1="650" y1="380" x2="650" y2="130"/>
+    <!-- floor machines -->
+    <rect x="90" y="310" width="100" height="60" rx="3" stroke="#f59e0b"/>
+    <rect x="220" y="310" width="100" height="60" rx="3" stroke="#f59e0b"/>
+    <rect x="350" y="310" width="100" height="60" rx="3"/>
+    <rect x="480" y="310" width="100" height="60" rx="3" stroke="#f59e0b"/>
+    <rect x="610" y="310" width="100" height="60" rx="3"/>
+    <!-- injection nozzles -->
+    <line x1="140" y1="310" x2="140" y2="260"/><circle cx="140" cy="255" r="5" fill="#f59e0b"/>
+    <line x1="270" y1="310" x2="270" y2="260"/><circle cx="270" cy="255" r="5" fill="#f59e0b"/>
+    <line x1="530" y1="310" x2="530" y2="260"/><circle cx="530" cy="255" r="5" fill="#f59e0b"/>
+  </g>
+  <text x="30" y="40" fill="#e2e8f0" font-family="Inter,Arial" font-size="16" font-weight="700">Production Workshop</text>
+  <text x="30" y="60" fill="#64748b" font-family="Inter,Arial" font-size="12">Haiyan, Jiaxing · Approx. 50,000 m²</text>
+</svg>

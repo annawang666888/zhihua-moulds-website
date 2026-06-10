@@ -1,0 +1,7 @@
+# Zhihua Moulds Website
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+Sitemap: https://zhihuamoulds.com/sitemap.xml

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Industrial mould factory illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0c2050"/><stop offset="0.55" stop-color="#0e3a7a"/><stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+    <pattern id="bgGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#60a5fa" stroke-width="0.9" opacity="0.35"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.75" cy="0.25" r="0.55">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#f59e0b" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.15" cy="0.85" r="0.55">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#bgGrid)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#glow2)"/>
+
+  <!-- Distant factory silhouette -->
+  <g fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.55">
+    <path d="M0 720 L120 720 L120 600 L220 600 L220 660 L360 660 L360 540 L500 540 L500 720 L760 720 L760 580 L900 580 L900 720 L1100 720 L1100 620 L1240 620 L1240 720 L1600 720"/>
+    <!-- chimneys -->
+    <line x1="170" y1="600" x2="170" y2="500"/>
+    <line x1="410" y1="540" x2="410" y2="440"/>
+    <line x1="830" y1="580" x2="830" y2="470"/>
+    <line x1="1170" y1="620" x2="1170" y2="520"/>
+  </g>
+
+  <!-- Foreground machine / mould blueprint -->
+  <g transform="translate(800 480)" fill="none" stroke="#93c5fd" stroke-width="1.5" opacity="0.85">
+    <circle r="280" stroke="#60a5fa" opacity="0.6"/>
+    <circle r="220" stroke="#93c5fd" opacity="0.75"/>
+    <circle r="160" stroke="#fbbf24" stroke-dasharray="6 4" opacity="0.95"/>
+    <g stroke="#93c5fd" opacity="0.75">
+      <line x1="-280" y1="0" x2="280" y2="0"/>
+      <line x1="0" y1="-280" x2="0" y2="280"/>
+      <line x1="-198" y1="-198" x2="198" y2="198"/>
+      <line x1="-198" y1="198" x2="198" y2="-198"/>
+    </g>
+    <!-- hex pattern center -->
+    <g stroke="#fbbf24" opacity="0.95">
+      <polygon points="-40,-23 -20,-35 0,-23 0,0 -20,12 -40,0"/>
+      <polygon points="0,-23 20,-35 40,-23 40,0 20,12 0,0"/>
+      <polygon points="-40,23 -20,12 0,23 0,46 -20,58 -40,46"/>
+      <polygon points="0,23 20,12 40,23 40,46 20,58 0,46"/>
+    </g>
+  </g>
+
+  <!-- Floating spec tags -->
+  <g font-family="Inter,Arial" font-size="13" fill="#e2e8f0">
+    <g transform="translate(220 220)">
+      <rect x="0" y="0" width="180" height="34" rx="4" fill="#0a1a2e" fill-opacity="0.75" stroke="#60a5fa" stroke-opacity="0.8"/>
+      <text x="14" y="22">PP · ABS · HDPE</text>
+    </g>
+    <g transform="translate(1180 280)">
+      <rect x="0" y="0" width="200" height="34" rx="4" fill="#0a1a2e" fill-opacity="0.75" stroke="#fbbf24" stroke-opacity="0.9"/>
+      <text x="14" y="22" fill="#fbbf24">300+ Pours per Mould</text>
+    </g>
+    <g transform="translate(260 740)">
+      <rect x="0" y="0" width="190" height="34" rx="4" fill="#0a1a2e" fill-opacity="0.75" stroke="#60a5fa" stroke-opacity="0.8"/>
+      <text x="14" y="22">OEM · Custom Drawings</text>
+    </g>
+    <g transform="translate(1150 700)">
+      <rect x="0" y="0" width="220" height="34" rx="4" fill="#0a1a2e" fill-opacity="0.75" stroke="#22d3ee" stroke-opacity="0.85"/>
+      <text x="14" y="22" fill="#22d3ee">Container Loading Worldwide</text>
+    </g>
+  </g>
+</svg>

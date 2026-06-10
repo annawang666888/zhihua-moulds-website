@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Local Netlify folder
+.netlify
+
+# Local environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.backup

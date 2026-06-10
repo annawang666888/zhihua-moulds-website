@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Manhole Cover Mould">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f2742"/><stop offset="1" stop-color="#0a1a2e"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#1d3557" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  <g transform="translate(200 150)" fill="none" stroke="#f59e0b" stroke-width="1.5">
+    <circle r="90"/>
+    <circle r="75"/>
+    <circle r="60" stroke="#3b82f6"/>
+    <g stroke="#3b82f6" stroke-width="1">
+      <line x1="-75" y1="0" x2="75" y2="0"/>
+      <line x1="0" y1="-75" x2="0" y2="75"/>
+      <line x1="-53" y1="-53" x2="53" y2="53"/>
+      <line x1="-53" y1="53" x2="53" y2="-53"/>
+    </g>
+    <circle r="6" fill="#f59e0b"/>
+    <text y="115" text-anchor="middle" fill="#94a3b8" font-family="Inter,Arial" font-size="11" stroke="none">Ø 700 mm · Heavy Duty</text>
+  </g>
+  <text x="20" y="30" fill="#e2e8f0" font-family="Inter,Arial" font-size="14" font-weight="700">Manhole Cover Mould</text>
+  <text x="20" y="48" fill="#64748b" font-family="Inter,Arial" font-size="11">PP Injection · D400 Round</text>
+</svg>

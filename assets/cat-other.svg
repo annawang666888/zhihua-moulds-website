@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Other Moulds">
+  <defs>
+    <linearGradient id="bg8" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f2742"/><stop offset="1" stop-color="#0a1a2e"/></linearGradient>
+    <pattern id="grid8" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#1d3557" stroke-width="0.5"/></pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg8)"/>
+  <rect width="400" height="300" fill="url(#grid8)"/>
+  <g transform="translate(200 160)" fill="none" stroke="#3b82f6" stroke-width="1.5">
+    <!-- cable trough -->
+    <path d="M-70,-30 L-70,20 L-55,20 L-55,0 L55,0 L55,20 L70,20 L70,-30Z" stroke="#f59e0b"/>
+    <!-- guardrail post -->
+    <rect x="90" y="-50" width="20" height="80" rx="2"/>
+    <circle cx="100" cy="-30" r="5" stroke="#f59e0b"/>
+    <!-- small fence -->
+    <g transform="translate(-100 -10)" stroke="#3b82f6">
+      <rect x="0" y="0" width="10" height="40" rx="1"/>
+      <rect x="25" y="0" width="10" height="40" rx="1"/>
+      <line x1="5" y1="10" x2="30" y2="10" stroke="#f59e0b"/>
+      <line x1="5" y1="25" x2="30" y2="25" stroke="#f59e0b"/>
+    </g>
+  </g>
+  <text x="20" y="30" fill="#e2e8f0" font-family="Inter,Arial" font-size="14" font-weight="700">Other Moulds</text>
+  <text x="20" y="48" fill="#64748b" font-family="Inter,Arial" font-size="11">Cable Trough · Guardrail · Custom</text>
+</svg>

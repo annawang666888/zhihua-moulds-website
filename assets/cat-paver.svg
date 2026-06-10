@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Paver Mould">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f2742"/><stop offset="1" stop-color="#0a1a2e"/></linearGradient>
+    <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#1d3557" stroke-width="0.5"/></pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg3)"/>
+  <rect width="400" height="300" fill="url(#grid3)"/>
+  <g transform="translate(60 100)" fill="none" stroke="#f59e0b" stroke-width="1.5">
+    <path d="M0 0h60v30h-30v30h-60v-30h30z"/>
+    <path d="M60 0h60v30h-30v30h-60v-30h30z" transform="translate(60 0)"/>
+    <path d="M0 0h60v30h-30v30h-60v-30h30z" transform="translate(120 60)"/>
+    <path d="M60 0h60v30h-30v30h-60v-30h30z" transform="translate(0 60)" stroke="#3b82f6"/>
+    <path d="M0 0h60v30h-30v30h-60v-30h30z" transform="translate(60 120)" stroke="#3b82f6"/>
+  </g>
+  <text x="20" y="30" fill="#e2e8f0" font-family="Inter,Arial" font-size="14" font-weight="700">Flagstone / Paver Mould</text>
+  <text x="20" y="48" fill="#64748b" font-family="Inter,Arial" font-size="11">Interlocking · Walkways</text>
+</svg>

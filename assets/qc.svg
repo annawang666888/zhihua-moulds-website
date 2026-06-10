@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Quality control illustration">
+  <defs>
+    <linearGradient id="bgq" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f2742"/><stop offset="1" stop-color="#081428"/></linearGradient>
+    <pattern id="gridq" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#1d3557" stroke-width="0.5"/></pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgq)"/>
+  <rect width="800" height="500" fill="url(#gridq)"/>
+  <g transform="translate(400 260)" fill="none" stroke="#3b82f6" stroke-width="1.5">
+    <!-- caliper -->
+    <rect x="-220" y="-15" width="440" height="30" rx="2" stroke="#f59e0b"/>
+    <rect x="-220" y="-15" width="80" height="50" stroke="#f59e0b"/>
+    <rect x="60" y="-15" width="50" height="50"/>
+    <!-- tick marks -->
+    <g stroke="#3b82f6" stroke-width="1">
+      <line x1="-130" y1="-15" x2="-130" y2="-5"/>
+      <line x1="-100" y1="-15" x2="-100" y2="-5"/>
+      <line x1="-70" y1="-15" x2="-70" y2="-5"/>
+      <line x1="-40" y1="-15" x2="-40" y2="-5"/>
+      <line x1="-10" y1="-15" x2="-10" y2="-5"/>
+      <line x1="20" y1="-15" x2="20" y2="-5"/>
+      <line x1="50" y1="-15" x2="50" y2="-5"/>
+    </g>
+    <!-- sample piece -->
+    <circle cx="-40" cy="60" r="50" stroke="#f59e0b"/>
+    <circle cx="-40" cy="60" r="30"/>
+    <text x="-40" y="64" text-anchor="middle" fill="#94a3b8" font-family="Inter,Arial" font-size="11" stroke="none">QC pass</text>
+  </g>
+  <text x="30" y="40" fill="#e2e8f0" font-family="Inter,Arial" font-size="16" font-weight="700">Quality Control</text>
+  <text x="30" y="60" fill="#64748b" font-family="Inter,Arial" font-size="12">Dimensional check · Material verification · Sample pour</text>
+</svg>

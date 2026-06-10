@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Concrete Planter Mould">
+  <defs>
+    <linearGradient id="bg6" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f2742"/><stop offset="1" stop-color="#0a1a2e"/></linearGradient>
+    <pattern id="grid6" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#1d3557" stroke-width="0.5"/></pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg6)"/>
+  <rect width="400" height="300" fill="url(#grid6)"/>
+  <g transform="translate(200 160)" fill="none" stroke="#f59e0b" stroke-width="1.5">
+    <!-- tapered planter -->
+    <path d="M-40,-70 L-55,50 L55,50 L40,-70Z"/>
+    <path d="M-30,-70 L-45,40 L45,40 L30,-70Z" stroke="#3b82f6"/>
+    <ellipse cx="0" cy="-70" rx="40" ry="10"/>
+    <ellipse cx="0" cy="50" rx="55" ry="10" stroke="#3b82f6"/>
+    <!-- rim detail -->
+    <line x1="-40" y1="-70" x2="-30" y2="-70"/>
+    <line x1="40" y1="-70" x2="30" y2="-70"/>
+  </g>
+  <text x="20" y="30" fill="#e2e8f0" font-family="Inter,Arial" font-size="14" font-weight="700">Concrete Planter Mould</text>
+  <text x="20" y="48" fill="#64748b" font-family="Inter,Arial" font-size="11">Tapered · Urban Landscaping</text>
+</svg>
