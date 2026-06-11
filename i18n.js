@@ -165,15 +165,15 @@
         heroTitle: 'Product <span style="color:#f59e0b">Catalogue</span>',
         heroSub: 'Eight product lines, 1 000+ standard SKUs — plus unlimited custom designs from your drawings.',
         /* Product section titles and subtitles */
-        manhole: { t: 'Manhole Cover Moulds', s: 'Round and square moulds for heavy-duty manhole covers, suitable for D400 to F900 load classes. Available in single-cavity and multi-cavity configurations.' },
-        kerbstone: { t: 'Kerbstone / Curbstone Moulds', s: 'L-type, S-type, slope-type, and straight kerbstone moulds for road edging, median barriers, and pedestrian boundaries.' },
-        paver: { t: 'Flagstone / Paver Moulds', s: 'Interlocking paver, zigzag, Holland-style, and I-shape moulds for walkways, plazas, and light-traffic paving.' },
-        slope: { t: 'Slope Protection Moulds', s: 'Hexagonal slope blocks, I-beam eco-blocks, arch-frame moulds, and hollow slope protection — for embankment and hydraulic stabilisation.' },
-        drainage: { t: 'Drainage / Trench Cover Moulds', s: 'Slotted covers, grating covers, gap-type covers for roadside drainage, utility trenches, and cable ducts.' },
-        treeGrate: { t: 'Tree Grate Moulds', s: 'Square and circular tree grates for urban streetscapes — functional drainage with decorative appeal.' },
-        planter: { t: 'Concrete Planter Moulds', s: 'Tapered, cylindrical, and rectangular planter moulds for streetscape, park, and commercial landscaping.' },
-        windowGrille: { t: 'Window Grille Moulds', s: 'Professional window grille decorative brick moulds providing exquisite hollow designs for architectural decoration and beautification projects.' },
-        other: { t: 'Other Moulds', s: 'Cable trough, guardrail posts, fence posts, caps, and speciality moulds — plus full custom design service.' },
+        manhole: { t: 'Manhole Cover Moulds', s: 'Round and square moulds for heavy-duty manhole covers, suitable for D400 to F900 load classes. Available in single-cavity and multi-cavity configurations.', sub: 'High-performance <strong>manhole cover moulds</strong> for municipal, highway, and airport applications. Available in EN 124 load classes <strong>B125, C250, D400, E600, and F900</strong> — round (Ø 600 / 700 / 800 / 900 mm) and square configurations. Single-cavity and multi-cavity options with <strong>300+ casting cycles</strong> and CAD-verified draft angles. OEM customisation accepted.' },
+        kerbstone: { t: 'Kerbstone / Curbstone Moulds', s: 'L-type, S-type, slope-type, and straight kerbstone moulds for road edging, median barriers, and pedestrian boundaries.', sub: 'Durable <strong>kerbstone moulds</strong> (also called <strong>curbstone moulds</strong>) for road edging, traffic medians, pedestrian boundaries, and decorative landscaping. L-type, S-type, slope-type, straight, and round arc profiles. Standard 1000 × 300 × 120 mm and <strong>custom dimensions on request</strong>. Compatible with C30/40 concrete and pigment dyeing for coloured kerbs.' },
+        paver: { t: 'Flagstone / Paver Moulds', s: 'Interlocking paver, zigzag, Holland-style, and I-shape moulds for walkways, plazas, and light-traffic paving.', sub: 'Industry-standard <strong>paver block moulds</strong> for walkways, plazas, driveways, and permeable paving. Includes <strong>interlocking Z-shape, zigzag Dutch-style, Holland rectangular, I-shape grass paver, and decorative flagstone</strong> designs. Sizes from 200 × 100 × 60 mm to custom large-format slabs. Pigment-compatible PP for vibrant coloured pavers.' },
+        slope: { t: 'Slope Protection Moulds', s: 'Hexagonal slope blocks, I-beam eco-blocks, arch-frame moulds, and hollow slope protection — for embankment and hydraulic stabilisation.', sub: 'Engineered <strong>slope protection moulds</strong> for embankment stabilisation and river bank protection. <strong>Hexagonal, I-beam, arch-frame, and hollow slope blocks</strong> designed for durability and effective vegetation growth. Suitable for highway, railway, and hydraulic projects requiring erosion control.' },
+        drainage: { t: 'Drainage / Trench Cover Moulds', s: 'Slotted covers, grating covers, gap-type covers for roadside drainage, utility trenches, and cable ducts.', sub: 'Professional <strong>drainage cover moulds</strong> for roadside drainage and utility trenches. <strong>Slotted, grating, gap-type covers</strong> with precise slot dimensions for water flow. Designed for municipal infrastructure and utility corridors requiring efficient drainage.' },
+        treeGrate: { t: 'Tree Grate Moulds', s: 'Square and circular tree grates for urban streetscapes — functional drainage with decorative appeal.', sub: 'Aesthetic <strong>tree grate moulds</strong> for urban landscaping and tree protection. <strong>Square and circular, cast-iron-look designs</strong> that complement urban architecture. Available in various patterns and sizes for decorative and functional applications.' },
+        planter: { t: 'Concrete Planter Moulds', s: 'Tapered, cylindrical, and rectangular planter moulds for streetscape, park, and commercial landscaping.', sub: 'Versatile <strong>concrete planter moulds</strong> for decorative and functional applications. <strong>Tapered, cylindrical, rectangular planters</strong> designed for urban landscaping, commercial plazas, and residential outdoor spaces. Multiple sizes and styles available.' },
+        windowGrille: { t: 'Window Grille Moulds', s: 'Professional window grille decorative brick moulds providing exquisite hollow designs for architectural decoration and beautification projects.', sub: 'Professional <strong>window grille moulds</strong> providing exquisite hollow designs for architectural decoration and beautification projects. Various patterns available for creating attractive and functional building facades.', applicationCases: 'Application Cases', applicationSub: 'See our window grille moulds in real-world applications' },
+        other: { t: 'Other Moulds', s: 'Cable trough, guardrail posts, fence posts, caps, and speciality moulds — plus full custom design service.', sub: 'Specialised <strong>cable trough moulds</strong> and custom mould designs for infrastructure projects. <strong>Cable trough, guardrail posts, and other custom mould solutions</strong> to meet your specific engineering requirements. Contact us with your drawings or specifications.' },
         ctaTitle: 'Can\'t Find Your Mould?',
         ctaSub: 'We manufacture custom moulds from your drawings. Send us specifications and we will provide a quotation within 48 hours.',
         ctaBtn: 'Request Custom Quote'
@@ -308,8 +308,7 @@
           q3: { q: 'Are your paver moulds compatible with coloured concrete?', a: 'Yes. Our PP material does not react with iron-oxide pigments, so vibrant coloured pavers can be produced without staining the mould.' },
           q4: { q: 'How many cycles can a paver mould produce?', a: 'With virgin PP and standard vibration-table demoulding, our paver moulds reliably deliver 300+ cycles, often more with careful handling.' }
         }
-      }
-
+      },
 
       /* --- Facility Gallery --- */
       facility: {
@@ -514,15 +513,15 @@
       products: {
         heroTitle: '产品<span style="color:#f59e0b">目录</span>',
         heroSub: '八大产品线，1000+标准规格——另支持按图定制无限扩展。',
-        manhole: { t: '井盖模具', s: '重型井盖用圆形和方形模具，适用D400至F900荷载等级，单腔和多腔配置可选。' },
-        kerbstone: { t: '路沿石模具', s: 'L型、S型、斜面型及直线型路沿石模具，适用于道路边缘、中央隔离带及人行道边界。' },
-        paver: { t: '平石模具', s: '联锁型、锯齿型、荷兰式及工字型平石模具，适用于人行道、广场及轻型交通铺装。' },
-        slope: { t: '护坡塑料模具', s: '六角形护坡块、工字型生态块、拱架型模具及空心护坡——用于堤坝和水工加固。' },
-        drainage: { t: '水沟盖板模具', s: '条缝型盖板、格栅型盖板、间隙型盖板，适用于路边排水、管线沟槽及电缆槽。' },
-        treeGrate: { t: '围树模具', s: '方形和圆形围树箅，适用于城市街景——兼具排水功能与装饰效果。' },
-        planter: { t: '花盆模具', s: '锥形、圆柱形及方形花盆模具，适用于街景、公园及商业景观。' },
-        windowGrille: { t: '窗花镂空砖模具', s: '专业窗花镂空砖模具，提供各种精美的镂空设计，适用于建筑装饰和美化工程。' },
-        other: { t: '其他模具', s: '电缆槽、护栏立柱、围栏立柱、压顶及特种模具——另提供全套定制设计服务。' },
+        manhole: { t: '井盖模具', s: '重型井盖用圆形和方形模具，适用D400至F900荷载等级，单腔和多腔配置可选。', sub: '高性能<strong>井盖模具</strong>，适用于市政道路、高速公路、机场及重载区域。支持 EN 124 <strong>B125、C250、D400、E600、F900</strong> 等荷载等级，圆形（Ø600/700/800/900 mm）和方形规格均可定制。支持单腔/多腔设计，单模可实现<strong>300+次浇筑</strong>，接受 OEM 定制。' },
+        kerbstone: { t: '路沿石模具', s: 'L型、S型、斜面型及直线型路沿石模具，适用于道路边缘、中央隔离带及人行道边界。', sub: '耐用<strong>路沿石模具</strong>，用于道路边缘、中央隔离带、人行道边界及景观工程。包括 L 型、S 型、斜面型、直线型、圆弧型等规格。可按图纸定制尺寸，适配 C30/40 混凝土和彩色颜料生产。' },
+        paver: { t: '平石模具', s: '联锁型、锯齿型、荷兰式及工字型平石模具，适用于人行道、广场及轻型交通铺装。', sub: '标准<strong>平石/铺路砖模具</strong>，用于人行道、广场、车道和透水铺装。包括联锁型、锯齿荷兰式、矩形荷兰砖、工字型草坪砖及装饰平石等，可支持彩色混凝土生产和大规格定制。' },
+        slope: { t: '护坡塑料模具', s: '六角形护坡块、工字型生态块、拱架型模具及空心护坡——用于堤坝和水工加固。', sub: '工程级<strong>护坡塑料模具</strong>，用于边坡稳定、河道护岸和水利工程。包括六角形、工字型、拱架型、空心护坡块等结构，适用于公路、铁路和水利项目的防冲刷需求。' },
+        drainage: { t: '水沟盖板模具', s: '条缝型盖板、格栅型盖板、间隙型盖板，适用于路边排水、管线沟槽及电缆槽。', sub: '专业<strong>水沟盖板模具</strong>，用于道路排水沟、管线沟和市政沟渠。支持条缝型、格栅型、间隙型等设计，开孔尺寸精准，便于排水和承载。' },
+        treeGrate: { t: '围树模具', s: '方形和圆形围树箅，适用于城市街景——兼具排水功能与装饰效果。', sub: '美观实用的<strong>围树模具</strong>，用于城市绿化和树池保护。支持方形、圆形及仿铸铁纹理设计，兼顾装饰性、排水性和行人安全。' },
+        planter: { t: '花盆模具', s: '锥形、圆柱形及方形花盆模具，适用于街景、公园及商业景观。', sub: '多规格<strong>混凝土花盆模具</strong>，用于城市街景、商业广场、公园和住宅景观。支持锥形、圆柱形、矩形等多种造型。' },
+        windowGrille: { t: '窗花镂空砖模具', s: '专业窗花镂空砖模具，提供各种精美的镂空设计，适用于建筑装饰和美化工程。', sub: '专业<strong>窗花镂空砖模具</strong>，用于建筑立面装饰和美化工程。多种图案可选，可生产兼具装饰性和通风采光功能的混凝土镂空砖。', applicationCases: '应用案例', applicationSub: '查看窗花镂空砖模具的实际应用效果' },
+        other: { t: '其他模具', s: '电缆槽、护栏立柱、围栏立柱、压顶及特种模具——另提供全套定制设计服务。', sub: '特殊<strong>电缆槽模具</strong>及定制模具方案，适用于基础设施工程中的电缆槽、护栏立柱及其他非标混凝土预制件。可按图纸或样品开发。' },
         ctaTitle: '没有找到您需要的模具？',
         ctaSub: '我们支持按图纸定制模具。提供规格参数，48小时内报价。',
         ctaBtn: '获取定制报价'
@@ -657,8 +656,7 @@
           q3: { q: 'Are your paver moulds compatible with coloured concrete?', a: 'Yes. Our PP material does not react with iron-oxide pigments, so vibrant coloured pavers can be produced without staining the mould.' },
           q4: { q: 'How many cycles can a paver mould produce?', a: 'With virgin PP and standard vibration-table demoulding, our paver moulds reliably deliver 300+ cycles, often more with careful handling.' }
         }
-      }
-
+      },
 
       /* --- 厂房设施 --- */
       facility: {
@@ -773,6 +771,8 @@
     if (langBtn) {
       langBtn.textContent = lang === 'en' ? '中文' : 'EN';
       langBtn.setAttribute('data-lang', lang === 'en' ? 'zh' : 'en');
+      langBtn.setAttribute('title', lang === 'en' ? '切换到中文' : 'Switch to English');
+      langBtn.setAttribute('aria-label', lang === 'en' ? 'Switch to Chinese' : 'Switch to English');
     }
 
     // Update Google Map language
@@ -785,9 +785,14 @@
 
   /* ---------- Get stored or default language ---------- */
   function getLang() {
-    var stored = localStorage.getItem('zhihua-lang');
-    if (stored === 'zh' || stored === 'en') return stored;
-    return 'en'; // default English
+    var params = new URLSearchParams(window.location.search);
+    var qLang = params.get('lang');
+    if (qLang === 'zh' || qLang === 'en') return qLang;
+    try {
+      var stored = localStorage.getItem('zhihua-lang');
+      if (stored === 'zh' || stored === 'en') return stored;
+    } catch (e) {}
+    return 'en'; // default English for overseas buyers and SEO
   }
 
   /* ---------- Init ---------- */
@@ -799,7 +804,7 @@
     if (e.target.classList.contains('lang-switch')) {
       var next = e.target.getAttribute('data-lang') || (currentLang === 'en' ? 'zh' : 'en');
       currentLang = next;
-      localStorage.setItem('zhihua-lang', next);
+      try { localStorage.setItem('zhihua-lang', next); } catch (err) {}
       applyLang(next);
     }
   });
