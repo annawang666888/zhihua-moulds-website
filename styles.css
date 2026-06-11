@@ -220,6 +220,8 @@ body.no-scroll{overflow:hidden}
 .form-group.has-error input,.form-group.has-error select,.form-group.has-error textarea{border-color:#ef4444}
 .form-group.has-error .error-msg{display:block}
 .form-message{padding:16px 20px;border-radius:8px;margin-bottom:20px;font-weight:500;animation:fadeSlideIn .3s ease}
+.turnstile-wrap{margin:18px 0 20px;display:flex;justify-content:center}
+.turnstile-wrap .cf-turnstile{max-width:100%}
 .form-success{background:rgba(34,197,94,0.15);border:1px solid #22c55e;color:#4ade80}
 .form-error{background:rgba(239,68,68,0.15);border:1px solid #ef4444;color:#fca5a5}
 @keyframes fadeSlideIn{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}

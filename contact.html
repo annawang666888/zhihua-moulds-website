@@ -33,6 +33,7 @@
 
     gtag('config', 'G-K3ZCK1MBSZ');
   </script>
+  <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
   <meta name="description" content="Contact Zhihua Moulds for precast concrete moulds quote. WhatsApp +86 16621391202, email 354909745@qq.com. Manhole cover, kerbstone, paver, slope protection moulds. OEM & custom design.">
   <meta name="keywords" content="contact Zhihua Moulds, request mould quote, precast moulds price, custom plastic mould design">
   <link rel="canonical" href="https://zhihuamoulds.com/contact">
@@ -200,7 +201,7 @@
         </div>
         <!-- Formal inquiry form.
              The browser submits to our same-origin Cloudflare Pages Function,
-             which forwards the inquiry to Basin in the background. -->
+             which verifies Cloudflare Turnstile and sends the inquiry email via Resend. -->
         <form id="inquiryForm" action="/api/inquiry" method="POST" novalidate
               data-form-type="api">
           <input type="hidden" id="source_page" name="source_page" value="contact.html">
@@ -282,6 +283,10 @@
             <label for="message" data-i18n="contact.messageLabel">Message / Specifications *</label>
             <textarea id="message" name="message" data-i18n-placeholder="contact.messagePh" placeholder="Describe your project, mould dimensions, target standards (EN/BS/GOST), preferred material, or attach a drawing reference." required></textarea>
             <div class="error-msg" data-i18n="contact.messageError">Please provide some details about your inquiry.</div>
+          </div>
+
+          <div class="turnstile-wrap" aria-label="Spam protection check">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADi0kCvqD80PGvtP" data-theme="dark"></div>
           </div>
 
           <button type="submit" class="btn-primary" id="submitBtn" style="width:100%;justify-content:center" data-i18n="contact.submitBtn" >

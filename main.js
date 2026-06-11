@@ -54,7 +54,7 @@
 
   /* ---------- Contact Form Validation ---------- */
   const form = document.getElementById('inquiryForm');
-  if (form && form.dataset.formType !== 'api') {
+  if (form) {
     const submitBtn = document.getElementById('submitBtn');
     const btnText = submitBtn?.querySelector('.btn-text');
     const btnLoading = submitBtn?.querySelector('.btn-loading');
@@ -91,7 +91,7 @@
       const name = input.name;
       const value = input.value.trim();
 
-      if ((name === 'name' || name === 'email' || name === 'message') && !value) {
+      if ((name === 'name' || name === 'email' || name === 'phone' || name === 'message') && !value) {
         valid = false;
       }
 
@@ -115,7 +115,7 @@
       let valid = true;
       form.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
 
-      const required = ['name', 'email', 'message'];
+      const required = ['name', 'email', 'phone', 'message'];
       required.forEach(name => {
         const input = form.querySelector(`[name="${name}"]`);
         if (input && !validateField(input)) {
@@ -134,9 +134,60 @@
       const formType = form.getAttribute('data-form-type') || 'mailto';
       const formAction = form.getAttribute('action');
 
+      function resetTurnstile() {
+        if (window.turnstile && form.querySelector('.cf-turnstile')) {
+          try {
+            window.turnstile.reset();
+          } catch (error) {
+            console.warn('Turnstile reset failed', error);
+          }
+        }
+      }
+
       // Handle different form types
-      if (formType === 'formspree' || formType === 'basin' || (formAction && (formAction.includes('formspree.io') || formAction.includes('usebasin.com')))) {
-        // Formspree/Basin submission - use fetch API
+      if (formType === 'api') {
+        const formData = new FormData(form);
+        if (form.querySelector('.cf-turnstile') && !formData.get('cf-turnstile-response')) {
+          setLoading(false);
+          if (formError) {
+            formError.textContent = '❌ Please complete the anti-spam check, then submit again. You can also contact us by WhatsApp/email.';
+            showMessage(formError, 6000);
+          }
+          return;
+        }
+
+        fetch(formAction || '/api/inquiry', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(async response => {
+          setLoading(false);
+          const result = await response.json().catch(() => ({}));
+          if (response.ok && result.ok !== false) {
+            if (formSuccess) {
+              formSuccess.textContent = result.message || formSuccess.dataset.successText || formSuccess.textContent || '✅ Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.';
+              showMessage(formSuccess, 7000);
+              form.reset();
+              resetTurnstile();
+            }
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', { form_location: 'contact_page', form_provider: 'resend_turnstile' });
+            }
+          } else {
+            throw new Error(result.message || 'Submission failed');
+          }
+        }).catch((error) => {
+          setLoading(false);
+          resetTurnstile();
+          if (formError) {
+            formError.textContent = error.message || '❌ Submit failed. Please contact us by WhatsApp or email.';
+            showMessage(formError, 6000);
+          }
+        });
+      } else if (formType === 'formspree' || (formAction && formAction.includes('formspree.io'))) {
+        // Formspree submission - use fetch API
         const formData = new FormData(form);
         fetch(formAction, {
           method: 'POST',
