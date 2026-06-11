@@ -54,7 +54,10 @@
         title: 'Precision Plastic Moulds for <span>Precast Concrete</span>',
         subtitle: 'From manhole covers to slope protection blocks — 1 000+ mould SKUs engineered for municipal, highway, and railway projects across 30+ countries.',
         btnQuote: 'Request a Quote',
-        btnProducts: 'View Products'
+        btnProducts: 'View Products',
+        trustFactory: 'Factory direct manufacturer',
+        trustAudit: 'Video factory audit available',
+        trustOem: 'OEM from drawings or samples'
       },
 
       /* Stats */
@@ -176,7 +179,8 @@
         other: { t: 'Other Moulds', s: 'Cable trough, guardrail posts, fence posts, caps, and speciality moulds — plus full custom design service.', sub: 'Specialised <strong>cable trough moulds</strong> and custom mould designs for infrastructure projects. <strong>Cable trough, guardrail posts, and other custom mould solutions</strong> to meet your specific engineering requirements. Contact us with your drawings or specifications.' },
         ctaTitle: 'Can\'t Find Your Mould?',
         ctaSub: 'We manufacture custom moulds from your drawings. Send us specifications and we will provide a quotation within 48 hours.',
-        ctaBtn: 'Request Custom Quote'
+        ctaBtn: 'Request Custom Quote',
+        requestQuote: 'Request Quote'
       },
 
       /* Industries page */
@@ -255,6 +259,9 @@
         hoursLine: 'Mon – Sat, 08:30 – 18:00 (GMT+8)<br>WhatsApp answered 7 days a week.',
         mapPlaceholder: '🗺️ Google Maps embed — replace with your share link iframe',
         formTitle: 'Request a Quote',
+        fastTitle: 'Fastest response: WhatsApp',
+        fastText: 'Send drawings, sizes, quantity, destination country, and target standard. We can quickly check feasibility and quote direction.',
+        fastButton: 'Chat on WhatsApp',
         nameLabel: 'Your Name *',
         namePh: 'John Smith',
         companyLabel: 'Company',
@@ -403,7 +410,10 @@
         title: '混凝土预制件<span>精密塑料模具</span>',
         subtitle: '从井盖到护坡块——1000+模具规格，服务于全球30+国家的市政、公路及铁路工程项目。',
         btnQuote: '获取报价',
-        btnProducts: '浏览产品'
+        btnProducts: '浏览产品',
+        trustFactory: '源头工厂直供',
+        trustAudit: '支持视频验厂',
+        trustOem: '支持图纸/样品定制'
       },
 
       /* Stats */
@@ -524,7 +534,8 @@
         other: { t: '其他模具', s: '电缆槽、护栏立柱、围栏立柱、压顶及特种模具——另提供全套定制设计服务。', sub: '特殊<strong>电缆槽模具</strong>及定制模具方案，适用于基础设施工程中的电缆槽、护栏立柱及其他非标混凝土预制件。可按图纸或样品开发。' },
         ctaTitle: '没有找到您需要的模具？',
         ctaSub: '我们支持按图纸定制模具。提供规格参数，48小时内报价。',
-        ctaBtn: '获取定制报价'
+        ctaBtn: '获取定制报价',
+        requestQuote: '获取报价'
       },
 
       /* Industries page */
@@ -603,6 +614,9 @@
         hoursLine: '周一至周六 08:30 – 18:00（GMT+8）<br>WhatsApp每周7天在线。',
         mapPlaceholder: '🗺️ Google地图嵌入——替换为您的分享链接iframe',
         formTitle: '询盘表单',
+        fastTitle: '最快响应：WhatsApp',
+        fastText: '请发送图纸、尺寸、数量、目的国和目标标准。我们可以快速判断可行性并给出报价方向。',
+        fastButton: 'WhatsApp 咨询',
         nameLabel: '姓名 *',
         namePh: '张三',
         companyLabel: '公司名称',
