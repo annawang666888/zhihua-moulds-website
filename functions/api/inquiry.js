@@ -29,7 +29,7 @@ async function parseBody(request) {
 }
 
 export async function onRequestPost(context) {
-  const { request, env } = context;
+  const { request } = context;
 
   let data;
   try {
@@ -61,59 +61,50 @@ export async function onRequestPost(context) {
   if (!required(inquiry.email) || !/^\S+@\S+\.\S+$/.test(inquiry.email)) errors.email = "Valid email is required.";
   if (!required(inquiry.phone)) errors.phone = "Phone / WhatsApp is required.";
   if (!required(inquiry.message)) errors.message = "Message is required.";
-  if (Object.keys(errors).length) return json({ ok: false, errors }, 400);
+  if (Object.keys(errors).length) return json({ ok: false, errors, message: "Please fill in the required fields." }, 400);
 
-  // Honeypot: if a hidden website field is added later and filled by bots, reject silently.
-  if (data.website) return json({ ok: true });
+  // Honeypot: if the hidden website field is filled by bots, reject silently.
+  if (data.website) return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
 
-  const subject = `New inquiry from ${inquiry.name} - Zhihua Moulds`;
-  const html = `
-    <h2>New Zhihua Moulds Inquiry</h2>
-    <p><strong>Name:</strong> ${escapeHtml(inquiry.name)}</p>
-    <p><strong>Company:</strong> ${escapeHtml(inquiry.company)}</p>
-    <p><strong>Country:</strong> ${escapeHtml(inquiry.country)}</p>
-    <p><strong>Email:</strong> ${escapeHtml(inquiry.email)}</p>
-    <p><strong>Phone / WhatsApp:</strong> ${escapeHtml(inquiry.phone)}</p>
-    <p><strong>Product:</strong> ${escapeHtml(inquiry.product)}</p>
-    <p><strong>Quantity:</strong> ${escapeHtml(inquiry.quantity)}</p>
-    <p><strong>Budget:</strong> ${escapeHtml(inquiry.budget)}</p>
-    <p><strong>Message:</strong><br>${escapeHtml(inquiry.message).replaceAll("\n", "<br>")}</p>
-    <hr>
-    <p><strong>Source page:</strong> ${escapeHtml(inquiry.source_page)}</p>
-    <p><strong>UTM:</strong> ${escapeHtml([inquiry.utm_source, inquiry.utm_medium, inquiry.utm_campaign].filter(Boolean).join(" / "))}</p>
-    <p><strong>Submitted at:</strong> ${escapeHtml(inquiry.submitted_at)}</p>
-    <p><strong>IP country:</strong> ${escapeHtml(inquiry.ip_country)}</p>
-  `;
+  const basinEndpoint = "https://usebasin.com/f/faac31d0bb8e";
+  const basinForm = new FormData();
+  basinForm.set("_subject", "New website inquiry from zhihuamoulds.com");
+  basinForm.set("name", inquiry.name);
+  basinForm.set("company", inquiry.company);
+  basinForm.set("country", inquiry.country);
+  basinForm.set("email", inquiry.email);
+  basinForm.set("phone", inquiry.phone);
+  basinForm.set("product", inquiry.product);
+  basinForm.set("quantity", inquiry.quantity);
+  basinForm.set("budget", inquiry.budget);
+  basinForm.set("message", inquiry.message);
+  basinForm.set("source_page", inquiry.source_page);
+  basinForm.set("utm_source", inquiry.utm_source);
+  basinForm.set("utm_medium", inquiry.utm_medium);
+  basinForm.set("utm_campaign", inquiry.utm_campaign);
+  basinForm.set("submitted_at", inquiry.submitted_at);
+  basinForm.set("ip_country", inquiry.ip_country);
 
-  // Email via Resend. Set RESEND_API_KEY, INQUIRY_TO_EMAIL, and INQUIRY_FROM_EMAIL in Cloudflare Pages.
-  if (env.RESEND_API_KEY && env.INQUIRY_TO_EMAIL && env.INQUIRY_FROM_EMAIL) {
-    const response = await fetch("https://api.resend.com/emails", {
+  let basinResponse;
+  try {
+    basinResponse = await fetch(basinEndpoint, {
       method: "POST",
-      headers: {
-        "authorization": `Bearer ${env.RESEND_API_KEY}`,
-        "content-type": "application/json"
-      },
-      body: JSON.stringify({
-        from: env.INQUIRY_FROM_EMAIL,
-        to: [env.INQUIRY_TO_EMAIL],
-        reply_to: inquiry.email,
-        subject,
-        html
-      })
+      body: basinForm,
+      headers: { "accept": "application/json" }
     });
+  } catch (error) {
+    console.error("Basin network error", error);
+    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 502);
+  }
 
-    if (!response.ok) {
-      const detail = await response.text();
-      console.error("Resend failed", detail);
-      return json({ ok: false, message: "Inquiry received but email notification failed. Please contact us by WhatsApp." }, 502);
-    }
-  } else {
-    console.log("Inquiry received; email env vars are not configured yet.", inquiry);
+  if (!basinResponse.ok) {
+    const detail = await basinResponse.text().catch(() => "");
+    console.error("Basin submit failed", basinResponse.status, detail.slice(0, 500));
+    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 502);
   }
 
   return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours." });
 }
-
 export async function onRequestGet() {
   return json({ ok: true, message: "Inquiry endpoint is running. Use POST to submit." });
 }

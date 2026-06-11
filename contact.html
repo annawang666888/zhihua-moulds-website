@@ -198,10 +198,11 @@
         <div id="formError" class="form-message form-error" style="display:none">
           ❌ Please fix the required fields below and try again, or contact us by WhatsApp/email.
         </div>
-        <!-- Formal inquiry form powered by Basin.
-             Submissions are delivered to the configured inbox and kept in the Basin dashboard. -->
-        <form id="inquiryForm" action="https://usebasin.com/f/faac31d0bb8e" method="POST" novalidate
-              data-form-type="basin">
+        <!-- Formal inquiry form.
+             The browser submits to our same-origin Cloudflare Pages Function,
+             which forwards the inquiry to Basin in the background. -->
+        <form id="inquiryForm" action="/api/inquiry" method="POST" novalidate
+              data-form-type="api">
           <input type="hidden" id="source_page" name="source_page" value="contact.html">
           <input type="hidden" id="utm_source" name="utm_source" value="">
           <input type="hidden" id="utm_medium" name="utm_medium" value="">
