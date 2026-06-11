@@ -192,21 +192,25 @@
           <p data-i18n="contact.fastText">Send drawings, sizes, quantity, destination country, and target standard. We can quickly check feasibility and quote direction.</p>
           <a href="https://wa.me/8616621391202" target="_blank" rel="noopener" class="btn-whatsapp-inline" onclick="gtag('event', 'whatsapp_click', { 'link_url': 'https://wa.me/8616621391202', 'location': 'contact_form_tip' });" data-i18n="contact.fastButton">Chat on WhatsApp</a>
         </div>
-        <div id="formSuccess" class="form-message form-success" style="display:none">
-          ✅ Thank you! Your email client will open with your inquiry. You can also contact us directly on WhatsApp for the fastest reply.
+        <div id="formSuccess" class="form-message form-success" style="display:none" data-i18n="contact.formSuccess">
+          ✅ Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.
         </div>
         <div id="formError" class="form-message form-error" style="display:none">
           ❌ Please fix the required fields below and try again, or contact us by WhatsApp/email.
         </div>
-        <!-- Temporary launch-safe contact form.
-             It opens the visitor's email client until the Cloudflare Pages Function
-             email backend is configured. WhatsApp remains the fastest contact path. -->
-        <form id="inquiryForm" action="mailto:354909745@qq.com" method="POST" enctype="text/plain" novalidate
-              data-form-type="mailto">
+        <!-- Formal inquiry form powered by Basin.
+             Submissions are delivered to the configured inbox and kept in the Basin dashboard. -->
+        <form id="inquiryForm" action="https://usebasin.com/f/faac31d0bb8e" method="POST" novalidate
+              data-form-type="basin">
           <input type="hidden" id="source_page" name="source_page" value="contact.html">
           <input type="hidden" id="utm_source" name="utm_source" value="">
           <input type="hidden" id="utm_medium" name="utm_medium" value="">
           <input type="hidden" id="utm_campaign" name="utm_campaign" value="">
+          <input type="hidden" name="_subject" value="New website inquiry from zhihuamoulds.com">
+          <div class="hidden-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
 
           <div class="form-row">
             <div class="form-group">

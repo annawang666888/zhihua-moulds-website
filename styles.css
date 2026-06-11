@@ -604,3 +604,6 @@ img.lazy-loaded.loaded {
 .certs-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
 @media(max-width:1024px){.assurance-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.assurance-grid{grid-template-columns:1fr}.certs-cta a{width:100%;justify-content:center}}
+
+
+.hidden-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}

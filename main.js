@@ -135,8 +135,8 @@
       const formAction = form.getAttribute('action');
 
       // Handle different form types
-      if (formType === 'formspree' || (formAction && formAction.includes('formspree.io'))) {
-        // Formspree submission - use fetch API
+      if (formType === 'formspree' || formType === 'basin' || (formAction && (formAction.includes('formspree.io') || formAction.includes('usebasin.com')))) {
+        // Formspree/Basin submission - use fetch API
         const formData = new FormData(form);
         fetch(formAction, {
           method: 'POST',
@@ -148,8 +148,12 @@
           setLoading(false);
           if (response.ok) {
             if (formSuccess) {
-              showMessage(formSuccess, 5000);
+              formSuccess.textContent = formSuccess.dataset.successText || formSuccess.textContent || '✅ Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.';
+              showMessage(formSuccess, 7000);
               form.reset();
+            }
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', { form_location: 'contact_page', form_provider: formType });
             }
           } else {
             throw new Error('Submission failed');
