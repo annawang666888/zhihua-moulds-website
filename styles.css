@@ -590,3 +590,17 @@ img.lazy-loaded.loaded {
 .btn-whatsapp-inline{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:8px;background:#25d366;color:#052e16;font-weight:800;font-size:13px;text-decoration:none;box-shadow:0 4px 14px rgba(37,211,102,.28)}
 .btn-whatsapp-inline:hover{color:#052e16;transform:translateY(-1px)}
 @media(max-width:560px){.hero-trust span{font-size:12px;padding:7px 10px}.product-quick-quote{width:100%}}
+
+
+/* Trust-building About page sections */
+.buyer-assurance-section{background:#071224;border-top:1px solid #132944;border-bottom:1px solid #132944}
+.assurance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.assurance-card{background:#0f2742;border:1px solid #1a2e4a;border-radius:12px;padding:24px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.assurance-card:hover{transform:translateY(-4px);border-color:#38bdf8;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.assurance-icon{font-size:28px;margin-bottom:12px}
+.assurance-card h3{font-size:16px;color:#e2e8f0;margin-bottom:8px;line-height:1.35}
+.assurance-card p{font-size:14px;color:#94a3b8;line-height:1.65}
+.certs-note{max-width:820px;margin:0 auto 24px;padding:14px 18px;border:1px solid rgba(251,191,36,.35);border-radius:10px;background:rgba(251,191,36,.08);color:#fde68a;text-align:center;font-size:14px;line-height:1.6}
+.certs-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+@media(max-width:1024px){.assurance-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.assurance-grid{grid-template-columns:1fr}.certs-cta a{width:100%;justify-content:center}}

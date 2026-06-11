@@ -51,8 +51,8 @@
 
       /* Hero */
       hero: {
-        title: 'Precision Plastic Moulds for <span>Precast Concrete</span>',
-        subtitle: 'From manhole covers to slope protection blocks — 1 000+ mould SKUs engineered for municipal, highway, and railway projects across 30+ countries.',
+        title: 'Factory-Direct Plastic Moulds for <span>Precast Concrete</span>',
+        subtitle: 'Zhihua manufactures manhole cover, kerbstone, paver, slope protection and drainage moulds for overseas precast factories and infrastructure contractors — with video factory audit, OEM design and export packing support.',
         btnQuote: 'Request a Quote',
         btnProducts: 'View Products',
         trustFactory: 'Factory direct manufacturer',
@@ -161,6 +161,15 @@
         ctaTitle: 'Want to Visit Our Factory?',
         ctaSub: 'We welcome factory audits and video-call tours. Schedule a visit or get a quote today.',
         ctaBtn: 'Contact Us'
+      },
+
+      buyerAssurance: {
+        title: 'Built for <span>Overseas Buyers</span>',
+        subtitle: 'We understand that international buyers need more than a catalogue. You need a supplier that can be checked, audited, and contacted quickly.',
+        factory: { h: 'Real Factory, Not Just a Trading Page', p: 'Production workshops, warehouse photos, certificates and customer-visit records help you evaluate us before placing an order.' },
+        audit: { h: 'Video Audit Available', p: 'We can arrange video factory tours, product inspection calls, and loading checks for overseas buyers and procurement teams.' },
+        oem: { h: 'OEM from Drawings or Samples', p: 'Send your dimensions, local standard, drawing or sample photo. We review feasibility and suggest mould structure before quotation.' },
+        export: { h: 'Export Packing & Documentation', p: 'Mixed-SKU container loading, packing photos, invoice/packing list support, and shipment coordination are part of our export workflow.' }
       },
 
       /* Products page */
@@ -347,7 +356,10 @@
         patent1: { h: 'Utility Model Patent', p: 'Easy-demould drainage cover mould' },
         patent2: { h: 'Invention Patent', p: 'Cement product forming mould' },
         patent3: { h: 'Utility Model Patent', p: 'Wind-guide injection mould design' },
-        hightech: { h: 'High-Tech Enterprise', p: 'National certification (2023–2026)' }
+        hightech: { h: 'High-Tech Enterprise', p: 'National certification (2023–2026)' },
+        auditNote: 'Need documents for supplier approval? Contact us for certificate copies, factory photos, loading photos, and a video factory tour.',
+        auditBtn: 'Request Audit Documents',
+        whatsappBtn: 'Ask on WhatsApp'
       },
       /* --- Footer Trust --- */
       trust: {
@@ -407,8 +419,8 @@
 
       /* Hero */
       hero: {
-        title: '混凝土预制件<span>精密塑料模具</span>',
-        subtitle: '从井盖到护坡块——1000+模具规格，服务于全球30+国家的市政、公路及铁路工程项目。',
+        title: '混凝土预制件塑料模具<span>源头工厂</span>',
+        subtitle: '志华为海外预制厂和基建承包商生产井盖、路沿石、平石、护坡和水沟盖板模具，支持视频验厂、OEM定制和出口装柜服务。',
         btnQuote: '获取报价',
         btnProducts: '浏览产品',
         trustFactory: '源头工厂直供',
@@ -517,6 +529,15 @@
         ctaTitle: '欢迎来厂参观',
         ctaSub: '我们欢迎来厂验厂及视频看厂。预约参观或获取报价。',
         ctaBtn: '联系我们'
+      },
+
+      buyerAssurance: {
+        title: '面向<span>海外买家</span>的供应体系',
+        subtitle: '国际采购不只需要产品目录，更需要可核验、可沟通、可持续合作的真实供应商。',
+        factory: { h: '真实工厂，不只是展示页面', p: '生产车间、仓库照片、证书和客户来访记录，帮助您在下单前完成供应商评估。' },
+        audit: { h: '支持视频验厂', p: '可为海外买家和采购团队安排视频看厂、产品检查视频会议和装柜检查。' },
+        oem: { h: '支持图纸或样品定制', p: '提供尺寸、当地标准、图纸或样品照片，我们先评估可行性并建议模具结构，再进行报价。' },
+        export: { h: '出口包装与文件支持', p: '混装多规格装柜、包装照片、发票/装箱单支持和发货协调，都是我们的出口流程组成部分。' }
       },
 
       /* Products page */
@@ -702,7 +723,10 @@
         patent1: { h: '实用新型专利', p: '易脱模排水沟盖板模具' },
         patent2: { h: '发明专利', p: '水泥制品成型模具' },
         patent3: { h: '实用新型专利', p: '导风罩注塑模具设计' },
-        hightech: { h: '高新技术企业', p: '国家级认证（2023–2026）' }
+        hightech: { h: '高新技术企业', p: '国家级认证（2023–2026）' },
+        auditNote: '需要供应商审核资料？可联系我们获取证书副本、工厂照片、装柜照片和视频验厂安排。',
+        auditBtn: '索取审核资料',
+        whatsappBtn: 'WhatsApp 咨询'
       },
       /* --- 底部信任标识 --- */
       trust: {
