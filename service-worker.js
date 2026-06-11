@@ -1,73 +1,37 @@
 /* ========== Service Worker for Zhihua Moulds ========== */
-const CACHE_NAME = 'zhihua-moulds-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/about.html',
-  '/products.html',
-  '/industries.html',
-  '/contact.html',
-  '/blog.html',
-  '/styles.css',
-  '/main.js',
-  '/i18n.js',
-  '/assets/logo.png',
-  '/assets/hero.svg'
-];
+/*
+ * Cloudflare Pages launch-safe service worker.
+ * Previous versions used a cache-first strategy, which can keep old Netlify-era
+ * pages in visitors' browsers. This version clears old caches and always tries
+ * the network first for pages/assets, so updates appear immediately.
+ */
+const CACHE_NAME = 'zhihua-moulds-cloudflare-v2';
 
-// Install Service Worker
 self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
-  );
+  self.skipWaiting();
+  event.waitUntil(caches.open(CACHE_NAME));
 });
 
-// Fetch with cache-first strategy
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        
-        // Clone the request
-        const fetchRequest = event.request.clone();
-
-        return fetch(fetchRequest).then(response => {
-          // Check if valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          // Clone the response
-          const responseToCache = response.clone();
-
-          caches.open(CACHE_NAME)
-            .then(cache => {
-              cache.put(event.request, responseToCache);
-            });
-
-          return response;
-        });
-      })
-  );
-});
-
-// Activate Service Worker
 self.addEventListener('activate', event => {
-  const cacheWhitelist = [CACHE_NAME];
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
+  event.waitUntil((async () => {
+    const names = await caches.keys();
+    await Promise.all(names.map(name => caches.delete(name)));
+    await self.clients.claim();
+  })());
+});
+
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  if (request.method !== 'GET') return;
+
+  event.respondWith((async () => {
+    try {
+      const response = await fetch(request);
+      return response;
+    } catch (error) {
+      const cached = await caches.match(request);
+      if (cached) return cached;
+      throw error;
+    }
+  })());
 });

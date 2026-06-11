@@ -54,7 +54,7 @@
 
   /* ---------- Contact Form Validation ---------- */
   const form = document.getElementById('inquiryForm');
-  if (form) {
+  if (form && form.dataset.formType !== 'api') {
     const submitBtn = document.getElementById('submitBtn');
     const btnText = submitBtn?.querySelector('.btn-text');
     const btnLoading = submitBtn?.querySelector('.btn-loading');
@@ -180,18 +180,34 @@
           if (formError) showMessage(formError, 5000);
         });
       } else {
-        // mailto fallback - show success then open email client
+        // mailto fallback - open the visitor's email client with a readable inquiry.
         setTimeout(() => {
           setLoading(false);
+          const data = new FormData(form);
+          const subject = encodeURIComponent('Website inquiry from ' + (data.get('name') || 'visitor'));
+          const lines = [
+            'New inquiry from zhihuamoulds.com',
+            '',
+            'Name: ' + (data.get('name') || ''),
+            'Company: ' + (data.get('company') || ''),
+            'Country: ' + (data.get('country') || ''),
+            'Email: ' + (data.get('email') || ''),
+            'Phone / WhatsApp: ' + (data.get('phone') || ''),
+            'Product: ' + (data.get('product') || ''),
+            'Quantity: ' + (data.get('quantity') || ''),
+            'Budget: ' + (data.get('budget') || ''),
+            '',
+            'Message:',
+            data.get('message') || '',
+            '',
+            'Source page: ' + (data.get('source_page') || window.location.href)
+          ];
+          const body = encodeURIComponent(lines.join('\n'));
           if (formSuccess) {
-            showMessage(formSuccess, 2000);
-            form.reset();
+            showMessage(formSuccess, 5000);
           }
-          // Actually submit the form after showing success (opens email client)
-          setTimeout(() => {
-            form.submit();
-          }, 500);
-        }, 1000);
+          window.location.href = 'mailto:354909745@qq.com?subject=' + subject + '&body=' + body;
+        }, 300);
       }
     });
   }

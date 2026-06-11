@@ -1,1 +1,8 @@
-https://www.zhihuamoulds.com/* https://zhihuamoulds.com/:splat 301!
+# Cloudflare Pages redirects for Zhihua Moulds
+# Keep both root-domain and www custom domains usable during DNS propagation.
+# Extensionless URLs for cleaner navigation and compatibility with shared links.
+/about       /about.html       200
+/products    /products.html    200
+/industries  /industries.html  200
+/blog        /blog.html        200
+/contact     /contact.html     200

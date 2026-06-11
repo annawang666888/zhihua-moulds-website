@@ -184,15 +184,16 @@
       <div class="inquiry-form fade-in">
         <h2 data-i18n="contact.formTitle">Request a Quote</h2>
         <div id="formSuccess" class="form-message form-success" style="display:none">
-          ✅ Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.
+          ✅ Thank you! Your email client will open with your inquiry. You can also contact us directly on WhatsApp for the fastest reply.
         </div>
         <div id="formError" class="form-message form-error" style="display:none">
-          ❌ Please fix the errors below and try again.
+          ❌ Please fix the required fields below and try again, or contact us by WhatsApp/email.
         </div>
-        <!-- Inquiry form posts to Cloudflare Pages Functions (/api/inquiry).
-             Required environment variables are documented in docs/DEPLOYMENT.md. -->
-        <form id="inquiryForm" action="/api/inquiry" method="POST" novalidate
-              data-form-type="api">
+        <!-- Temporary launch-safe contact form.
+             It opens the visitor's email client until the Cloudflare Pages Function
+             email backend is configured. WhatsApp remains the fastest contact path. -->
+        <form id="inquiryForm" action="mailto:354909745@qq.com" method="POST" enctype="text/plain" novalidate
+              data-form-type="mailto">
           <input type="hidden" id="source_page" name="source_page" value="contact.html">
           <input type="hidden" id="utm_source" name="utm_source" value="">
           <input type="hidden" id="utm_medium" name="utm_medium" value="">
