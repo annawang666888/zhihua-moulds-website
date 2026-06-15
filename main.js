@@ -150,7 +150,7 @@
         if (form.querySelector('.cf-turnstile') && !formData.get('cf-turnstile-response')) {
           setLoading(false);
           if (formError) {
-            formError.textContent = '❌ Please complete the anti-spam check, then submit again. You can also contact us by WhatsApp/email.';
+            formError.textContent = '❌ Please complete the anti-spam check, then submit again. You can also contact us by Telegram/email.';
             showMessage(formError, 6000);
           }
           return;
@@ -182,7 +182,7 @@
           setLoading(false);
           resetTurnstile();
           if (formError) {
-            formError.textContent = error.message || '❌ Submit failed. Please contact us by WhatsApp or email.';
+            formError.textContent = error.message || '❌ Submit failed. Please contact us by Telegram or email.';
             showMessage(formError, 6000);
           }
         });
@@ -247,7 +247,7 @@
             'Company: ' + (data.get('company') || ''),
             'Country: ' + (data.get('country') || ''),
             'Email: ' + (data.get('email') || ''),
-            'Phone / WhatsApp: ' + (data.get('phone') || ''),
+            'Phone / Telegram: ' + (data.get('phone') || ''),
             'Product: ' + (data.get('product') || ''),
             'Quantity: ' + (data.get('quantity') || ''),
             'Budget: ' + (data.get('budget') || ''),
@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     } catch (err) {
       if (error) {
-        error.textContent = '❌ ' + (err.message || 'Submit failed. Please contact us by WhatsApp or email.');
+        error.textContent = '❌ ' + (err.message || 'Submit failed. Please contact us by Telegram or email.');
         error.style.display = 'block';
       }
     } finally {
