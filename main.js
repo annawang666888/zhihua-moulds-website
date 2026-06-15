@@ -52,6 +52,30 @@
     faders.forEach(el => el.classList.add('visible'));
   }
 
+  /* ---------- Lead Tracking ---------- */
+  function trackLead(source, element) {
+    if (typeof gtag !== 'function') return;
+    const href = element?.getAttribute('href') || '';
+    gtag('event', 'generate_lead', {
+      lead_source: source,
+      contact_method: source,
+      link_url: href,
+      page_path: window.location.pathname
+    });
+  }
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href') || '';
+    const lowerHref = href.toLowerCase();
+    if (lowerHref.includes('t.me/jiexikauk')) {
+      link.addEventListener('click', () => trackLead('telegram', link));
+    } else if (lowerHref.startsWith('mailto:')) {
+      link.addEventListener('click', () => trackLead('email', link));
+    } else if (lowerHref.startsWith('tel:')) {
+      link.addEventListener('click', () => trackLead('phone', link));
+    }
+  });
+
   /* ---------- Contact Form Validation ---------- */
   const form = document.getElementById('inquiryForm');
   if (form) {
@@ -173,7 +197,7 @@
               resetTurnstile();
             }
             if (typeof gtag === 'function') {
-              gtag('event', 'generate_lead', { form_location: 'contact_page', form_provider: 'resend_turnstile' });
+              gtag('event', 'generate_lead', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', form_provider: 'resend_turnstile', page_path: window.location.pathname });
             }
           } else {
             throw new Error(result.message || 'Submission failed');
@@ -204,7 +228,7 @@
               form.reset();
             }
             if (typeof gtag === 'function') {
-              gtag('event', 'generate_lead', { form_location: 'contact_page', form_provider: formType });
+              gtag('event', 'generate_lead', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', form_provider: formType, page_path: window.location.pathname });
             }
           } else {
             throw new Error('Submission failed');
@@ -406,7 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
         success.style.display = 'block';
       }
       if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', { form_location: 'contact_page' });
+        gtag('event', 'generate_lead', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', page_path: window.location.pathname });
       }
       form.reset();
     } catch (err) {
