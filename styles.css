@@ -640,3 +640,10 @@ img.lazy-loaded.loaded {
   display:block;
   background:#e8f2ff;
 }
+
+/* WhatsApp restored as primary instant chat channel */
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:90;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s;text-decoration:none;color:#fff}
+.whatsapp-float:hover{transform:scale(1.1);color:#fff}
+.btn-whatsapp-inline{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#25D366!important;color:#ffffff!important;border-color:#25D366!important}
+.btn-whatsapp-inline:hover{color:#ffffff!important;transform:translateY(-1px)}
+@media(max-width:560px){.whatsapp-float{width:52px;height:52px;font-size:26px;bottom:16px;right:16px}}

@@ -260,15 +260,15 @@
         infoTitle: 'Contact Information',
         addrLabel: 'Factory Address',
         addrLine: 'Yongkang Road 399, Shendang Industrial Park,<br>Haiyan County, Jiaxing City,<br>Zhejiang Province, China',
-        waLabel: 'Telegram / Mobile',
+        waLabel: 'WhatsApp / Mobile',
         waClickTip: 'Click to chat instantly',
         emailLabel: 'Email',
         hotlineLabel: 'Domestic Hotline (China)',
         hoursLabel: 'Business Hours',
-        hoursLine: 'Mon – Sat, 08:30 – 18:00 (GMT+8)<br>Telegram messages are checked every business day.',
+        hoursLine: 'Mon – Sat, 08:30 – 18:00 (GMT+8)<br>WhatsApp and Telegram messages are checked every business day.',
         mapPlaceholder: '🗺️ Google Maps embed — replace with your share link iframe',
         formTitle: 'Request a Quote',
-        fastTitle: 'Fastest response: Telegram',
+        fastTitle: 'Fastest response: WhatsApp or Telegram',
         fastText: 'Send drawings, sizes, quantity, destination country, and target standard. We can quickly check feasibility and quote direction.',
         fastButton: 'Chat on Telegram',
         nameLabel: 'Your Name *',
@@ -279,7 +279,7 @@
         countryPh: 'Saudi Arabia',
         emailFormLabel: 'Email *',
         emailPh: 'you@company.com',
-        phoneLabel: 'Phone / Telegram *',
+        phoneLabel: 'Phone / WhatsApp / Telegram *',
         phonePh: '+966 5xx xxx xxx',
         productLabel: 'Product of Interest',
         productPh: '-- Select category --',
@@ -360,7 +360,7 @@
         hightech: { h: 'High-Tech Enterprise', p: 'National certification (2023–2026)' },
         auditNote: 'Need documents for supplier approval? Contact us for certificate copies, factory photos, loading photos, and a video factory tour.',
         auditBtn: 'Request Audit Documents',
-        whatsappBtn: 'Ask on Telegram'
+        whatsappBtn: 'Ask on WhatsApp'
       },
       /* --- Footer Trust --- */
       trust: {
@@ -628,7 +628,7 @@
         infoTitle: '联系方式',
         addrLabel: '工厂地址',
         addrLine: '中国浙江省嘉兴市海盐县沈荡工业园永康路399号',
-        waLabel: 'Telegram / 手机',
+        waLabel: 'WhatsApp / 手机',
         waClickTip: '点击即时聊天',
         emailLabel: '邮箱',
         hotlineLabel: '国内热线',
@@ -636,7 +636,7 @@
         hoursLine: '周一至周六 08:30 – 18:00（GMT+8）<br>Telegram消息工作日及时查看。',
         mapPlaceholder: '🗺️ Google地图嵌入——替换为您的分享链接iframe',
         formTitle: '询盘表单',
-        fastTitle: '最快响应：Telegram',
+        fastTitle: '最快响应：WhatsApp 或 Telegram',
         fastText: '请发送图纸、尺寸、数量、目的国和目标标准。我们可以快速判断可行性并给出报价方向。',
         fastButton: 'Telegram 咨询',
         nameLabel: '姓名 *',
@@ -647,7 +647,7 @@
         countryPh: '沙特阿拉伯',
         emailFormLabel: '邮箱 *',
         emailPh: 'you@company.com',
-        phoneLabel: '电话 / Telegram *',
+        phoneLabel: '电话 / WhatsApp / Telegram *',
         phonePh: '+966 5xx xxx xxx',
         productLabel: '感兴趣的产品',
         productPh: '-- 请选择类别 --',
@@ -728,7 +728,7 @@
         hightech: { h: '高新技术企业', p: '国家级认证（2023–2026）' },
         auditNote: '需要供应商审核资料？可联系我们获取证书副本、工厂照片、装柜照片和视频验厂安排。',
         auditBtn: '索取审核资料',
-        whatsappBtn: 'Telegram 咨询'
+        whatsappBtn: 'WhatsApp 咨询'
       },
       /* --- 底部信任标识 --- */
       trust: {

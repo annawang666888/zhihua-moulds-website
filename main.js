@@ -446,3 +446,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+// Track WhatsApp contact clicks after WhatsApp channel was restored.
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          lead_source: 'whatsapp',
+          contact_method: 'whatsapp',
+          link_url: link.href,
+          page_path: window.location.pathname
+        });
+      }
+    });
+  });
+});
