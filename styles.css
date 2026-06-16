@@ -623,3 +623,8 @@ img.lazy-loaded.loaded {
 
 /* ---------- Article Pages ---------- */
 .article-layout{max-width:920px}.article-content{background:#0f2742;border:1px solid #1a2e4a;border-radius:14px;padding:38px}.article-content p{color:#94a3b8;margin-bottom:18px;line-height:1.85}.article-content h2{font-size:clamp(1.25rem,2.2vw,1.65rem);font-weight:800;color:#f8fafc;margin:34px 0 12px}.article-content a{font-weight:600}.article-content .detail-list{margin-bottom:20px}@media(max-width:700px){.article-content{padding:24px}}
+
+/* Full catalogue-card product images: preserve product + orange description text */
+.full-card-hero img,.full-card-gallery .product-item img,.product-item.full-card-item img{aspect-ratio:auto!important;height:auto!important;object-fit:contain!important;background:#e8f2ff;}
+.full-card-gallery{align-items:start;}
+.product-card.full-card-preview img{object-fit:contain;background:#e8f2ff;}
