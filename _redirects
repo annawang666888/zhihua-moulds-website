@@ -1,5 +1,3 @@
 # Cloudflare Pages redirects for Zhihua Moulds
-# Keep explicit rewrites only where clean nested product URLs need stable .html mapping.
-
-/products/stepped-slope-block-moulds /products/stepped-slope-block-moulds.html 200
-/products/hollow-interlocking-slope-block-moulds /products/hollow-interlocking-slope-block-moulds.html 200
+# No custom page rewrites here: Cloudflare Pages already supports /about and /about.html.
+# Keeping this file intentionally minimal avoids redirect loops during launch.
