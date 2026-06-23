@@ -771,3 +771,30 @@ img.lazy-loaded.loaded {
 @media(max-width:420px){
   .case-item img{height:260px;}
 }
+
+
+/* OEM process page layout fix: keep step number on the left and text on the right. */
+.process-step span{
+  grid-column:1;
+  grid-row:1 / span 2;
+}
+.process-step h2{
+  grid-column:2;
+  grid-row:1;
+  align-self:end;
+  margin:0 0 4px;
+}
+.process-step p{
+  grid-column:2;
+  grid-row:2;
+  margin:0;
+}
+@media(max-width:900px){
+  .process-step span,
+  .process-step h2,
+  .process-step p{
+    grid-column:auto;
+    grid-row:auto;
+  }
+  .process-step h2{align-self:auto;}
+}
