@@ -647,3 +647,63 @@ img.lazy-loaded.loaded {
 .btn-whatsapp-inline{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#25D366!important;color:#ffffff!important;border-color:#25D366!important}
 .btn-whatsapp-inline:hover{color:#ffffff!important;transform:translateY(-1px)}
 @media(max-width:560px){.whatsapp-float{width:52px;height:52px;font-size:26px;bottom:16px;right:16px}}
+
+/* ---------- Buyer Resource Pages ---------- */
+.resource-hero{background:linear-gradient(135deg,#081428,#0f2742);border-bottom:1px solid #1a2e4a;padding:70px 0 54px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:#f59e0b;margin-bottom:10px}.resource-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.compact-resource-grid{grid-template-columns:repeat(3,1fr)}.resource-card{background:#0f2742;border:1px solid #1a2e4a;border-radius:12px;padding:28px;transition:transform .25s,border-color .25s,box-shadow .25s}.resource-card:hover{transform:translateY(-3px);border-color:#3b82f6;box-shadow:0 8px 28px rgba(0,0,0,.28)}.resource-card h2,.resource-card h3{color:#f8fafc;font-size:20px;font-weight:800;margin-bottom:12px}.resource-card h3{font-size:17px}.resource-card p{color:#94a3b8;font-size:14px;line-height:1.75;margin-bottom:14px}.resource-card .detail-list{margin-top:8px;margin-bottom:20px}.resource-card .faq-item{background:transparent;border:0;border-top:1px solid #1a2e4a;border-radius:0;padding:14px 0;margin:0}.resource-card .faq-item:first-of-type{border-top:0}.resource-card .faq-item h3{font-size:15px;margin-bottom:6px;color:#e2e8f0}.process-timeline{display:grid;gap:18px}.process-step{display:grid;grid-template-columns:86px 1fr;gap:22px;align-items:start;background:#0f2742;border:1px solid #1a2e4a;border-radius:12px;padding:24px}.process-step span{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#0a1a2e;font-weight:900;font-size:20px}.process-step h2{font-size:20px;color:#f8fafc;margin-bottom:8px}.process-step p{color:#94a3b8;font-size:15px;line-height:1.75}.mt-40{margin-top:40px}@media(max-width:900px){.resource-grid,.compact-resource-grid{grid-template-columns:1fr}.process-step{grid-template-columns:1fr}.process-step span{width:54px;height:54px}}
+
+
+/* Stable layout for concrete product case/catalogue images
+   Source files are mostly vertical 551×665 catalogue cards. Keep the full card visible
+   but place it inside a consistent frame so product-case sections do not jump in height. */
+.product-items.full-card-gallery{
+  align-items:stretch;
+}
+.product-items.full-card-gallery .product-item,
+.detail-gallery.full-card-gallery .product-item{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.product-items.full-card-gallery .product-item img,
+.detail-gallery.full-card-gallery .product-item img,
+.product-item.full-card-item img{
+  width:100%!important;
+  height:360px!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  padding:10px!important;
+  background:#e8f2ff!important;
+}
+.product-items.full-card-gallery .product-item-body,
+.detail-gallery.full-card-gallery .product-item-body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+.product-items.full-card-gallery .product-quick-quote{
+  margin-top:auto;
+}
+.product-detail-hero-card.full-card-hero img,
+.product-card.full-card-preview img{
+  width:100%!important;
+  max-height:420px!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  padding:10px!important;
+  background:#e8f2ff!important;
+}
+@media(max-width:1024px){
+  .product-items.full-card-gallery .product-item img,
+  .detail-gallery.full-card-gallery .product-item img,
+  .product-item.full-card-item img{height:340px!important;}
+}
+@media(max-width:560px){
+  .product-items.full-card-gallery .product-item img,
+  .detail-gallery.full-card-gallery .product-item img,
+  .product-item.full-card-item img{height:420px!important;}
+  .product-detail-hero-card.full-card-hero img,
+  .product-card.full-card-preview img{max-height:460px!important;}
+}
