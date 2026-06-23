@@ -707,3 +707,67 @@ img.lazy-loaded.loaded {
   .product-detail-hero-card.full-card-hero img,
   .product-card.full-card-preview img{max-height:460px!important;}
 }
+
+
+/* Finished concrete application / garden case photos
+   These are installed/cast concrete examples, not product catalogue cards.
+   Keep mixed portrait/landscape photos complete and align up to three cases cleanly. */
+.application-cases{
+  margin-top:70px;
+  padding:46px 0 0;
+  border-top:1px solid #1a2e4a;
+}
+.application-cases h3{
+  color:#f8fafc;
+}
+.application-cases .section-subtitle{
+  color:#94a3b8;
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.case-items{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  overflow:visible;
+  padding-bottom:0;
+  scroll-snap-type:none;
+}
+.case-item{
+  flex:none;
+  scroll-snap-align:unset;
+  display:flex;
+  flex-direction:column;
+  background:#0f2742;
+  border:1px solid #1a2e4a;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 28px rgba(0,0,0,.28);
+}
+.case-item img{
+  width:100%;
+  height:320px;
+  object-fit:contain;
+  object-position:center center;
+  background:#e8f2ff;
+  display:block;
+}
+.case-item-body{
+  flex:1;
+  padding:20px;
+}
+.case-item-body h4{
+  color:#f8fafc;
+}
+.case-item-body p{
+  color:#94a3b8;
+}
+@media(max-width:768px){
+  .case-items{grid-template-columns:1fr;gap:18px;}
+  .case-item{flex:none;}
+  .case-item img{height:300px;}
+}
+@media(max-width:420px){
+  .case-item img{height:260px;}
+}
