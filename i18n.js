@@ -72,7 +72,7 @@
       categories: {
         title: 'Product <span>Categories</span>',
         subtitle: 'Eight major product lines covering every precast concrete mould need — from road infrastructure to urban landscaping.',
-        manhole: { h: 'Manhole Cover Moulds', p: 'Round & square, D400–F900 load classes' },
+        manhole: { h: 'Manhole Cover, Well Cover & Inspection Well Brick Moulds', p: 'Square covers, round sewer covers and well-brick systems' },
         kerbstone: { h: 'Kerbstone / Curbstone Moulds', p: 'L-type, S-type, slope-type, standard straight' },
         paver: { h: 'Flagstone / Paver Moulds', p: 'Interlocking, zigzag, Holland-style patterns' },
         slope: { h: 'Slope Protection Moulds', p: 'Hexagonal, I-beam, arch-frame, hollow blocks' },
@@ -138,7 +138,7 @@
         whoP4: 'We serve precast factories, municipal contractors, railway project procurement teams, and construction-material importers across the Middle East, Southeast Asia, Africa, the CIS, and Latin America.',
         makeTitle: 'What We <span>Make</span>',
         makeSub: 'Eight product lines — over 1 000 standard SKUs — plus unlimited custom designs from your drawings.',
-        makeManhole: { h: 'Manhole Cover Moulds', p: 'Round and square moulds for D400 through F900 load classes, with anti-slip surface patterns.' },
+        makeManhole: { h: 'Manhole, Well Cover & Inspection Well Brick Moulds', p: 'Square covers, round sewer covers, well frames and well-brick systems for utility access.' },
         makeKerbstone: { h: 'Kerbstone / Curbstone Moulds', p: 'L-type, S-type, slope-type, and straight profiles for road edging and median barriers.' },
         makePaver: { h: 'Paver / Flagstone Moulds', p: 'Interlocking, zigzag, Holland, and I-shape paver moulds for pedestrian and light-traffic areas.' },
         makeSlope: { h: 'Slope Protection Moulds', p: 'Hexagonal, I-beam, arch-frame, and hollow slope blocks for embankment stabilisation.' },
@@ -177,7 +177,7 @@
         heroTitle: 'Product <span style="color:#f59e0b">Catalogue</span>',
         heroSub: 'Eight product lines, 1 000+ standard SKUs — plus unlimited custom designs from your drawings.',
         /* Product section titles and subtitles */
-        manhole: { t: 'Manhole Cover Moulds', s: 'Round and square moulds for heavy-duty manhole covers, suitable for D400 to F900 load classes. Available in single-cavity and multi-cavity configurations.', sub: 'High-performance <strong>manhole cover moulds</strong> for municipal, highway, and airport applications. Available in EN 124 load classes <strong>B125, C250, D400, E600, and F900</strong> — round (Ø 600 / 700 / 800 / 900 mm) and square configurations. Single-cavity and multi-cavity options with <strong>300+ casting cycles</strong> and CAD-verified draft angles. OEM customisation accepted.' },
+        manhole: { t: 'Manhole Cover, Well Cover & Inspection Well Brick Moulds', s: 'Square well cover, rectangular well cover, round sewer cover, inspection-well frame and well-brick system moulds for municipal utility access.', sub: 'OCR-checked <strong>manhole cover, well cover and inspection-well brick moulds</strong> for municipal drainage, sewer, road, sidewalk, community and industrial park projects. Current examples include square covers, rectangular covers, round sewer covers, well wall bricks and circular well-brick systems. OEM customisation accepted from drawings or sample photos.' },
         kerbstone: { t: 'Kerbstone / Curbstone Moulds', s: 'Arc side stone, L-type, S-type, line side stone, isolation barrier and slope water-blocking kerbstone moulds for road edging, medians and pedestrian boundaries.', sub: 'Durable <strong>kerbstone moulds</strong> (also called <strong>curbstone moulds</strong>) for road edging, traffic medians, pedestrian boundaries, and decorative landscaping. Arc side stone, L-type, S-type, line side stone, isolation barrier and slope water-blocking profiles can be reviewed from catalogue photos, drawings or sample dimensions. Compatible with C30/40 concrete and pigment dyeing for coloured kerbs.' },
         paver: { t: 'Flagstone / Paver Moulds', s: 'Interlocking paver, zigzag, Holland-style, and I-shape moulds for walkways, plazas, and light-traffic paving.', sub: 'Industry-standard <strong>paver block moulds</strong> for walkways, plazas, driveways, and permeable paving. Includes <strong>interlocking Z-shape, zigzag Dutch-style, Holland rectangular, I-shape grass paver, and decorative flagstone</strong> designs. Sizes from 200 × 100 × 60 mm to custom large-format slabs. Pigment-compatible PP for vibrant coloured pavers.' },
         slope: { t: 'Slope Protection Moulds', s: 'Hexagonal slope blocks, I-beam eco-blocks, arch-frame moulds, and hollow slope protection — for embankment and hydraulic stabilisation.', sub: 'Engineered <strong>slope protection moulds</strong> for embankment stabilisation and river bank protection. <strong>Hexagonal, I-beam, arch-frame, and hollow slope blocks</strong> designed for durability and effective vegetation growth. Suitable for highway, railway, and hydraulic projects requiring erosion control.' },
@@ -303,11 +303,11 @@
       faq: {
         manhole: {
           title: 'Frequently Asked Questions',
-          sub: 'Common questions about manhole cover moulds, load classes, and specifications.',
-          q1: { q: 'What is the difference between D400 and F900 manhole covers?', a: 'D400 is rated for 40-tonne loads (municipal streets, standard highways) while F900 is rated for 90-tonne loads (airports, heavy industrial). F900 requires 20-30% more concrete per cast and 30-40% higher mould cost.' },
-          q2: { q: 'Can you make manhole moulds with our logo?', a: 'Yes! We can include your logo or utility marking on the mould surface at no extra charge. Please provide your logo in high-resolution format (vector AI/EPS preferred).' },
-          q3: { q: 'What is the lifespan of a plastic manhole mould?', a: 'With virgin PP/ABS materials and proper usage, our moulds consistently deliver 300+ casting cycles. With proper care and maintenance, many last well beyond that.' },
-          q4: { q: 'What sizes of manhole moulds do you offer?', a: 'We offer standard round diameters of Ø 600 / 700 / 800 / 900 mm and square configurations. Custom sizes are available based on your drawings or local standards.' }
+          sub: 'Common questions about manhole cover, well cover and inspection-well brick moulds, local sizes, markings and specifications.',
+          q1: { q: 'Can you make manhole, well cover and inspection-well brick moulds from samples?', a: 'Yes. Send the finished cover or well-brick dimensions, drawing, markings or sample photos. We can review the mould structure and quote standard or custom production.' },
+          q2: { q: 'Can one shipment include cover moulds and well-brick moulds?', a: 'Yes. Mixed-SKU orders are common for distributors and municipal supply projects where multiple cover, frame and well-brick sizes are needed.' },
+          q3: { q: 'Can the mould include logo or utility text?', a: 'Yes. Logo, lettering, utility name and anti-slip surface patterns can be discussed from drawings or clear sample photos.' },
+          q4: { q: 'What sizes of manhole and inspection-well moulds do you offer?', a: 'The current OCR-checked examples include square covers, rectangular covers, Ø80 cm round sewer covers, Ø68 cm well frames, well wall bricks, and inner Ø90/Ø110 cm circular well-brick systems. Custom sizes are available from drawings or local standards.' }
         },
         kerbstone: {
           title: 'Kerbstone Mould FAQ',
@@ -441,7 +441,7 @@
       categories: {
         title: '产品<span>分类</span>',
         subtitle: '八大产品线，覆盖混凝土预制件模具全需求——从道路基建到城市景观。',
-        manhole: { h: '井盖模具', p: '圆形/方形，D400–F900荷载等级' },
+        manhole: { h: '井盖/井框/砌井砖模具', p: '方井盖、圆井盖、井框和砌井砖系统' },
         kerbstone: { h: '路沿石模具', p: 'L型、S型、斜面型、标准直线型' },
         paver: { h: '平石模具', p: '联锁型、锯齿型、荷兰式图案' },
         slope: { h: '护坡塑料模具', p: '六角形、工字型、拱架型、空心块' },
@@ -507,7 +507,7 @@
         whoP4: '我们服务预制构件厂、市政施工方、铁路项目采购团队及建材进口商，客户遍及中东、东南亚、非洲、独联体及拉美地区。',
         makeTitle: '我们<span>生产什么</span>',
         makeSub: '八大产品线——1000+标准规格——另支持按图定制无限扩展。',
-        makeManhole: { h: '井盖模具', p: '圆形和方形模具，D400至F900荷载等级，带防滑表面纹路。' },
+        makeManhole: { h: '井盖/井框/砌井砖模具', p: '方井盖、圆形下水井盖、井框和砌井砖系统，适用于管线检查井。' },
         makeKerbstone: { h: '路沿石模具', p: 'L型、S型、斜面型及直线型路沿石，适用于道路边缘和中央隔离带。' },
         makePaver: { h: '平石模具', p: '联锁型、锯齿型、荷兰式及工字型平石模具，适用于人行道和轻型交通区域。' },
         makeSlope: { h: '护坡模具', p: '六角形、工字型、拱架型及空心护坡块，用于堤坝加固。' },
@@ -545,7 +545,7 @@
       products: {
         heroTitle: '产品<span style="color:#f59e0b">目录</span>',
         heroSub: '八大产品线，1000+标准规格——另支持按图定制无限扩展。',
-        manhole: { t: '井盖模具', s: '重型井盖用圆形和方形模具，适用D400至F900荷载等级，单腔和多腔配置可选。', sub: '高性能<strong>井盖模具</strong>，适用于市政道路、高速公路、机场及重载区域。支持 EN 124 <strong>B125、C250、D400、E600、F900</strong> 等荷载等级，圆形（Ø600/700/800/900 mm）和方形规格均可定制。支持单腔/多腔设计，单模可实现<strong>300+次浇筑</strong>，接受 OEM 定制。' },
+        manhole: { t: '井盖/井框/砌井砖模具', s: '方井盖、长方井盖、圆形下水井盖、圆井框、井壁砖和砌井砖系统模具，适用于市政管线检查井。', sub: '经 OCR 复核的<strong>井盖、井框和砌井砖模具</strong>，适用于市政排水、下水道、道路、人行道、小区、工业园区和管线检查井。当前样例包括方井盖、长方井盖、圆形下水井盖、井壁砖和内径90/110cm砌井砖系统。支持按图纸或样品照片 OEM 定制。' },
         kerbstone: { t: '路沿石模具', s: 'L型、S型、斜面型及直线型路沿石模具，适用于道路边缘、中央隔离带及人行道边界。', sub: '耐用<strong>路沿石模具</strong>，用于道路边缘、中央隔离带、人行道边界及景观工程。包括 L 型、S 型、斜面型、直线型、圆弧型等规格。可按图纸定制尺寸，适配 C30/40 混凝土和彩色颜料生产。' },
         paver: { t: '平石模具', s: '联锁型、锯齿型、荷兰式及工字型平石模具，适用于人行道、广场及轻型交通铺装。', sub: '标准<strong>平石/铺路砖模具</strong>，用于人行道、广场、车道和透水铺装。包括联锁型、锯齿荷兰式、矩形荷兰砖、工字型草坪砖及装饰平石等，可支持彩色混凝土生产和大规格定制。' },
         slope: { t: '护坡塑料模具', s: '六角形护坡块、工字型生态块、拱架型模具及空心护坡——用于堤坝和水工加固。', sub: '工程级<strong>护坡塑料模具</strong>，用于边坡稳定、河道护岸和水利工程。包括六角形、工字型、拱架型、空心护坡块等结构，适用于公路、铁路和水利项目的防冲刷需求。' },
@@ -670,12 +670,12 @@
       /* --- FAQ --- */
       faq: {
         manhole: {
-          title: 'Frequently Asked Questions',
-          sub: 'Common questions about manhole cover moulds, load classes, and specifications.',
-          q1: { q: 'What is the difference between D400 and F900 manhole covers?', a: 'D400 is rated for 40-tonne loads (municipal streets, standard highways) while F900 is rated for 90-tonne loads (airports, heavy industrial). F900 requires 20-30% more concrete per cast and 30-40% higher mould cost.' },
-          q2: { q: 'Can you make manhole moulds with our logo?', a: 'Yes! We can include your logo or utility marking on the mould surface at no extra charge. Please provide your logo in high-resolution format (vector AI/EPS preferred).' },
-          q3: { q: 'What is the lifespan of a plastic manhole mould?', a: 'With virgin PP/ABS materials and proper usage, our moulds consistently deliver 300+ casting cycles. With proper care and maintenance, many last well beyond that.' },
-          q4: { q: 'What sizes of manhole moulds do you offer?', a: 'We offer standard round diameters of Ø 600 / 700 / 800 / 900 mm and square configurations. Custom sizes are available based on your drawings or local standards.' }
+          title: '常见问题',
+          sub: '关于井盖、井框、砌井砖模具规格、标识和定制的常见问题。',
+          q1: { q: '可以按样品或图纸做井盖/井框/砌井砖模具吗？', a: '可以。请提供成品尺寸、图纸、标识要求或样品照片，我们会先评估模具结构，再给出标准款或定制方案报价。' },
+          q2: { q: '一次发货可以混装井盖和砌井砖模具吗？', a: '可以。经销商和市政项目常见多规格混装，包括盖板、井框、井壁砖和砌井砖系统等。' },
+          q3: { q: '模具可以做 logo 或管线文字吗？', a: '可以。Logo、文字、管线名称和防滑纹路都可以根据图纸或清晰样品照片沟通。' },
+          q4: { q: '目前有哪些井盖/检查井相关规格？', a: '当前 OCR 复核样例包括方井盖、长方井盖、Ø80cm 五孔下水圆井盖、Ø68cm 圆井框、井壁砖，以及内径90/110cm砌井砖系统。其他尺寸可按图纸或当地标准定制。' }
         },
         kerbstone: {
           title: 'Kerbstone Mould FAQ',
