@@ -798,3 +798,20 @@ img.lazy-loaded.loaded {
   }
   .process-step h2{align-self:auto;}
 }
+
+
+/* ---------- SEO buyer guide blocks for product landing pages ---------- */
+.seo-guide-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:start}
+.seo-guide-card{background:#0f2742;border:1px solid #1a2e4a;border-radius:12px;padding:24px}
+.seo-guide-card h3{font-size:18px;font-weight:800;color:#f8fafc;margin-bottom:12px}
+.seo-guide-card p{font-size:14px;color:#94a3b8;line-height:1.75;margin-bottom:14px}
+.seo-guide-card .detail-list{margin-top:6px}
+.spec-table-wrap{overflow-x:auto;border:1px solid #1a2e4a;border-radius:12px;background:#0f2742}
+.spec-table{width:100%;border-collapse:collapse;min-width:680px}
+.spec-table th,.spec-table td{padding:14px 16px;border-bottom:1px solid #1a2e4a;text-align:left;vertical-align:top;font-size:14px;color:#94a3b8}
+.spec-table th{background:#102a48;color:#e2e8f0;font-weight:800}
+.spec-table tr:last-child td{border-bottom:0}
+.related-link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.related-link-grid a{display:block;background:#102a48;border:1px solid #1a2e4a;border-radius:10px;padding:14px;color:#e2e8f0;font-weight:700;font-size:14px}
+.related-link-grid a:hover{border-color:#f59e0b;color:#fbbf24;transform:translateY(-2px)}
+@media(max-width:900px){.seo-guide-grid{grid-template-columns:1fr}.related-link-grid{grid-template-columns:1fr}.spec-table{min-width:560px}}
