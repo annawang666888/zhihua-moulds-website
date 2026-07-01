@@ -815,3 +815,7 @@ img.lazy-loaded.loaded {
 .related-link-grid a{display:block;background:#102a48;border:1px solid #1a2e4a;border-radius:10px;padding:14px;color:#e2e8f0;font-weight:700;font-size:14px}
 .related-link-grid a:hover{border-color:#f59e0b;color:#fbbf24;transform:translateY(-2px)}
 @media(max-width:900px){.seo-guide-grid{grid-template-columns:1fr}.related-link-grid{grid-template-columns:1fr}.spec-table{min-width:560px}}
+
+/* Lead-generation helpers */
+.quote-helper-box{margin-top:14px;padding:14px 16px;border:1px solid rgba(96,165,250,.35);border-radius:10px;background:rgba(15,39,66,.72);color:#cbd5e1;font-size:14px;line-height:1.55}
+.quote-helper-box strong{display:block;color:#f8fafc;margin-bottom:6px}.quote-helper-box ul{margin:0;padding-left:18px}.quote-helper-box li{margin:3px 0;color:#94a3b8}

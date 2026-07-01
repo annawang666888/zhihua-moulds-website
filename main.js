@@ -52,33 +52,91 @@
     faders.forEach(el => el.classList.add('visible'));
   }
 
-  /* ---------- Lead Tracking ---------- */
-  function trackLead(source, element) {
+  /* ---------- Lead & CTA Tracking ---------- */
+  const GA_LEAD_EVENTS = {
+    whatsapp: 'whatsapp_click',
+    telegram: 'telegram_click',
+    email: 'email_click',
+    phone: 'phone_click',
+    request_quote: 'request_quote_click',
+    get_catalogue: 'get_catalogue_click',
+    send_drawing: 'send_drawing_click'
+  };
+
+  function sendAnalyticsEvent(eventName, params, generateLead) {
     if (typeof gtag !== 'function') return;
-    const href = element?.getAttribute('href') || '';
-    gtag('event', 'generate_lead', {
-      lead_source: source,
-      contact_method: source,
-      link_url: href,
-      page_path: window.location.pathname
-    });
+    const payload = Object.assign({
+      page_path: window.location.pathname,
+      page_location: window.location.href
+    }, params || {});
+    gtag('event', eventName, payload);
+    if (generateLead) {
+      gtag('event', 'generate_lead', Object.assign({}, payload, {
+        lead_source: payload.lead_source || payload.contact_method || eventName,
+        contact_method: payload.contact_method || payload.lead_source || eventName
+      }));
+    }
   }
 
-  document.querySelectorAll('a[href]').forEach(link => {
-    const href = link.getAttribute('href') || '';
-    const lowerHref = href.toLowerCase();
-    if (lowerHref.includes('t.me/jiexikauk')) {
-      link.addEventListener('click', () => trackLead('telegram', link));
-    } else if (lowerHref.startsWith('mailto:')) {
-      link.addEventListener('click', () => trackLead('email', link));
-    } else if (lowerHref.startsWith('tel:')) {
-      link.addEventListener('click', () => trackLead('phone', link));
+  function trackCtaClick(kind, element) {
+    const href = element?.href || element?.getAttribute('href') || '';
+    const text = (element?.textContent || '').trim().replace(/\s+/g, ' ');
+    const eventName = GA_LEAD_EVENTS[kind] || 'lead_cta_click';
+    sendAnalyticsEvent(eventName, {
+      lead_source: kind,
+      contact_method: kind,
+      link_url: href,
+      link_text: text,
+      lead_intent: element?.dataset?.leadIntent || kind
+    }, ['whatsapp', 'telegram', 'email', 'phone'].includes(kind));
+  }
+
+  function classifyLeadLink(link) {
+    const href = (link.getAttribute('href') || '').toLowerCase();
+    const text = (link.textContent || '').toLowerCase();
+    const intent = (link.dataset.leadIntent || '').toLowerCase();
+    if (href.includes('wa.me') || href.includes('whatsapp.com')) return 'whatsapp';
+    if (href.includes('t.me/') || href.includes('telegram')) return 'telegram';
+    if (href.startsWith('mailto:')) return 'email';
+    if (href.startsWith('tel:')) return 'phone';
+    if (intent.includes('catalog') || text.includes('catalogue') || text.includes('catalog')) return 'get_catalogue';
+    if (intent.includes('drawing') || text.includes('drawing') || text.includes('sample photo') || text.includes('send photo')) return 'send_drawing';
+    if (intent.includes('quote') || link.classList.contains('btn-quote') || text.includes('quote') || text.includes('inquiry') || text.includes('send inquiry')) return 'request_quote';
+    return '';
+  }
+
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest && event.target.closest('a[href]');
+    if (!link) return;
+    const kind = classifyLeadLink(link);
+    if (kind) trackCtaClick(kind, link);
+  }, { capture: true });
+
+  function populateInquiryContext(form) {
+    const params = new URLSearchParams(window.location.search);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'lead_intent', 'ref_product'].forEach((key) => {
+      const input = form.querySelector(`[name="${key}"]`) || document.getElementById(key);
+      if (input) input.value = params.get(key) || input.value || '';
+    });
+
+    const source = document.getElementById('source_page');
+    if (source) source.value = window.location.pathname + window.location.search;
+
+    const product = form.querySelector('[name="product"]');
+    const productParam = params.get('product') || params.get('ref_product');
+    if (product && productParam) product.value = productParam;
+
+    const message = form.querySelector('[name="message"]');
+    if (message && !message.value && params.get('intent') === 'send-drawing') {
+      message.placeholder = 'Please attach or describe your drawing/sample photo, finished size, quantity, destination country, and expected mould material.';
     }
-  });
+  }
 
   /* ---------- Contact Form Validation ---------- */
   const form = document.getElementById('inquiryForm');
   if (form) {
+    populateInquiryContext(form);
+
     const submitBtn = document.getElementById('submitBtn');
     const btnText = submitBtn?.querySelector('.btn-text');
     const btnLoading = submitBtn?.querySelector('.btn-loading');
@@ -197,7 +255,7 @@
               resetTurnstile();
             }
             if (typeof gtag === 'function') {
-              gtag('event', 'generate_lead', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', form_provider: 'resend_turnstile', page_path: window.location.pathname });
+              sendAnalyticsEvent('contact_form_submit', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', form_provider: 'resend_turnstile' }, true);
             }
           } else {
             throw new Error(result.message || 'Submission failed');
@@ -228,7 +286,7 @@
               form.reset();
             }
             if (typeof gtag === 'function') {
-              gtag('event', 'generate_lead', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', form_provider: formType, page_path: window.location.pathname });
+              sendAnalyticsEvent('contact_form_submit', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', form_provider: formType }, true);
             }
           } else {
             throw new Error('Submission failed');
@@ -376,90 +434,3 @@
   }
 
 })();
-
-// Inquiry form: submit to Cloudflare Pages Function and preserve UTM/source data.
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('inquiryForm');
-  if (!form) return;
-
-  const params = new URLSearchParams(window.location.search);
-  ['utm_source', 'utm_medium', 'utm_campaign'].forEach((key) => {
-    const input = document.getElementById(key);
-    if (input) input.value = params.get(key) || '';
-  });
-  const source = document.getElementById('source_page');
-  if (source) source.value = window.location.pathname + window.location.search;
-
-  form.addEventListener('submit', async (event) => {
-    if (form.dataset.formType !== 'api') return;
-    event.preventDefault();
-
-    const success = document.getElementById('formSuccess');
-    const error = document.getElementById('formError');
-    const btn = document.getElementById('submitBtn');
-    const btnText = btn?.querySelector('.btn-text');
-    const btnLoading = btn?.querySelector('.btn-loading');
-
-    if (success) success.style.display = 'none';
-    if (error) error.style.display = 'none';
-
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      if (error) {
-        error.textContent = '❌ Please fill in the required fields and try again.';
-        error.style.display = 'block';
-      }
-      return;
-    }
-
-    if (btn) btn.disabled = true;
-    if (btnText) btnText.style.display = 'none';
-    if (btnLoading) btnLoading.style.display = 'inline';
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'accept': 'application/json' }
-      });
-      const result = await response.json().catch(() => ({}));
-      if (!response.ok || !result.ok) throw new Error(result.message || 'Submit failed');
-
-      if (success) {
-        success.textContent = '✅ ' + (result.message || 'Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.');
-        success.style.display = 'block';
-      }
-      if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', { lead_source: 'form', contact_method: 'form', form_location: 'contact_page', page_path: window.location.pathname });
-      }
-      form.reset();
-    } catch (err) {
-      if (error) {
-        error.textContent = '❌ ' + (err.message || 'Submit failed. Please contact us by Telegram or email.');
-        error.style.display = 'block';
-      }
-    } finally {
-      if (btn) btn.disabled = false;
-      if (btnText) btnText.style.display = 'inline';
-      if (btnLoading) btnLoading.style.display = 'none';
-    }
-  });
-});
-
-
-
-// Track WhatsApp contact clicks after WhatsApp channel was restored.
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', {
-          lead_source: 'whatsapp',
-          contact_method: 'whatsapp',
-          link_url: link.href,
-          page_path: window.location.pathname
-        });
-      }
-    });
-  });
-});

@@ -71,6 +71,8 @@ function buildEmailHtml(inquiry) {
     ["UTM Source", inquiry.utm_source],
     ["UTM Medium", inquiry.utm_medium],
     ["UTM Campaign", inquiry.utm_campaign],
+    ["Lead Intent", inquiry.lead_intent],
+    ["Reference Product", inquiry.ref_product],
     ["Submitted At", inquiry.submitted_at],
     ["Visitor Country", inquiry.ip_country]
   ];
@@ -114,6 +116,8 @@ function buildEmailText(inquiry) {
     `UTM Source: ${inquiry.utm_source}`,
     `UTM Medium: ${inquiry.utm_medium}`,
     `UTM Campaign: ${inquiry.utm_campaign}`,
+    `Lead Intent: ${inquiry.lead_intent}`,
+    `Reference Product: ${inquiry.ref_product}`,
     `Submitted At: ${inquiry.submitted_at}`,
     `Visitor Country: ${inquiry.ip_country}`
   ].join("\n");
@@ -143,6 +147,8 @@ export async function onRequestPost(context) {
     utm_source: String(data.utm_source || "").trim(),
     utm_medium: String(data.utm_medium || "").trim(),
     utm_campaign: String(data.utm_campaign || "").trim(),
+    lead_intent: String(data.lead_intent || "").trim(),
+    ref_product: String(data.ref_product || "").trim(),
     submitted_at: new Date().toISOString(),
     ip_country: request.headers.get("cf-ipcountry") || "",
   };

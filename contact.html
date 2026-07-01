@@ -117,7 +117,7 @@
       <a href="industries.html" data-i18n="nav.industries">Industries</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
-      <a href="contact.html" class="btn-quote" data-i18n="nav.getQuote">Get a Quote</a>
+      <a href="contact.html?lead_intent=request_quote" class="btn-quote" data-lead-intent="request_quote" data-i18n="nav.getQuote">Get a Quote</a>
     </div>
     <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </nav>
@@ -195,6 +195,14 @@
           <strong data-i18n="contact.fastTitle">Fastest response: WhatsApp or Telegram</strong>
           <p data-i18n="contact.fastText">Send drawings, sizes, quantity, destination country, and target standard. We can quickly check feasibility and quote direction.</p>
           <a href="https://wa.me/8616621391202" target="_blank" rel="noopener" class="btn-whatsapp-inline">Chat on WhatsApp</a><a href="https://t.me/jiexikauk" target="_blank" rel="noopener" class="btn-telegram-inline">Chat on Telegram</a>
+          <div class="quote-helper-box">
+            <strong>For a faster quote, include:</strong>
+            <ul>
+              <li>Finished concrete product size or drawing</li>
+              <li>Clear sample photo if there is no drawing</li>
+              <li>Quantity, destination country and preferred mould material</li>
+            </ul>
+          </div>
         </div>
         <div id="formSuccess" class="form-message form-success" style="display:none" data-i18n="contact.formSuccess">
           ✅ Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours.
@@ -211,6 +219,8 @@
           <input type="hidden" id="utm_source" name="utm_source" value="">
           <input type="hidden" id="utm_medium" name="utm_medium" value="">
           <input type="hidden" id="utm_campaign" name="utm_campaign" value="">
+          <input type="hidden" id="lead_intent" name="lead_intent" value="">
+          <input type="hidden" id="ref_product" name="ref_product" value="">
           <input type="hidden" name="_subject" value="New website inquiry from zhihuamoulds.com">
           <div class="hidden-field" aria-hidden="true">
             <label for="website">Website</label>
