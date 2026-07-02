@@ -63,12 +63,30 @@
     send_drawing: 'send_drawing_click'
   };
 
-  function sendAnalyticsEvent(eventName, params, generateLead) {
-    if (typeof gtag !== 'function') return;
+  function sendAnalyticsEvent(eventName, params, generateLead, callback) {
+    if (typeof gtag !== 'function') {
+      if (typeof callback === 'function') callback();
+      return false;
+    }
+
     const payload = Object.assign({
       page_path: window.location.pathname,
-      page_location: window.location.href
+      page_location: window.location.href,
+      transport_type: 'beacon'
     }, params || {});
+
+    let callbackDone = false;
+    function done() {
+      if (callbackDone) return;
+      callbackDone = true;
+      if (typeof callback === 'function') callback();
+    }
+
+    if (typeof callback === 'function') {
+      payload.event_callback = done;
+      payload.event_timeout = 800;
+    }
+
     gtag('event', eventName, payload);
     if (generateLead) {
       gtag('event', 'generate_lead', Object.assign({}, payload, {
@@ -76,19 +94,24 @@
         contact_method: payload.contact_method || payload.lead_source || eventName
       }));
     }
+
+    if (typeof callback === 'function') {
+      window.setTimeout(done, 900);
+    }
+    return true;
   }
 
-  function trackCtaClick(kind, element) {
+  function trackCtaClick(kind, element, callback) {
     const href = element?.href || element?.getAttribute('href') || '';
     const text = (element?.textContent || '').trim().replace(/\s+/g, ' ');
     const eventName = GA_LEAD_EVENTS[kind] || 'lead_cta_click';
-    sendAnalyticsEvent(eventName, {
+    return sendAnalyticsEvent(eventName, {
       lead_source: kind,
       contact_method: kind,
       link_url: href,
       link_text: text,
       lead_intent: element?.dataset?.leadIntent || kind
-    }, ['whatsapp', 'telegram', 'email', 'phone'].includes(kind));
+    }, ['whatsapp', 'telegram', 'email', 'phone'].includes(kind), callback);
   }
 
   function classifyLeadLink(link) {
@@ -105,11 +128,31 @@
     return '';
   }
 
+  function shouldDelayTrackedNavigation(event, link) {
+    if (event.defaultPrevented || event.button !== 0) return false;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return false;
+    if (link.hasAttribute('download')) return false;
+    const href = link.getAttribute('href') || '';
+    if (!href || href.startsWith('#') || href.toLowerCase().startsWith('javascript:')) return false;
+    const target = (link.getAttribute('target') || '').toLowerCase();
+    return target !== '_blank';
+  }
+
   document.addEventListener('click', function (event) {
     const link = event.target.closest && event.target.closest('a[href]');
     if (!link) return;
     const kind = classifyLeadLink(link);
-    if (kind) trackCtaClick(kind, link);
+    if (!kind) return;
+
+    if (shouldDelayTrackedNavigation(event, link) && typeof gtag === 'function') {
+      const href = link.href;
+      event.preventDefault();
+      trackCtaClick(kind, link, function () {
+        window.location.href = href;
+      });
+    } else {
+      trackCtaClick(kind, link);
+    }
   }, { capture: true });
 
   function populateInquiryContext(form) {
