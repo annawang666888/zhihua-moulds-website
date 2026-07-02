@@ -53,6 +53,7 @@
   }
 
   /* ---------- Lead & CTA Tracking ---------- */
+  const GA_MEASUREMENT_ID = 'G-K3ZCK1MBSZ';
   const GA_LEAD_EVENTS = {
     whatsapp: 'whatsapp_click',
     telegram: 'telegram_click',
@@ -63,15 +64,26 @@
     send_drawing: 'send_drawing_click'
   };
 
+  const GA_COMPATIBILITY_EVENTS = {
+    request_quote_click: ['qualify_lead'],
+    whatsapp_click: [],
+    telegram_click: ['qualify_lead'],
+    email_click: ['qualify_lead'],
+    phone_click: ['qualify_lead'],
+    contact_form_submit: ['form_submit'],
+    generate_lead: ['qualify_lead']
+  };
+
   function sendAnalyticsEvent(eventName, params, generateLead, callback) {
     if (typeof gtag !== 'function') {
       if (typeof callback === 'function') callback();
       return false;
     }
 
-    const payload = Object.assign({
+    const basePayload = Object.assign({
       page_path: window.location.pathname,
       page_location: window.location.href,
+      send_to: GA_MEASUREMENT_ID,
       transport_type: 'beacon'
     }, params || {});
 
@@ -82,18 +94,38 @@
       if (typeof callback === 'function') callback();
     }
 
-    if (typeof callback === 'function') {
-      payload.event_callback = done;
-      payload.event_timeout = 800;
+    const sent = new Set();
+    function fire(name, extraParams, useCallback) {
+      if (sent.has(name)) return;
+      sent.add(name);
+      const eventPayload = Object.assign({}, basePayload, extraParams || {});
+      if (useCallback && typeof callback === 'function') {
+        eventPayload.event_callback = done;
+        eventPayload.event_timeout = 800;
+      }
+      gtag('event', name, eventPayload);
     }
 
-    gtag('event', eventName, payload);
+    fire(eventName, null, true);
+
     if (generateLead) {
-      gtag('event', 'generate_lead', Object.assign({}, payload, {
-        lead_source: payload.lead_source || payload.contact_method || eventName,
-        contact_method: payload.contact_method || payload.lead_source || eventName
-      }));
+      fire('generate_lead', {
+        lead_source: basePayload.lead_source || basePayload.contact_method || eventName,
+        contact_method: basePayload.contact_method || basePayload.lead_source || eventName,
+        original_event_name: eventName
+      }, false);
     }
+
+    const aliasEvents = [];
+    (GA_COMPATIBILITY_EVENTS[eventName] || []).forEach(name => aliasEvents.push(name));
+    if (generateLead) {
+      (GA_COMPATIBILITY_EVENTS.generate_lead || []).forEach(name => aliasEvents.push(name));
+    }
+    aliasEvents.forEach(name => {
+      fire(name, {
+        original_event_name: eventName
+      }, false);
+    });
 
     if (typeof callback === 'function') {
       window.setTimeout(done, 900);
