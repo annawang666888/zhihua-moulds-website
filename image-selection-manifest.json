@@ -1,0 +1,1686 @@
+{
+  "manhole-cover-moulds": {
+    "category_cn": "井盖_合格",
+    "category_en": "Manhole Cover Mould",
+    "slug": "manhole-cover-moulds",
+    "total_qualified": 16,
+    "total_groups": 5,
+    "selected_count": 6,
+    "images": [
+      {
+        "filename": "manhole-cover-moulds-design-01.jpg",
+        "original": "井盖_WechatIMG60_卡04_C无上字.jpg",
+        "group": "井盖_WechatIMG60",
+        "alt": "manhole cover mould design 01",
+        "title": "Manhole Cover Mould Design 01"
+      },
+      {
+        "filename": "manhole-cover-moulds-design-02.jpg",
+        "original": "井盖_WechatIMG62_卡01_C无上字.jpg",
+        "group": "井盖_WechatIMG62",
+        "alt": "manhole cover mould design 02",
+        "title": "Manhole Cover Mould Design 02"
+      },
+      {
+        "filename": "manhole-cover-moulds-design-03.jpg",
+        "original": "井盖_WechatIMG63_卡01_C无上字.jpg",
+        "group": "井盖_WechatIMG63",
+        "alt": "manhole cover mould design 03",
+        "title": "Manhole Cover Mould Design 03"
+      },
+      {
+        "filename": "manhole-cover-moulds-design-04.jpg",
+        "original": "井盖_WechatIMG64_卡01_C无上字.jpg",
+        "group": "井盖_WechatIMG64",
+        "alt": "manhole cover mould design 04",
+        "title": "Manhole Cover Mould Design 04"
+      },
+      {
+        "filename": "manhole-cover-moulds-design-05.jpg",
+        "original": "井盖_WechatIMG64_卡04_C无上字.jpg",
+        "group": "井盖_WechatIMG64",
+        "alt": "manhole cover mould design 05",
+        "title": "Manhole Cover Mould Design 05"
+      },
+      {
+        "filename": "manhole-cover-moulds-design-06.jpg",
+        "original": "井盖_WechatIMG65_卡01_C无上字.jpg",
+        "group": "井盖_WechatIMG65",
+        "alt": "manhole cover mould design 06",
+        "title": "Manhole Cover Mould Design 06"
+      }
+    ]
+  },
+  "slope-protection-moulds": {
+    "category_cn": "护坡_合格",
+    "category_en": "Slope Protection Mould",
+    "slug": "slope-protection-moulds",
+    "total_qualified": 42,
+    "total_groups": 7,
+    "selected_count": 14,
+    "images": [
+      {
+        "filename": "slope-protection-moulds-design-01.jpg",
+        "original": "护坡_WechatIMG76_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG76",
+        "alt": "slope protection block mould design 01",
+        "title": "Slope Protection Mould Design 01"
+      },
+      {
+        "filename": "slope-protection-moulds-design-02.jpg",
+        "original": "护坡_WechatIMG76_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG76",
+        "alt": "slope protection block mould design 02",
+        "title": "Slope Protection Mould Design 02"
+      },
+      {
+        "filename": "slope-protection-moulds-design-03.jpg",
+        "original": "护坡_WechatIMG77_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG77",
+        "alt": "slope protection block mould design 03",
+        "title": "Slope Protection Mould Design 03"
+      },
+      {
+        "filename": "slope-protection-moulds-design-04.jpg",
+        "original": "护坡_WechatIMG77_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG77",
+        "alt": "slope protection block mould design 04",
+        "title": "Slope Protection Mould Design 04"
+      },
+      {
+        "filename": "slope-protection-moulds-design-05.jpg",
+        "original": "护坡_WechatIMG78_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG78",
+        "alt": "slope protection block mould design 05",
+        "title": "Slope Protection Mould Design 05"
+      },
+      {
+        "filename": "slope-protection-moulds-design-06.jpg",
+        "original": "护坡_WechatIMG78_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG78",
+        "alt": "slope protection block mould design 06",
+        "title": "Slope Protection Mould Design 06"
+      },
+      {
+        "filename": "slope-protection-moulds-design-07.jpg",
+        "original": "护坡_WechatIMG79_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG79",
+        "alt": "slope protection block mould design 07",
+        "title": "Slope Protection Mould Design 07"
+      },
+      {
+        "filename": "slope-protection-moulds-design-08.jpg",
+        "original": "护坡_WechatIMG79_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG79",
+        "alt": "slope protection block mould design 08",
+        "title": "Slope Protection Mould Design 08"
+      },
+      {
+        "filename": "slope-protection-moulds-design-09.jpg",
+        "original": "护坡_WechatIMG80_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG80",
+        "alt": "slope protection block mould design 09",
+        "title": "Slope Protection Mould Design 09"
+      },
+      {
+        "filename": "slope-protection-moulds-design-10.jpg",
+        "original": "护坡_WechatIMG80_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG80",
+        "alt": "slope protection block mould design 10",
+        "title": "Slope Protection Mould Design 10"
+      },
+      {
+        "filename": "slope-protection-moulds-design-11.jpg",
+        "original": "护坡_WechatIMG81_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG81",
+        "alt": "slope protection block mould design 11",
+        "title": "Slope Protection Mould Design 11"
+      },
+      {
+        "filename": "slope-protection-moulds-design-12.jpg",
+        "original": "护坡_WechatIMG81_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG81",
+        "alt": "slope protection block mould design 12",
+        "title": "Slope Protection Mould Design 12"
+      },
+      {
+        "filename": "slope-protection-moulds-design-13.jpg",
+        "original": "护坡_WechatIMG82_卡01_C无上字.jpg",
+        "group": "护坡_WechatIMG82",
+        "alt": "slope protection block mould design 13",
+        "title": "Slope Protection Mould Design 13"
+      },
+      {
+        "filename": "slope-protection-moulds-design-14.jpg",
+        "original": "护坡_WechatIMG82_卡04_C无上字.jpg",
+        "group": "护坡_WechatIMG82",
+        "alt": "slope protection block mould design 14",
+        "title": "Slope Protection Mould Design 14"
+      }
+    ]
+  },
+  "dot-pattern-drainage-cover-moulds": {
+    "category_cn": "圆点盖板_合格",
+    "category_en": "Dot Pattern Drainage Cover Mould",
+    "slug": "dot-pattern-drainage-cover-moulds",
+    "total_qualified": 25,
+    "total_groups": 5,
+    "selected_count": 9,
+    "images": [
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-01.jpg",
+        "original": "圆点盖板_WechatIMG215_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG215",
+        "alt": "dot pattern drainage cover mould design 01",
+        "title": "Dot Pattern Drainage Cover Mould Design 01"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-02.jpg",
+        "original": "圆点盖板_WechatIMG216_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG216",
+        "alt": "dot pattern drainage cover mould design 02",
+        "title": "Dot Pattern Drainage Cover Mould Design 02"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-03.jpg",
+        "original": "圆点盖板_WechatIMG216_卡04_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG216",
+        "alt": "dot pattern drainage cover mould design 03",
+        "title": "Dot Pattern Drainage Cover Mould Design 03"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-04.jpg",
+        "original": "圆点盖板_WechatIMG217_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG217",
+        "alt": "dot pattern drainage cover mould design 04",
+        "title": "Dot Pattern Drainage Cover Mould Design 04"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-05.jpg",
+        "original": "圆点盖板_WechatIMG217_卡04_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG217",
+        "alt": "dot pattern drainage cover mould design 05",
+        "title": "Dot Pattern Drainage Cover Mould Design 05"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-06.jpg",
+        "original": "圆点盖板_WechatIMG218_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG218",
+        "alt": "dot pattern drainage cover mould design 06",
+        "title": "Dot Pattern Drainage Cover Mould Design 06"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-07.jpg",
+        "original": "圆点盖板_WechatIMG218_卡04_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG218",
+        "alt": "dot pattern drainage cover mould design 07",
+        "title": "Dot Pattern Drainage Cover Mould Design 07"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-08.jpg",
+        "original": "圆点盖板_WechatIMG219_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG219",
+        "alt": "dot pattern drainage cover mould design 08",
+        "title": "Dot Pattern Drainage Cover Mould Design 08"
+      },
+      {
+        "filename": "dot-pattern-drainage-cover-moulds-design-09.jpg",
+        "original": "圆点盖板_WechatIMG219_卡04_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG219",
+        "alt": "dot pattern drainage cover mould design 09",
+        "title": "Dot Pattern Drainage Cover Mould Design 09"
+      }
+    ]
+  },
+  "power-engineering-moulds": {
+    "category_cn": "电力工程_合格",
+    "category_en": "Power Engineering Mould",
+    "slug": "power-engineering-moulds",
+    "total_qualified": 57,
+    "total_groups": 10,
+    "selected_count": 19,
+    "images": [
+      {
+        "filename": "power-engineering-moulds-design-01.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG66_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG66",
+        "alt": "power engineering concrete mould design 01",
+        "title": "Power Engineering Mould Design 01"
+      },
+      {
+        "filename": "power-engineering-moulds-design-02.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG66_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG66",
+        "alt": "power engineering concrete mould design 02",
+        "title": "Power Engineering Mould Design 02"
+      },
+      {
+        "filename": "power-engineering-moulds-design-03.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG67_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG67",
+        "alt": "power engineering concrete mould design 03",
+        "title": "Power Engineering Mould Design 03"
+      },
+      {
+        "filename": "power-engineering-moulds-design-04.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG67_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG67",
+        "alt": "power engineering concrete mould design 04",
+        "title": "Power Engineering Mould Design 04"
+      },
+      {
+        "filename": "power-engineering-moulds-design-05.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG68_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG68",
+        "alt": "power engineering concrete mould design 05",
+        "title": "Power Engineering Mould Design 05"
+      },
+      {
+        "filename": "power-engineering-moulds-design-06.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG68_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG68",
+        "alt": "power engineering concrete mould design 06",
+        "title": "Power Engineering Mould Design 06"
+      },
+      {
+        "filename": "power-engineering-moulds-design-07.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG69_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG69",
+        "alt": "power engineering concrete mould design 07",
+        "title": "Power Engineering Mould Design 07"
+      },
+      {
+        "filename": "power-engineering-moulds-design-08.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG69_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG69",
+        "alt": "power engineering concrete mould design 08",
+        "title": "Power Engineering Mould Design 08"
+      },
+      {
+        "filename": "power-engineering-moulds-design-09.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG70_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG70",
+        "alt": "power engineering concrete mould design 09",
+        "title": "Power Engineering Mould Design 09"
+      },
+      {
+        "filename": "power-engineering-moulds-design-10.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG70_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG70",
+        "alt": "power engineering concrete mould design 10",
+        "title": "Power Engineering Mould Design 10"
+      },
+      {
+        "filename": "power-engineering-moulds-design-11.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG71_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG71",
+        "alt": "power engineering concrete mould design 11",
+        "title": "Power Engineering Mould Design 11"
+      },
+      {
+        "filename": "power-engineering-moulds-design-12.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG71_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG71",
+        "alt": "power engineering concrete mould design 12",
+        "title": "Power Engineering Mould Design 12"
+      },
+      {
+        "filename": "power-engineering-moulds-design-13.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG72_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG72",
+        "alt": "power engineering concrete mould design 13",
+        "title": "Power Engineering Mould Design 13"
+      },
+      {
+        "filename": "power-engineering-moulds-design-14.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG72_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG72",
+        "alt": "power engineering concrete mould design 14",
+        "title": "Power Engineering Mould Design 14"
+      },
+      {
+        "filename": "power-engineering-moulds-design-15.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG73_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG73",
+        "alt": "power engineering concrete mould design 15",
+        "title": "Power Engineering Mould Design 15"
+      },
+      {
+        "filename": "power-engineering-moulds-design-16.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG73_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG73",
+        "alt": "power engineering concrete mould design 16",
+        "title": "Power Engineering Mould Design 16"
+      },
+      {
+        "filename": "power-engineering-moulds-design-17.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG74_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG74",
+        "alt": "power engineering concrete mould design 17",
+        "title": "Power Engineering Mould Design 17"
+      },
+      {
+        "filename": "power-engineering-moulds-design-18.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG74_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG74",
+        "alt": "power engineering concrete mould design 18",
+        "title": "Power Engineering Mould Design 18"
+      },
+      {
+        "filename": "power-engineering-moulds-design-19.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG75_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG75",
+        "alt": "power engineering concrete mould design 19",
+        "title": "Power Engineering Mould Design 19"
+      }
+    ]
+  },
+  "diamond-pattern-drainage-cover-moulds": {
+    "category_cn": "菱形盖板_合格",
+    "category_en": "Diamond Pattern Drainage Cover Mould",
+    "slug": "diamond-pattern-drainage-cover-moulds",
+    "total_qualified": 6,
+    "total_groups": 1,
+    "selected_count": 2,
+    "images": [
+      {
+        "filename": "diamond-pattern-drainage-cover-moulds-design-01.jpg",
+        "original": "菱形盖板_WechatIMG214_卡01_C无上字.jpg",
+        "group": "菱形盖板_WechatIMG214",
+        "alt": "diamond pattern drainage cover mould design 01",
+        "title": "Diamond Pattern Drainage Cover Mould Design 01"
+      },
+      {
+        "filename": "diamond-pattern-drainage-cover-moulds-design-02.jpg",
+        "original": "菱形盖板_WechatIMG214_卡04_C无上字.jpg",
+        "group": "菱形盖板_WechatIMG214",
+        "alt": "diamond pattern drainage cover mould design 02",
+        "title": "Diamond Pattern Drainage Cover Mould Design 02"
+      }
+    ]
+  },
+  "rail-transit-concrete-moulds": {
+    "category_cn": "轨道交通_合格",
+    "category_en": "Rail Transit Concrete Mould",
+    "slug": "rail-transit-concrete-moulds",
+    "total_qualified": 15,
+    "total_groups": 4,
+    "selected_count": 6,
+    "images": [
+      {
+        "filename": "rail-transit-concrete-moulds-design-01.jpg",
+        "original": "保留说明去下一图_WechatIMG84_卡03_C无上字_保守保留说明.jpg",
+        "group": "保留说明去下一图_WechatIMG84",
+        "alt": "rail transit precast concrete mould design 01",
+        "title": "Rail Transit Concrete Mould Design 01"
+      },
+      {
+        "filename": "rail-transit-concrete-moulds-design-02.jpg",
+        "original": "保留说明去下一图_WechatIMG84_卡04_C无上字_保守保留说明.jpg",
+        "group": "保留说明去下一图_WechatIMG84",
+        "alt": "rail transit precast concrete mould design 02",
+        "title": "Rail Transit Concrete Mould Design 02"
+      },
+      {
+        "filename": "rail-transit-concrete-moulds-design-03.jpg",
+        "original": "保留说明去下一图_WechatIMG86_卡01_C无上字_保守保留说明.jpg",
+        "group": "保留说明去下一图_WechatIMG86",
+        "alt": "rail transit precast concrete mould design 03",
+        "title": "Rail Transit Concrete Mould Design 03"
+      },
+      {
+        "filename": "rail-transit-concrete-moulds-design-04.jpg",
+        "original": "保留说明去下一图_WechatIMG86_卡02_C无上字_保守保留说明.jpg",
+        "group": "保留说明去下一图_WechatIMG86",
+        "alt": "rail transit precast concrete mould design 04",
+        "title": "Rail Transit Concrete Mould Design 04"
+      },
+      {
+        "filename": "rail-transit-concrete-moulds-design-05.jpg",
+        "original": "轨道微调去底部多余.jpg",
+        "group": "轨道微调去底部多余.jpg",
+        "alt": "rail transit precast concrete mould design 05",
+        "title": "Rail Transit Concrete Mould Design 05"
+      },
+      {
+        "filename": "rail-transit-concrete-moulds-design-06.jpg",
+        "original": "轨道微调去底部多余说明去下一图_WechatIMG85_卡01_C无上字_更干净.jpg",
+        "group": "轨道微调去底部多余说明去下一图_WechatIMG85",
+        "alt": "rail transit precast concrete mould design 06",
+        "title": "Rail Transit Concrete Mould Design 06"
+      }
+    ]
+  },
+  "cable-trench-moulds": {
+    "category_cn": "电缆槽电缆沟_合格",
+    "category_en": "Cable Trench Mould",
+    "slug": "cable-trench-moulds",
+    "total_qualified": 57,
+    "total_groups": 10,
+    "selected_count": 19,
+    "images": [
+      {
+        "filename": "cable-trench-moulds-design-01.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG66_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG66",
+        "alt": "cable trench mould design 01",
+        "title": "Cable Trench Mould Design 01"
+      },
+      {
+        "filename": "cable-trench-moulds-design-02.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG66_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG66",
+        "alt": "cable trench mould design 02",
+        "title": "Cable Trench Mould Design 02"
+      },
+      {
+        "filename": "cable-trench-moulds-design-03.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG67_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG67",
+        "alt": "cable trench mould design 03",
+        "title": "Cable Trench Mould Design 03"
+      },
+      {
+        "filename": "cable-trench-moulds-design-04.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG67_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG67",
+        "alt": "cable trench mould design 04",
+        "title": "Cable Trench Mould Design 04"
+      },
+      {
+        "filename": "cable-trench-moulds-design-05.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG68_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG68",
+        "alt": "cable trench mould design 05",
+        "title": "Cable Trench Mould Design 05"
+      },
+      {
+        "filename": "cable-trench-moulds-design-06.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG68_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG68",
+        "alt": "cable trench mould design 06",
+        "title": "Cable Trench Mould Design 06"
+      },
+      {
+        "filename": "cable-trench-moulds-design-07.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG69_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG69",
+        "alt": "cable trench mould design 07",
+        "title": "Cable Trench Mould Design 07"
+      },
+      {
+        "filename": "cable-trench-moulds-design-08.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG69_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG69",
+        "alt": "cable trench mould design 08",
+        "title": "Cable Trench Mould Design 08"
+      },
+      {
+        "filename": "cable-trench-moulds-design-09.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG70_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG70",
+        "alt": "cable trench mould design 09",
+        "title": "Cable Trench Mould Design 09"
+      },
+      {
+        "filename": "cable-trench-moulds-design-10.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG70_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG70",
+        "alt": "cable trench mould design 10",
+        "title": "Cable Trench Mould Design 10"
+      },
+      {
+        "filename": "cable-trench-moulds-design-11.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG71_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG71",
+        "alt": "cable trench mould design 11",
+        "title": "Cable Trench Mould Design 11"
+      },
+      {
+        "filename": "cable-trench-moulds-design-12.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG71_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG71",
+        "alt": "cable trench mould design 12",
+        "title": "Cable Trench Mould Design 12"
+      },
+      {
+        "filename": "cable-trench-moulds-design-13.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG72_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG72",
+        "alt": "cable trench mould design 13",
+        "title": "Cable Trench Mould Design 13"
+      },
+      {
+        "filename": "cable-trench-moulds-design-14.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG72_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG72",
+        "alt": "cable trench mould design 14",
+        "title": "Cable Trench Mould Design 14"
+      },
+      {
+        "filename": "cable-trench-moulds-design-15.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG73_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG73",
+        "alt": "cable trench mould design 15",
+        "title": "Cable Trench Mould Design 15"
+      },
+      {
+        "filename": "cable-trench-moulds-design-16.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG73_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG73",
+        "alt": "cable trench mould design 16",
+        "title": "Cable Trench Mould Design 16"
+      },
+      {
+        "filename": "cable-trench-moulds-design-17.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG74_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG74",
+        "alt": "cable trench mould design 17",
+        "title": "Cable Trench Mould Design 17"
+      },
+      {
+        "filename": "cable-trench-moulds-design-18.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG74_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG74",
+        "alt": "cable trench mould design 18",
+        "title": "Cable Trench Mould Design 18"
+      },
+      {
+        "filename": "cable-trench-moulds-design-19.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG75_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG75",
+        "alt": "cable trench mould design 19",
+        "title": "Cable Trench Mould Design 19"
+      }
+    ]
+  },
+  "drainage-channel-moulds": {
+    "category_cn": "排水沟排水盖板U型渠_合格",
+    "category_en": "Drainage Channel Mould",
+    "slug": "drainage-channel-moulds",
+    "total_qualified": 198,
+    "total_groups": 33,
+    "selected_count": 30,
+    "images": [
+      {
+        "filename": "drainage-channel-moulds-design-01.jpg",
+        "original": "导流槽_u型导流槽_卡01_C无上字.jpg",
+        "group": "导流槽_u型导流槽",
+        "alt": "drainage channel mould design 01",
+        "title": "Drainage Channel Mould Design 01"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-02.jpg",
+        "original": "导流槽_u型导流槽2_卡01_C无上字.jpg",
+        "group": "导流槽_u型导流槽2",
+        "alt": "drainage channel mould design 02",
+        "title": "Drainage Channel Mould Design 02"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-03.jpg",
+        "original": "导流槽_导流槽1_卡01_C无上字.jpg",
+        "group": "导流槽_导流槽1",
+        "alt": "drainage channel mould design 03",
+        "title": "Drainage Channel Mould Design 03"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-04.jpg",
+        "original": "导流槽_导流槽2_卡01_C无上字.jpg",
+        "group": "导流槽_导流槽2",
+        "alt": "drainage channel mould design 04",
+        "title": "Drainage Channel Mould Design 04"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-05.jpg",
+        "original": "导流槽_导流槽3_卡01_C无上字.jpg",
+        "group": "导流槽_导流槽3",
+        "alt": "drainage channel mould design 05",
+        "title": "Drainage Channel Mould Design 05"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-06.jpg",
+        "original": "导流槽_导流槽4_卡04_C无上字.jpg",
+        "group": "导流槽_导流槽4",
+        "alt": "drainage channel mould design 06",
+        "title": "Drainage Channel Mould Design 06"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-07.jpg",
+        "original": "导流槽_导流槽5_卡04_C无上字.jpg",
+        "group": "导流槽_导流槽5",
+        "alt": "drainage channel mould design 07",
+        "title": "Drainage Channel Mould Design 07"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-08.jpg",
+        "original": "导流槽_导流槽6_卡04_C无上字.jpg",
+        "group": "导流槽_导流槽6",
+        "alt": "drainage channel mould design 08",
+        "title": "Drainage Channel Mould Design 08"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-09.jpg",
+        "original": "导流槽_导流槽7_卡04_C无上字.jpg",
+        "group": "导流槽_导流槽7",
+        "alt": "drainage channel mould design 09",
+        "title": "Drainage Channel Mould Design 09"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-10.jpg",
+        "original": "导流槽_导流槽8_卡04_C无上字.jpg",
+        "group": "导流槽_导流槽8",
+        "alt": "drainage channel mould design 10",
+        "title": "Drainage Channel Mould Design 10"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-11.jpg",
+        "original": "水沟板集水槽_WechatIMG31_卡01_C无上字.jpg",
+        "group": "水沟板集水槽_WechatIMG31",
+        "alt": "drainage channel mould design 11",
+        "title": "Drainage Channel Mould Design 11"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-12.jpg",
+        "original": "水沟板集水槽_WechatIMG32_卡01_C无上字.jpg",
+        "group": "水沟板集水槽_WechatIMG32",
+        "alt": "drainage channel mould design 12",
+        "title": "Drainage Channel Mould Design 12"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-13.jpg",
+        "original": "水沟板集水槽_WechatIMG33_卡01_C无上字.jpg",
+        "group": "水沟板集水槽_WechatIMG33",
+        "alt": "drainage channel mould design 13",
+        "title": "Drainage Channel Mould Design 13"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-14.jpg",
+        "original": "水沟板集水槽_WechatIMG34_卡01_C无上字.jpg",
+        "group": "水沟板集水槽_WechatIMG34",
+        "alt": "drainage channel mould design 14",
+        "title": "Drainage Channel Mould Design 14"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-15.jpg",
+        "original": "水沟板集水槽_WechatIMG35_卡01_C无上字.jpg",
+        "group": "水沟板集水槽_WechatIMG35",
+        "alt": "drainage channel mould design 15",
+        "title": "Drainage Channel Mould Design 15"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-16.jpg",
+        "original": "水沟盖板_WechatIMG14_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG14",
+        "alt": "drainage channel mould design 16",
+        "title": "Drainage Channel Mould Design 16"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-17.jpg",
+        "original": "水沟盖板_WechatIMG15_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG15",
+        "alt": "drainage channel mould design 17",
+        "title": "Drainage Channel Mould Design 17"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-18.jpg",
+        "original": "水沟盖板_WechatIMG16_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG16",
+        "alt": "drainage channel mould design 18",
+        "title": "Drainage Channel Mould Design 18"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-19.jpg",
+        "original": "水沟盖板_WechatIMG17_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG17",
+        "alt": "drainage channel mould design 19",
+        "title": "Drainage Channel Mould Design 19"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-20.jpg",
+        "original": "水沟盖板_WechatIMG18_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG18",
+        "alt": "drainage channel mould design 20",
+        "title": "Drainage Channel Mould Design 20"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-21.jpg",
+        "original": "水沟盖板_WechatIMG20_卡01_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG20",
+        "alt": "drainage channel mould design 21",
+        "title": "Drainage Channel Mould Design 21"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-22.jpg",
+        "original": "水沟盖板_WechatIMG21_卡01_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG21",
+        "alt": "drainage channel mould design 22",
+        "title": "Drainage Channel Mould Design 22"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-23.jpg",
+        "original": "水沟盖板_WechatIMG22_卡01_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG22",
+        "alt": "drainage channel mould design 23",
+        "title": "Drainage Channel Mould Design 23"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-24.jpg",
+        "original": "水沟盖板_WechatIMG23_卡01_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG23",
+        "alt": "drainage channel mould design 24",
+        "title": "Drainage Channel Mould Design 24"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-25.jpg",
+        "original": "水沟盖板_WechatIMG24_卡01_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG24",
+        "alt": "drainage channel mould design 25",
+        "title": "Drainage Channel Mould Design 25"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-26.jpg",
+        "original": "水沟盖板_WechatIMG25_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG25",
+        "alt": "drainage channel mould design 26",
+        "title": "Drainage Channel Mould Design 26"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-27.jpg",
+        "original": "水沟盖板_WechatIMG26_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG26",
+        "alt": "drainage channel mould design 27",
+        "title": "Drainage Channel Mould Design 27"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-28.jpg",
+        "original": "水沟盖板_WechatIMG27_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG27",
+        "alt": "drainage channel mould design 28",
+        "title": "Drainage Channel Mould Design 28"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-29.jpg",
+        "original": "水沟盖板_WechatIMG28_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG28",
+        "alt": "drainage channel mould design 29",
+        "title": "Drainage Channel Mould Design 29"
+      },
+      {
+        "filename": "drainage-channel-moulds-design-30.jpg",
+        "original": "水沟盖板_WechatIMG29_卡04_C无上字.jpg",
+        "group": "水沟盖板_WechatIMG29",
+        "alt": "drainage channel mould design 30",
+        "title": "Drainage Channel Mould Design 30"
+      }
+    ]
+  },
+  "photovoltaic-pier-moulds": {
+    "category_cn": "光伏墩光伏支墩_合格",
+    "category_en": "Photovoltaic Pier Mould",
+    "slug": "photovoltaic-pier-moulds",
+    "total_qualified": 57,
+    "total_groups": 10,
+    "selected_count": 19,
+    "images": [
+      {
+        "filename": "photovoltaic-pier-moulds-design-01.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG66_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG66",
+        "alt": "photovoltaic pier mould design 01",
+        "title": "Photovoltaic Pier Mould Design 01"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-02.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG66_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG66",
+        "alt": "photovoltaic pier mould design 02",
+        "title": "Photovoltaic Pier Mould Design 02"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-03.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG67_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG67",
+        "alt": "photovoltaic pier mould design 03",
+        "title": "Photovoltaic Pier Mould Design 03"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-04.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG67_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG67",
+        "alt": "photovoltaic pier mould design 04",
+        "title": "Photovoltaic Pier Mould Design 04"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-05.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG68_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG68",
+        "alt": "photovoltaic pier mould design 05",
+        "title": "Photovoltaic Pier Mould Design 05"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-06.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG68_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG68",
+        "alt": "photovoltaic pier mould design 06",
+        "title": "Photovoltaic Pier Mould Design 06"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-07.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG69_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG69",
+        "alt": "photovoltaic pier mould design 07",
+        "title": "Photovoltaic Pier Mould Design 07"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-08.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG69_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG69",
+        "alt": "photovoltaic pier mould design 08",
+        "title": "Photovoltaic Pier Mould Design 08"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-09.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG70_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG70",
+        "alt": "photovoltaic pier mould design 09",
+        "title": "Photovoltaic Pier Mould Design 09"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-10.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG70_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG70",
+        "alt": "photovoltaic pier mould design 10",
+        "title": "Photovoltaic Pier Mould Design 10"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-11.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG71_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG71",
+        "alt": "photovoltaic pier mould design 11",
+        "title": "Photovoltaic Pier Mould Design 11"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-12.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG71_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG71",
+        "alt": "photovoltaic pier mould design 12",
+        "title": "Photovoltaic Pier Mould Design 12"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-13.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG72_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG72",
+        "alt": "photovoltaic pier mould design 13",
+        "title": "Photovoltaic Pier Mould Design 13"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-14.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG72_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG72",
+        "alt": "photovoltaic pier mould design 14",
+        "title": "Photovoltaic Pier Mould Design 14"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-15.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG73_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG73",
+        "alt": "photovoltaic pier mould design 15",
+        "title": "Photovoltaic Pier Mould Design 15"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-16.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG73_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG73",
+        "alt": "photovoltaic pier mould design 16",
+        "title": "Photovoltaic Pier Mould Design 16"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-17.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG74_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG74",
+        "alt": "photovoltaic pier mould design 17",
+        "title": "Photovoltaic Pier Mould Design 17"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-18.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG74_卡04_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG74",
+        "alt": "photovoltaic pier mould design 18",
+        "title": "Photovoltaic Pier Mould Design 18"
+      },
+      {
+        "filename": "photovoltaic-pier-moulds-design-19.jpg",
+        "original": "电缆槽_电力工程_光伏墩_WechatIMG75_卡01_C无上字.jpg",
+        "group": "电缆槽_电力工程_光伏墩_WechatIMG75",
+        "alt": "photovoltaic pier mould design 19",
+        "title": "Photovoltaic Pier Mould Design 19"
+      }
+    ]
+  },
+  "hollow-block-hexagon-moulds": {
+    "category_cn": "空心砖六角候选_合格",
+    "category_en": "Hollow Block Hexagon Mould",
+    "slug": "hollow-block-hexagon-moulds",
+    "total_qualified": 168,
+    "total_groups": 28,
+    "selected_count": 30,
+    "images": [
+      {
+        "filename": "hollow-block-hexagon-moulds-design-01.jpg",
+        "original": "平面六角_WechatIMG188_卡01_C无上字.jpg",
+        "group": "平面六角_WechatIMG188",
+        "alt": "hollow block hexagon mould design 01",
+        "title": "Hollow Block Hexagon Mould Design 01"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-02.jpg",
+        "original": "平面六角_WechatIMG188_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG188",
+        "alt": "hollow block hexagon mould design 02",
+        "title": "Hollow Block Hexagon Mould Design 02"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-03.jpg",
+        "original": "平面六角_WechatIMG189_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG189",
+        "alt": "hollow block hexagon mould design 03",
+        "title": "Hollow Block Hexagon Mould Design 03"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-04.jpg",
+        "original": "平面六角_WechatIMG190_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG190",
+        "alt": "hollow block hexagon mould design 04",
+        "title": "Hollow Block Hexagon Mould Design 04"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-05.jpg",
+        "original": "平面六角_WechatIMG191_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG191",
+        "alt": "hollow block hexagon mould design 05",
+        "title": "Hollow Block Hexagon Mould Design 05"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-06.jpg",
+        "original": "平面六角_WechatIMG192_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG192",
+        "alt": "hollow block hexagon mould design 06",
+        "title": "Hollow Block Hexagon Mould Design 06"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-07.jpg",
+        "original": "平面六角_WechatIMG193_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG193",
+        "alt": "hollow block hexagon mould design 07",
+        "title": "Hollow Block Hexagon Mould Design 07"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-08.jpg",
+        "original": "平面六角_WechatIMG194_卡04_C无上字.jpg",
+        "group": "平面六角_WechatIMG194",
+        "alt": "hollow block hexagon mould design 08",
+        "title": "Hollow Block Hexagon Mould Design 08"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-09.jpg",
+        "original": "平面六角_WechatIMG195_卡01_C无上字.jpg",
+        "group": "平面六角_WechatIMG195",
+        "alt": "hollow block hexagon mould design 09",
+        "title": "Hollow Block Hexagon Mould Design 09"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-10.jpg",
+        "original": "平面六角_WechatIMG196_卡01_C无上字.jpg",
+        "group": "平面六角_WechatIMG196",
+        "alt": "hollow block hexagon mould design 10",
+        "title": "Hollow Block Hexagon Mould Design 10"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-11.jpg",
+        "original": "平面六角_WechatIMG197_卡01_C无上字.jpg",
+        "group": "平面六角_WechatIMG197",
+        "alt": "hollow block hexagon mould design 11",
+        "title": "Hollow Block Hexagon Mould Design 11"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-12.jpg",
+        "original": "空心六角_WechatIMG179_卡01_C无上字.jpg",
+        "group": "空心六角_WechatIMG179",
+        "alt": "hollow block hexagon mould design 12",
+        "title": "Hollow Block Hexagon Mould Design 12"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-13.jpg",
+        "original": "空心六角_WechatIMG180_卡01_C无上字.jpg",
+        "group": "空心六角_WechatIMG180",
+        "alt": "hollow block hexagon mould design 13",
+        "title": "Hollow Block Hexagon Mould Design 13"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-14.jpg",
+        "original": "空心六角_WechatIMG181_卡01_C无上字.jpg",
+        "group": "空心六角_WechatIMG181",
+        "alt": "hollow block hexagon mould design 14",
+        "title": "Hollow Block Hexagon Mould Design 14"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-15.jpg",
+        "original": "空心六角_WechatIMG182_卡01_C无上字.jpg",
+        "group": "空心六角_WechatIMG182",
+        "alt": "hollow block hexagon mould design 15",
+        "title": "Hollow Block Hexagon Mould Design 15"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-16.jpg",
+        "original": "空心六角_WechatIMG183_卡01_C无上字.jpg",
+        "group": "空心六角_WechatIMG183",
+        "alt": "hollow block hexagon mould design 16",
+        "title": "Hollow Block Hexagon Mould Design 16"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-17.jpg",
+        "original": "空心六角_WechatIMG183_卡04_C无上字.jpg",
+        "group": "空心六角_WechatIMG183",
+        "alt": "hollow block hexagon mould design 17",
+        "title": "Hollow Block Hexagon Mould Design 17"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-18.jpg",
+        "original": "空心六角_WechatIMG184_卡04_C无上字.jpg",
+        "group": "空心六角_WechatIMG184",
+        "alt": "hollow block hexagon mould design 18",
+        "title": "Hollow Block Hexagon Mould Design 18"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-19.jpg",
+        "original": "空心六角_WechatIMG185_卡04_C无上字.jpg",
+        "group": "空心六角_WechatIMG185",
+        "alt": "hollow block hexagon mould design 19",
+        "title": "Hollow Block Hexagon Mould Design 19"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-20.jpg",
+        "original": "空心六角_WechatIMG186_卡04_C无上字.jpg",
+        "group": "空心六角_WechatIMG186",
+        "alt": "hollow block hexagon mould design 20",
+        "title": "Hollow Block Hexagon Mould Design 20"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-21.jpg",
+        "original": "空心六角_WechatIMG187_卡04_C无上字.jpg",
+        "group": "空心六角_WechatIMG187",
+        "alt": "hollow block hexagon mould design 21",
+        "title": "Hollow Block Hexagon Mould Design 21"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-22.jpg",
+        "original": "空心砖_WechatIMG120_卡04_C无上字.jpg",
+        "group": "空心砖_WechatIMG120",
+        "alt": "hollow block hexagon mould design 22",
+        "title": "Hollow Block Hexagon Mould Design 22"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-23.jpg",
+        "original": "空心砖_WechatIMG121_卡04_C无上字.jpg",
+        "group": "空心砖_WechatIMG121",
+        "alt": "hollow block hexagon mould design 23",
+        "title": "Hollow Block Hexagon Mould Design 23"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-24.jpg",
+        "original": "空心砖_WechatIMG122_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG122",
+        "alt": "hollow block hexagon mould design 24",
+        "title": "Hollow Block Hexagon Mould Design 24"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-25.jpg",
+        "original": "空心砖_WechatIMG123_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG123",
+        "alt": "hollow block hexagon mould design 25",
+        "title": "Hollow Block Hexagon Mould Design 25"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-26.jpg",
+        "original": "空心砖_WechatIMG124_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG124",
+        "alt": "hollow block hexagon mould design 26",
+        "title": "Hollow Block Hexagon Mould Design 26"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-27.jpg",
+        "original": "空心砖_WechatIMG125_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG125",
+        "alt": "hollow block hexagon mould design 27",
+        "title": "Hollow Block Hexagon Mould Design 27"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-28.jpg",
+        "original": "空心砖_WechatIMG126_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG126",
+        "alt": "hollow block hexagon mould design 28",
+        "title": "Hollow Block Hexagon Mould Design 28"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-29.jpg",
+        "original": "空心砖_WechatIMG127_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG127",
+        "alt": "hollow block hexagon mould design 29",
+        "title": "Hollow Block Hexagon Mould Design 29"
+      },
+      {
+        "filename": "hollow-block-hexagon-moulds-design-30.jpg",
+        "original": "空心砖_WechatIMG128_卡01_C无上字.jpg",
+        "group": "空心砖_WechatIMG128",
+        "alt": "hollow block hexagon mould design 30",
+        "title": "Hollow Block Hexagon Mould Design 30"
+      }
+    ]
+  },
+  "paver-block-moulds": {
+    "category_cn": "彩砖植草砖铺路石_合格",
+    "category_en": "Paver Block Mould",
+    "slug": "paver-block-moulds",
+    "total_qualified": 54,
+    "total_groups": 20,
+    "selected_count": 22,
+    "images": [
+      {
+        "filename": "paver-block-moulds-design-01.jpg",
+        "original": "完整产品卡1_多留一点_不超下一图.jpg",
+        "group": "完整产品卡1_多留一点_不超下一图.jpg",
+        "alt": "paver block mould design 01",
+        "title": "Paver Block Mould Design 01"
+      },
+      {
+        "filename": "paver-block-moulds-design-02.jpg",
+        "original": "完整产品卡1_更干净_橙条刚结束.jpg",
+        "group": "完整产品卡1_更干净_橙条刚结束.jpg",
+        "alt": "paver block mould design 02",
+        "title": "Paver Block Mould Design 02"
+      },
+      {
+        "filename": "paver-block-moulds-design-03.jpg",
+        "original": "完整产品卡1_标准_完整橙条后结束.jpg",
+        "group": "完整产品卡1_标准_完整橙条后结束.jpg",
+        "alt": "paver block mould design 03",
+        "title": "Paver Block Mould Design 03"
+      },
+      {
+        "filename": "paver-block-moulds-design-04.jpg",
+        "original": "完整产品卡2_多留一点_不超下一图.jpg",
+        "group": "完整产品卡2_多留一点_不超下一图.jpg",
+        "alt": "paver block mould design 04",
+        "title": "Paver Block Mould Design 04"
+      },
+      {
+        "filename": "paver-block-moulds-design-05.jpg",
+        "original": "完整产品卡2_更干净_橙条刚结束.jpg",
+        "group": "完整产品卡2_更干净_橙条刚结束.jpg",
+        "alt": "paver block mould design 05",
+        "title": "Paver Block Mould Design 05"
+      },
+      {
+        "filename": "paver-block-moulds-design-06.jpg",
+        "original": "完整产品卡2_标准_完整橙条后结束.jpg",
+        "group": "完整产品卡2_标准_完整橙条后结束.jpg",
+        "alt": "paver block mould design 06",
+        "title": "Paver Block Mould Design 06"
+      },
+      {
+        "filename": "paver-block-moulds-design-07.jpg",
+        "original": "完整产品卡3_多留一点_不超下一图.jpg",
+        "group": "完整产品卡3_多留一点_不超下一图.jpg",
+        "alt": "paver block mould design 07",
+        "title": "Paver Block Mould Design 07"
+      },
+      {
+        "filename": "paver-block-moulds-design-08.jpg",
+        "original": "完整产品卡3_更干净_橙条刚结束.jpg",
+        "group": "完整产品卡3_更干净_橙条刚结束.jpg",
+        "alt": "paver block mould design 08",
+        "title": "Paver Block Mould Design 08"
+      },
+      {
+        "filename": "paver-block-moulds-design-09.jpg",
+        "original": "完整产品卡3_标准_完整橙条后结束.jpg",
+        "group": "完整产品卡3_标准_完整橙条后结束.jpg",
+        "alt": "paver block mould design 09",
+        "title": "Paver Block Mould Design 09"
+      },
+      {
+        "filename": "paver-block-moulds-design-10.jpg",
+        "original": "完整产品卡4_多留一点_不超下一图.jpg",
+        "group": "完整产品卡4_多留一点_不超下一图.jpg",
+        "alt": "paver block mould design 10",
+        "title": "Paver Block Mould Design 10"
+      },
+      {
+        "filename": "paver-block-moulds-design-11.jpg",
+        "original": "完整产品卡4_更干净_橙条刚结束.jpg",
+        "group": "完整产品卡4_更干净_橙条刚结束.jpg",
+        "alt": "paver block mould design 11",
+        "title": "Paver Block Mould Design 11"
+      },
+      {
+        "filename": "paver-block-moulds-design-12.jpg",
+        "original": "完整产品卡4_标准_完整橙条后结束.jpg",
+        "group": "完整产品卡4_标准_完整橙条后结束.jpg",
+        "alt": "paver block mould design 12",
+        "title": "Paver Block Mould Design 12"
+      },
+      {
+        "filename": "paver-block-moulds-design-13.jpg",
+        "original": "完整产品卡5_多留一点_不超下一图.jpg",
+        "group": "完整产品卡5_多留一点_不超下一图.jpg",
+        "alt": "paver block mould design 13",
+        "title": "Paver Block Mould Design 13"
+      },
+      {
+        "filename": "paver-block-moulds-design-14.jpg",
+        "original": "完整产品卡5_更干净_橙条刚结束.jpg",
+        "group": "完整产品卡5_更干净_橙条刚结束.jpg",
+        "alt": "paver block mould design 14",
+        "title": "Paver Block Mould Design 14"
+      },
+      {
+        "filename": "paver-block-moulds-design-15.jpg",
+        "original": "完整产品卡5_标准_完整橙条后结束.jpg",
+        "group": "完整产品卡5_标准_完整橙条后结束.jpg",
+        "alt": "paver block mould design 15",
+        "title": "Paver Block Mould Design 15"
+      },
+      {
+        "filename": "paver-block-moulds-design-16.jpg",
+        "original": "完整产品卡_WechatIMG49_卡01_C无上字_多留一点_不超下一图.jpg",
+        "group": "完整产品卡_WechatIMG49",
+        "alt": "paver block mould design 16",
+        "title": "Paver Block Mould Design 16"
+      },
+      {
+        "filename": "paver-block-moulds-design-17.jpg",
+        "original": "完整产品卡_WechatIMG49_卡04_C无上字_多留一点_不超下一图.jpg",
+        "group": "完整产品卡_WechatIMG49",
+        "alt": "paver block mould design 17",
+        "title": "Paver Block Mould Design 17"
+      },
+      {
+        "filename": "paver-block-moulds-design-18.jpg",
+        "original": "完整产品卡_WechatIMG50_卡01_C无上字_多留一点_不超下一图.jpg",
+        "group": "完整产品卡_WechatIMG50",
+        "alt": "paver block mould design 18",
+        "title": "Paver Block Mould Design 18"
+      },
+      {
+        "filename": "paver-block-moulds-design-19.jpg",
+        "original": "完整产品卡_WechatIMG50_卡04_C无上字_多留一点_不超下一图.jpg",
+        "group": "完整产品卡_WechatIMG50",
+        "alt": "paver block mould design 19",
+        "title": "Paver Block Mould Design 19"
+      },
+      {
+        "filename": "paver-block-moulds-design-20.jpg",
+        "original": "完整产品卡_多留一点_不超下一图.jpg",
+        "group": "完整产品卡_多留一点_不超下一图.jpg",
+        "alt": "paver block mould design 20",
+        "title": "Paver Block Mould Design 20"
+      },
+      {
+        "filename": "paver-block-moulds-design-21.jpg",
+        "original": "完整产品卡_更干净_橙条刚结束.jpg",
+        "group": "完整产品卡_更干净_橙条刚结束.jpg",
+        "alt": "paver block mould design 21",
+        "title": "Paver Block Mould Design 21"
+      },
+      {
+        "filename": "paver-block-moulds-design-22.jpg",
+        "original": "完整产品卡_标准_完整橙条后结束.jpg",
+        "group": "完整产品卡_标准_完整橙条后结束.jpg",
+        "alt": "paver block mould design 22",
+        "title": "Paver Block Mould Design 22"
+      }
+    ]
+  },
+  "decorative-drainage-cover-moulds": {
+    "category_cn": "装饰排水盖板候选_合格",
+    "category_en": "Decorative Drainage Cover Mould",
+    "slug": "decorative-drainage-cover-moulds",
+    "total_qualified": 237,
+    "total_groups": 40,
+    "selected_count": 30,
+    "images": [
+      {
+        "filename": "decorative-drainage-cover-moulds-design-01.jpg",
+        "original": "圆点盖板_WechatIMG215_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG215",
+        "alt": "decorative drainage cover mould design 01",
+        "title": "Decorative Drainage Cover Mould Design 01"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-02.jpg",
+        "original": "圆点盖板_WechatIMG216_卡04_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG216",
+        "alt": "decorative drainage cover mould design 02",
+        "title": "Decorative Drainage Cover Mould Design 02"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-03.jpg",
+        "original": "圆点盖板_WechatIMG218_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG218",
+        "alt": "decorative drainage cover mould design 03",
+        "title": "Decorative Drainage Cover Mould Design 03"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-04.jpg",
+        "original": "圆点盖板_WechatIMG219_卡01_C无上字.jpg",
+        "group": "圆点盖板_WechatIMG219",
+        "alt": "decorative drainage cover mould design 04",
+        "title": "Decorative Drainage Cover Mould Design 04"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-05.jpg",
+        "original": "平石盖板_WechatIMG239_卡04_C无上字.jpg",
+        "group": "平石盖板_WechatIMG239",
+        "alt": "decorative drainage cover mould design 05",
+        "title": "Decorative Drainage Cover Mould Design 05"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-06.jpg",
+        "original": "平石盖板_WechatIMG241_卡01_C无上字.jpg",
+        "group": "平石盖板_WechatIMG241",
+        "alt": "decorative drainage cover mould design 06",
+        "title": "Decorative Drainage Cover Mould Design 06"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-07.jpg",
+        "original": "平石盖板_WechatIMG242_卡01_C无上字.jpg",
+        "group": "平石盖板_WechatIMG242",
+        "alt": "decorative drainage cover mould design 07",
+        "title": "Decorative Drainage Cover Mould Design 07"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-08.jpg",
+        "original": "条纹盖板_WechatIMG221_卡04_C无上字.jpg",
+        "group": "条纹盖板_WechatIMG221",
+        "alt": "decorative drainage cover mould design 08",
+        "title": "Decorative Drainage Cover Mould Design 08"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-09.jpg",
+        "original": "条纹盖板_WechatIMG222_卡04_C无上字.jpg",
+        "group": "条纹盖板_WechatIMG222",
+        "alt": "decorative drainage cover mould design 09",
+        "title": "Decorative Drainage Cover Mould Design 09"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-10.jpg",
+        "original": "条纹盖板_WechatIMG224_卡01_C无上字.jpg",
+        "group": "条纹盖板_WechatIMG224",
+        "alt": "decorative drainage cover mould design 10",
+        "title": "Decorative Drainage Cover Mould Design 10"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-11.jpg",
+        "original": "缺口盖板_WechatIMG167_卡04_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG167",
+        "alt": "decorative drainage cover mould design 11",
+        "title": "Decorative Drainage Cover Mould Design 11"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-12.jpg",
+        "original": "缺口盖板_WechatIMG168_卡04_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG168",
+        "alt": "decorative drainage cover mould design 12",
+        "title": "Decorative Drainage Cover Mould Design 12"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-13.jpg",
+        "original": "缺口盖板_WechatIMG170_卡01_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG170",
+        "alt": "decorative drainage cover mould design 13",
+        "title": "Decorative Drainage Cover Mould Design 13"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-14.jpg",
+        "original": "缺口盖板_WechatIMG171_卡01_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG171",
+        "alt": "decorative drainage cover mould design 14",
+        "title": "Decorative Drainage Cover Mould Design 14"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-15.jpg",
+        "original": "缺口盖板_WechatIMG172_卡04_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG172",
+        "alt": "decorative drainage cover mould design 15",
+        "title": "Decorative Drainage Cover Mould Design 15"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-16.jpg",
+        "original": "缺口盖板_WechatIMG174_卡01_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG174",
+        "alt": "decorative drainage cover mould design 16",
+        "title": "Decorative Drainage Cover Mould Design 16"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-17.jpg",
+        "original": "缺口盖板_WechatIMG175_卡01_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG175",
+        "alt": "decorative drainage cover mould design 17",
+        "title": "Decorative Drainage Cover Mould Design 17"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-18.jpg",
+        "original": "缺口盖板_WechatIMG176_卡04_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG176",
+        "alt": "decorative drainage cover mould design 18",
+        "title": "Decorative Drainage Cover Mould Design 18"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-19.jpg",
+        "original": "缺口盖板_WechatIMG177_卡04_C无上字.jpg",
+        "group": "缺口盖板_WechatIMG177",
+        "alt": "decorative drainage cover mould design 19",
+        "title": "Decorative Drainage Cover Mould Design 19"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-20.jpg",
+        "original": "菱形盖板_WechatIMG214_卡01_C无上字.jpg",
+        "group": "菱形盖板_WechatIMG214",
+        "alt": "decorative drainage cover mould design 20",
+        "title": "Decorative Drainage Cover Mould Design 20"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-21.jpg",
+        "original": "鹅卵石盖板_WechatIMG225_卡04_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG225",
+        "alt": "decorative drainage cover mould design 21",
+        "title": "Decorative Drainage Cover Mould Design 21"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-22.jpg",
+        "original": "鹅卵石盖板_WechatIMG226_卡04_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG226",
+        "alt": "decorative drainage cover mould design 22",
+        "title": "Decorative Drainage Cover Mould Design 22"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-23.jpg",
+        "original": "鹅卵石盖板_WechatIMG228_卡01_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG228",
+        "alt": "decorative drainage cover mould design 23",
+        "title": "Decorative Drainage Cover Mould Design 23"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-24.jpg",
+        "original": "鹅卵石盖板_WechatIMG229_卡01_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG229",
+        "alt": "decorative drainage cover mould design 24",
+        "title": "Decorative Drainage Cover Mould Design 24"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-25.jpg",
+        "original": "鹅卵石盖板_WechatIMG230_卡04_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG230",
+        "alt": "decorative drainage cover mould design 25",
+        "title": "Decorative Drainage Cover Mould Design 25"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-26.jpg",
+        "original": "鹅卵石盖板_WechatIMG232_卡01_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG232",
+        "alt": "decorative drainage cover mould design 26",
+        "title": "Decorative Drainage Cover Mould Design 26"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-27.jpg",
+        "original": "鹅卵石盖板_WechatIMG233_卡01_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG233",
+        "alt": "decorative drainage cover mould design 27",
+        "title": "Decorative Drainage Cover Mould Design 27"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-28.jpg",
+        "original": "鹅卵石盖板_WechatIMG234_卡04_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG234",
+        "alt": "decorative drainage cover mould design 28",
+        "title": "Decorative Drainage Cover Mould Design 28"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-29.jpg",
+        "original": "鹅卵石盖板_WechatIMG235_卡04_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG235",
+        "alt": "decorative drainage cover mould design 29",
+        "title": "Decorative Drainage Cover Mould Design 29"
+      },
+      {
+        "filename": "decorative-drainage-cover-moulds-design-30.jpg",
+        "original": "鹅卵石盖板_WechatIMG237_卡01_C无上字.jpg",
+        "group": "鹅卵石盖板_WechatIMG237",
+        "alt": "decorative drainage cover mould design 30",
+        "title": "Decorative Drainage Cover Mould Design 30"
+      }
+    ]
+  },
+  "kerbstone-moulds": {
+    "category_cn": "路沿石侧石路缘石_合格",
+    "category_en": "Kerbstone Mould",
+    "slug": "kerbstone-moulds",
+    "total_qualified": 48,
+    "total_groups": 8,
+    "selected_count": 16,
+    "images": [
+      {
+        "filename": "kerbstone-moulds-design-01.jpg",
+        "original": "路沿石侧石_WechatIMG52_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG52",
+        "alt": "kerbstone mould design 01",
+        "title": "Kerbstone Mould Design 01"
+      },
+      {
+        "filename": "kerbstone-moulds-design-02.jpg",
+        "original": "路沿石侧石_WechatIMG52_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG52",
+        "alt": "kerbstone mould design 02",
+        "title": "Kerbstone Mould Design 02"
+      },
+      {
+        "filename": "kerbstone-moulds-design-03.jpg",
+        "original": "路沿石侧石_WechatIMG53_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG53",
+        "alt": "kerbstone mould design 03",
+        "title": "Kerbstone Mould Design 03"
+      },
+      {
+        "filename": "kerbstone-moulds-design-04.jpg",
+        "original": "路沿石侧石_WechatIMG53_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG53",
+        "alt": "kerbstone mould design 04",
+        "title": "Kerbstone Mould Design 04"
+      },
+      {
+        "filename": "kerbstone-moulds-design-05.jpg",
+        "original": "路沿石侧石_WechatIMG54_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG54",
+        "alt": "kerbstone mould design 05",
+        "title": "Kerbstone Mould Design 05"
+      },
+      {
+        "filename": "kerbstone-moulds-design-06.jpg",
+        "original": "路沿石侧石_WechatIMG54_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG54",
+        "alt": "kerbstone mould design 06",
+        "title": "Kerbstone Mould Design 06"
+      },
+      {
+        "filename": "kerbstone-moulds-design-07.jpg",
+        "original": "路沿石侧石_WechatIMG55_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG55",
+        "alt": "kerbstone mould design 07",
+        "title": "Kerbstone Mould Design 07"
+      },
+      {
+        "filename": "kerbstone-moulds-design-08.jpg",
+        "original": "路沿石侧石_WechatIMG55_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG55",
+        "alt": "kerbstone mould design 08",
+        "title": "Kerbstone Mould Design 08"
+      },
+      {
+        "filename": "kerbstone-moulds-design-09.jpg",
+        "original": "路沿石侧石_WechatIMG56_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG56",
+        "alt": "kerbstone mould design 09",
+        "title": "Kerbstone Mould Design 09"
+      },
+      {
+        "filename": "kerbstone-moulds-design-10.jpg",
+        "original": "路沿石侧石_WechatIMG56_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG56",
+        "alt": "kerbstone mould design 10",
+        "title": "Kerbstone Mould Design 10"
+      },
+      {
+        "filename": "kerbstone-moulds-design-11.jpg",
+        "original": "路沿石侧石_WechatIMG57_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG57",
+        "alt": "kerbstone mould design 11",
+        "title": "Kerbstone Mould Design 11"
+      },
+      {
+        "filename": "kerbstone-moulds-design-12.jpg",
+        "original": "路沿石侧石_WechatIMG57_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG57",
+        "alt": "kerbstone mould design 12",
+        "title": "Kerbstone Mould Design 12"
+      },
+      {
+        "filename": "kerbstone-moulds-design-13.jpg",
+        "original": "路沿石侧石_WechatIMG58_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG58",
+        "alt": "kerbstone mould design 13",
+        "title": "Kerbstone Mould Design 13"
+      },
+      {
+        "filename": "kerbstone-moulds-design-14.jpg",
+        "original": "路沿石侧石_WechatIMG58_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG58",
+        "alt": "kerbstone mould design 14",
+        "title": "Kerbstone Mould Design 14"
+      },
+      {
+        "filename": "kerbstone-moulds-design-15.jpg",
+        "original": "路沿石侧石_WechatIMG59_卡01_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG59",
+        "alt": "kerbstone mould design 15",
+        "title": "Kerbstone Mould Design 15"
+      },
+      {
+        "filename": "kerbstone-moulds-design-16.jpg",
+        "original": "路沿石侧石_WechatIMG59_卡04_C无上字.jpg",
+        "group": "路沿石侧石_WechatIMG59",
+        "alt": "kerbstone mould design 16",
+        "title": "Kerbstone Mould Design 16"
+      }
+    ]
+  }
+}
