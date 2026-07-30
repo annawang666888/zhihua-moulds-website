@@ -1,3 +1,9 @@
 # Cloudflare Pages redirects for Zhihua Moulds
 # No custom page rewrites here: Cloudflare Pages already supports /about and /about.html.
 # Keeping this file intentionally minimal avoids redirect loops during launch.
+
+# Redirect removed ballast-block page to photovoltaic-pier-moulds
+/products/photovoltaic-ballast-block-moulds  /products/photovoltaic-pier-moulds  301
+
+# Custom 404 page
+/* /404.html 404

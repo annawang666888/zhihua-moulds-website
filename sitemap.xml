@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zhihuamoulds.com/</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://zhihuamoulds.com/products</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -68,19 +68,13 @@
   </url>
   <url>
     <loc>https://zhihuamoulds.com/products/power-engineering-moulds</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhihuamoulds.com/products/photovoltaic-ballast-block-moulds</loc>
-    <lastmod>2026-07-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
     <loc>https://zhihuamoulds.com/products/photovoltaic-pier-moulds</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -253,13 +247,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhihuamoulds.com/blog/decorative-drainage-cover-moulds-guide</loc>
+    <loc>https://zhihuamoulds.com/blog/decorative-drainage-cover-moulds-guide.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zhihuamoulds.com/blog/hollow-block-hexagon-concrete-moulds-guide</loc>
+    <loc>https://zhihuamoulds.com/blog/hollow-block-hexagon-concrete-moulds-guide.html</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
