@@ -1,6 +1,7 @@
 # Cloudflare Pages redirects for Zhihua Moulds
-# No custom page rewrites here: Cloudflare Pages already supports /about and /about.html.
-# Keeping this file intentionally minimal avoids redirect loops during launch.
+# Note: Cloudflare Pages natively 308-redirects /foo.html → /foo (clean URLs).
+# Now that canonical/sitemap/internal-links point to clean URLs, that 308 is normal
+# canonical resolution, not an "error" from Google's perspective.
 
 # Redirect removed ballast-block page to photovoltaic-pier-moulds
 /products/photovoltaic-ballast-block-moulds  /products/photovoltaic-pier-moulds  301

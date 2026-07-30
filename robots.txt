@@ -1,7 +1,51 @@
-# Zhihua Moulds Website
+# Zhihua Moulds Website — robots.txt
 # https://www.robotstxt.org/robotstxt.html
 
 User-agent: *
+Allow: /
+
+# Explicit AI training / retrieval crawlers welcome
+# (we want to appear in AI search assistants like ChatGPT, Perplexity, Claude, Copilot)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: https://zhihuamoulds.com/sitemap.xml

@@ -61,30 +61,106 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "Manufacturer"],
+    "@id": "https://zhihuamoulds.com/#organization",
     "name": "Zhihua Moulds",
+    "legalName": "Jiaxing Zhihua Technology Co., Ltd.",
     "alternateName": "嘉兴市志华科技股份有限公司",
     "url": "https://zhihuamoulds.com/",
     "logo": "https://zhihuamoulds.com/assets/logo.png",
-    "description": "Professional manufacturer of precast concrete moulds including manhole covers, kerbstones, pavers, and slope protection.",
+    "foundingDate": "2015",
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jiaxing",
+        "addressRegion": "Zhejiang",
+        "addressCountry": "CN"
+      }
+    },
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": 50
+    },
+    "industry": "Plastic Moulds for Precast Concrete Manufacturing",
+    "naics": "326199",
+    "description": "Chinese factory-direct manufacturer of plastic moulds for precast concrete products including manhole covers, kerbstones, pavers, drainage channels, cable trenches, slope protection blocks, photovoltaic pier bases and rail transit components. Over 10 years of experience, 50,000 m² production facility, 1,000+ mould SKUs, exporting to 30+ countries.",
+    "slogan": "Factory-Direct Plastic Moulds for Precast Concrete",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "No. 399, Yongkang Road, Shendang Industrial Park",
       "addressLocality": "Haiyan County",
-      "addressRegion": "Jiaxing City",
+      "addressRegion": "Jiaxing City, Zhejiang Province",
       "postalCode": "314300",
       "addressCountry": "CN"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+86-166-2139-1202",
-      "contactType": "customer service",
-      "areaServed": "Worldwide",
-      "availableLanguage": ["English", "Chinese"]
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+86-166-2139-1202",
+        "contactType": "sales",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "Chinese"]
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "354909745@qq.com",
+        "contactType": "sales",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "Chinese"]
+      }
+    ],
+    "areaServed": [
+      {"@type": "Place", "name": "Middle East"},
+      {"@type": "Place", "name": "Southeast Asia"},
+      {"@type": "Place", "name": "Africa"},
+      {"@type": "Place", "name": "CIS"},
+      {"@type": "Place", "name": "Latin America"},
+      {"@type": "Place", "name": "Europe"},
+      {"@type": "Place", "name": "Oceania"}
+    ],
+    "knowsAbout": [
+      "Plastic moulds for precast concrete",
+      "Manhole cover moulds",
+      "Kerbstone / curbstone moulds",
+      "Paver block moulds",
+      "Drainage channel moulds",
+      "Cable trench moulds",
+      "Slope protection block moulds",
+      "Photovoltaic pier moulds",
+      "Rail transit precast concrete moulds",
+      "OEM custom mould design",
+      "Injection moulding",
+      "PP and ABS plastic moulds",
+      "Precast concrete industry"
+    ],
+    "makesOffer": {
+      "@type": "OfferCatalog",
+      "name": "Precast Concrete Mould Catalogue",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Manhole Cover Moulds", "url": "https://zhihuamoulds.com/products/manhole-cover-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Kerbstone Moulds", "url": "https://zhihuamoulds.com/products/kerbstone-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Paver Block Moulds", "url": "https://zhihuamoulds.com/products/paver-block-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Drainage Channel Moulds", "url": "https://zhihuamoulds.com/products/drainage-channel-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Cable Trench Moulds", "url": "https://zhihuamoulds.com/products/cable-trench-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Slope Protection Moulds", "url": "https://zhihuamoulds.com/products/slope-protection-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Photovoltaic Pier Moulds", "url": "https://zhihuamoulds.com/products/photovoltaic-pier-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Rail Transit Concrete Moulds", "url": "https://zhihuamoulds.com/products/rail-transit-concrete-moulds"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Custom Precast Concrete Moulds", "url": "https://zhihuamoulds.com/products/custom-precast-concrete-moulds"}}
+      ]
     },
-    "sameAs": [
-      "https://www.facebook.com/zhihuamoulds",
-      "https://www.linkedin.com/company/zhihuamoulds"
+    "additionalProperty": [
+      {"@type": "PropertyValue", "name": "Facility area", "value": "50,000 m²"},
+      {"@type": "PropertyValue", "name": "Mould SKUs", "value": "1,000+"},
+      {"@type": "PropertyValue", "name": "Export markets", "value": "30+ countries"},
+      {"@type": "PropertyValue", "name": "Years of operation", "value": "10+"},
+      {"@type": "PropertyValue", "name": "Typical mould service life", "value": "300+ pour cycles"},
+      {"@type": "PropertyValue", "name": "Mould materials", "value": "PP, ABS, PE"},
+      {"@type": "PropertyValue", "name": "Lead time", "value": "15-30 days after design approval"},
+      {"@type": "PropertyValue", "name": "OEM support", "value": "Yes, from drawings or sample photos"}
+    ],
+    "award": [
+      "Utility Model Patents for easy-demould mould structures"
     ]
   }
   </script>
@@ -109,12 +185,12 @@
 <!-- Header -->
 <header class="site-header">
   <nav class="navbar container">
-    <a href="index.html" class="logo-link">
+    <a href="/" class="logo-link">
       <img src="assets/logo.png" alt="Zhihua Moulds Logo" width="42" height="42">
       <span class="logo-text">Zhihua Moulds</span>
     </a>
     <div class="nav-links">
-      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="/" data-i18n="nav.home">Home</a>
       <a href="about.html" class="active" data-i18n="nav.about">About</a>
       <a href="products.html" data-i18n="nav.products">Products</a>
       <a href="industries.html" data-i18n="nav.industries">Industries</a>
@@ -144,6 +220,28 @@
         <p data-i18n="about.whoP2">Our moulds are used to produce concrete elements for municipal infrastructure, highways, railways, hydraulic engineering, and urban landscaping — from manhole covers and kerbstones to slope protection blocks and drainage channel covers.</p>
         <p data-i18n="about.whoP3">With a production base of approximately 50 000 m², we operate our own injection moulding lines, assembly workshops, and quality control laboratories. Every mould that leaves our factory has passed dimensional inspection and a sample pour test.</p>
         <p data-i18n="about.whoP4">We serve precast factories, municipal contractors, railway project procurement teams, and construction-material importers across the Middle East, Southeast Asia, Africa, the CIS, and Latin America.</p>
+
+        <h3 style="margin-top:32px;color:#f59e0b" data-i18n="about.factsTitle">Company Facts at a Glance</h3>
+        <ul class="company-facts" style="list-style:none;padding:0;margin:16px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+          <li><strong>Legal name:</strong> Jiaxing Zhihua Technology Co., Ltd.</li>
+          <li><strong>Trading name:</strong> Zhihua Moulds</li>
+          <li><strong>Chinese name:</strong> 嘉兴市志华科技股份有限公司</li>
+          <li><strong>Location:</strong> Haiyan County, Jiaxing City, Zhejiang, China</li>
+          <li><strong>Founded:</strong> 2015</li>
+          <li><strong>Employees:</strong> approximately 50</li>
+          <li><strong>Facility:</strong> approximately 50,000 m²</li>
+          <li><strong>Experience:</strong> 10+ years in mould manufacturing</li>
+          <li><strong>Mould SKUs:</strong> 1,000+ standard designs</li>
+          <li><strong>Export markets:</strong> 30+ countries</li>
+          <li><strong>Materials:</strong> PP, ABS, PE plastic</li>
+          <li><strong>Service life:</strong> 300+ concrete pour cycles per mould</li>
+          <li><strong>Lead time:</strong> 15–30 days after design approval</li>
+          <li><strong>OEM:</strong> yes — from drawings, sample photos or physical samples</li>
+          <li><strong>Container loading:</strong> 20'/40' standard, flat-rack, open-top</li>
+          <li><strong>Response time:</strong> within 4 hours during business days</li>
+          <li><strong>Certifications:</strong> Utility Model Patents for easy-demould structures</li>
+          <li><strong>Contact:</strong> +86-166-2139-1202 (WhatsApp/phone), 354909745@qq.com</li>
+        </ul>
       </div>
       <div class="about-illustration">
         <img src="assets/photos/factory-exterior-03.jpg" alt="Zhihua production facility exterior">
