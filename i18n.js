@@ -72,7 +72,7 @@
       categories: {
         title: 'Product <span>Categories</span>',
         subtitle: 'Eight major product lines covering every precast concrete mould need — from road infrastructure to urban landscaping.',
-        manhole: { h: 'Manhole Cover, Well Cover & Inspection Well Brick Moulds', p: 'Square covers, round sewer covers and well-brick systems' },
+        manhole: { h: 'Manhole Cover, Shaft Brick & Well Wall Brick Moulds', p: 'Covers, frames and curved shaft ring bricks for Ø70-150 cm chambers' },
         kerbstone: { h: 'Kerbstone / Curbstone Moulds', p: 'L-type, S-type, slope-type, standard straight' },
         paver: { h: 'Flagstone / Paver Moulds', p: 'Interlocking, zigzag, Holland-style patterns' },
         slope: { h: 'Slope Protection Moulds', p: 'Hexagonal, I-beam, arch-frame, hollow blocks' },
@@ -138,7 +138,7 @@
         whoP4: 'We serve precast factories, municipal contractors, railway project procurement teams, and construction-material importers across the Middle East, Southeast Asia, Africa, the CIS, and Latin America.',
         makeTitle: 'What We <span>Make</span>',
         makeSub: 'Eight product lines — over 1 000 standard SKUs — plus unlimited custom designs from your drawings.',
-        makeManhole: { h: 'Manhole, Well Cover & Inspection Well Brick Moulds', p: 'Square covers, round sewer covers, well frames and well-brick systems for utility access.' },
+        makeManhole: { h: 'Manhole Cover, Shaft Brick & Well Wall Brick Moulds', p: 'Covers, well frames and curved shaft ring bricks for circular chambers from 70 to 150 cm inner diameter.' },
         makeKerbstone: { h: 'Kerbstone / Curbstone Moulds', p: 'L-type, S-type, slope-type, and straight profiles for road edging and median barriers.' },
         makePaver: { h: 'Paver / Flagstone Moulds', p: 'Interlocking, zigzag, Holland, and I-shape paver moulds for pedestrian and light-traffic areas.' },
         makeSlope: { h: 'Slope Protection Moulds', p: 'Hexagonal, I-beam, arch-frame, and hollow slope blocks for embankment stabilisation.' },
@@ -177,7 +177,7 @@
         heroTitle: 'Product <span style="color:#f59e0b">Catalogue</span>',
         heroSub: 'Eight product lines, 1 000+ standard SKUs — plus unlimited custom designs from your drawings.',
         /* Product section titles and subtitles */
-        manhole: { t: 'Manhole Cover, Well Cover & Inspection Well Brick Moulds', s: 'Square well cover, rectangular well cover, round sewer cover, inspection-well frame and well-brick system moulds for municipal utility access.', sub: 'OCR-checked <strong>manhole cover, well cover and inspection-well brick moulds</strong> for municipal drainage, sewer, road, sidewalk, community and industrial park projects. Current examples include square covers, rectangular covers, round sewer covers, well wall bricks and circular well-brick systems. OEM customisation accepted from drawings or sample photos.' },
+        manhole: { t: 'Manhole Cover, Shaft Brick & Well Wall Brick Moulds', s: 'Manhole cover and well frame moulds, plus curved shaft ring brick and well wall brick moulds for building the chamber below.', sub: 'Two separate purchases in one category: <strong>manhole cover and well frame moulds</strong> for the top, and <strong>shaft ring brick and well wall brick moulds</strong> for the chamber below. Covers include square 50x50x6 cm, rectangular 60x40x6 cm and a round five-hole sewer cover \u00d8 80 x 5.5 cm. Shaft ring bricks close a true circle at inner diameters of 70, 80, 90, 110, 130 and 150 cm, with the piece count fixed by the mould arc. All dimensions are read off our own workshop photos. OEM customisation accepted from drawings or sample photos.' },
         kerbstone: { t: 'Kerbstone / Curbstone Moulds', s: 'Arc side stone, L-type, S-type, line side stone, isolation barrier and slope water-blocking kerbstone moulds for road edging, medians and pedestrian boundaries.', sub: 'Durable <strong>kerbstone moulds</strong> (also called <strong>curbstone moulds</strong>) for road edging, traffic medians, pedestrian boundaries, and decorative landscaping. Arc side stone, L-type, S-type, line side stone, isolation barrier and slope water-blocking profiles can be reviewed from catalogue photos, drawings or sample dimensions. Compatible with C30/40 concrete and pigment dyeing for coloured kerbs.' },
         paver: { t: 'Flagstone / Paver Moulds', s: 'Interlocking paver, zigzag, Holland-style, and I-shape moulds for walkways, plazas, and light-traffic paving.', sub: 'Industry-standard <strong>paver block moulds</strong> for walkways, plazas, driveways, and permeable paving. Includes <strong>interlocking Z-shape, zigzag Dutch-style, Holland rectangular, I-shape grass paver, and decorative flagstone</strong> designs. Sizes from 200 × 100 × 60 mm to custom large-format slabs. Pigment-compatible PP for vibrant coloured pavers.' },
         slope: { t: 'Slope Protection Moulds', s: 'Hexagonal slope blocks, I-beam eco-blocks, arch-frame moulds, and hollow slope protection — for embankment and hydraulic stabilisation.', sub: 'Engineered <strong>slope protection moulds</strong> for embankment stabilisation and river bank protection. <strong>Hexagonal, I-beam, arch-frame, and hollow slope blocks</strong> designed for durability and effective vegetation growth. Suitable for highway, railway, and hydraulic projects requiring erosion control.' },
@@ -303,11 +303,11 @@
       faq: {
         manhole: {
           title: 'Frequently Asked Questions',
-          sub: 'Common questions about manhole cover, well cover and inspection-well brick moulds, local sizes, markings and specifications.',
-          q1: { q: 'Can you make manhole, well cover and inspection-well brick moulds from samples?', a: 'Yes. Send the finished cover or well-brick dimensions, drawing, markings or sample photos. We can review the mould structure and quote standard or custom production.' },
+          sub: 'Common questions about manhole cover moulds, well frame moulds and shaft ring brick moulds: cover-plus-frame fit, load class, inner versus outer diameter and pieces per course.',
+          q1: { q: 'Do I need the frame mould as well as the cover mould?', a: 'Only if you are casting the frame in concrete too. If your site already has steel frames or existing concrete seats, the cover mould alone is enough, but send the seat opening size so the cover drops in. Where both parts are cast, order them as a matched set so the seat clearance is designed in.' },
           q2: { q: 'Can one shipment include cover moulds and well-brick moulds?', a: 'Yes. Mixed-SKU orders are common for distributors and municipal supply projects where multiple cover, frame and well-brick sizes are needed.' },
           q3: { q: 'Can the mould include logo or utility text?', a: 'Yes. Logo, lettering, utility name and anti-slip surface patterns can be discussed from drawings or clear sample photos.' },
-          q4: { q: 'What sizes of manhole and inspection-well moulds do you offer?', a: 'The current OCR-checked examples include square covers, rectangular covers, Ø80 cm round sewer covers, Ø68 cm well frames, well wall bricks, and inner Ø90/Ø110 cm circular well-brick systems. Custom sizes are available from drawings or local standards.' }
+          q4: { q: 'How many shaft ring bricks are needed per course?', a: 'It is fixed by the mould arc, not chosen on site: 7 bricks at inner \u00d8 70 cm, 8 at \u00d8 80 cm, 9 at \u00d8 90 cm and 11 at \u00d8 110 cm, all 20 cm high. A mould only closes into a circle at its own diameter, so mixed-diameter projects need one mould per diameter. \u00d8 130 cm and \u00d8 150 cm are also stocked, and custom diameters are cut from drawings.' }
         },
         kerbstone: {
           title: 'Kerbstone Mould FAQ',
@@ -441,7 +441,7 @@
       categories: {
         title: '产品<span>分类</span>',
         subtitle: '八大产品线，覆盖混凝土预制件模具全需求——从道路基建到城市景观。',
-        manhole: { h: '井盖/井框/砌井砖模具', p: '方井盖、圆井盖、井框和砌井砖系统' },
+        manhole: { h: '井盖/井框/砌井砖模具', p: '井盖、井框，以及内径70-150cm圆形检查井弧形砌井砖' },
         kerbstone: { h: '路沿石模具', p: 'L型、S型、斜面型、标准直线型' },
         paver: { h: '平石模具', p: '联锁型、锯齿型、荷兰式图案' },
         slope: { h: '护坡塑料模具', p: '六角形、工字型、拱架型、空心块' },
@@ -545,7 +545,7 @@
       products: {
         heroTitle: '产品<span style="color:#f59e0b">目录</span>',
         heroSub: '八大产品线，1000+标准规格——另支持按图定制无限扩展。',
-        manhole: { t: '井盖/井框/砌井砖模具', s: '方井盖、长方井盖、圆形下水井盖、圆井框、井壁砖和砌井砖系统模具，适用于市政管线检查井。', sub: '经 OCR 复核的<strong>井盖、井框和砌井砖模具</strong>，适用于市政排水、下水道、道路、人行道、小区、工业园区和管线检查井。当前样例包括方井盖、长方井盖、圆形下水井盖、井壁砖和内径90/110cm砌井砖系统。支持按图纸或样品照片 OEM 定制。' },
+        manhole: { t: '井盖/井框/砌井砖模具', s: '上部的井盖与井框模具，以及下部砌井用的弧形砌井砖、井壁砖与转角砖模具。', sub: '一个品类，两笔独立采购：上部的<strong>井盖与井框模具</strong>，以及下部砌筑井身的<strong>砌井砖与井壁砖模具</strong>。井盖含方井 50×50×6cm、长方井 60×40×6cm、五孔圆形下水井盖 Ø80×5.5cm。砌井砖按内径成环，70/80/90/110/130/150cm 六种，每环块数由模具弧度决定，现场无需切割。全部尺寸取自本厂实拍照片。支持按图纸或样品照片 OEM 定制。' },
         kerbstone: { t: '路沿石模具', s: 'L型、S型、斜面型及直线型路沿石模具，适用于道路边缘、中央隔离带及人行道边界。', sub: '耐用<strong>路沿石模具</strong>，用于道路边缘、中央隔离带、人行道边界及景观工程。包括 L 型、S 型、斜面型、直线型、圆弧型等规格。可按图纸定制尺寸，适配 C30/40 混凝土和彩色颜料生产。' },
         paver: { t: '平石模具', s: '联锁型、锯齿型、荷兰式及工字型平石模具，适用于人行道、广场及轻型交通铺装。', sub: '标准<strong>平石/铺路砖模具</strong>，用于人行道、广场、车道和透水铺装。包括联锁型、锯齿荷兰式、矩形荷兰砖、工字型草坪砖及装饰平石等，可支持彩色混凝土生产和大规格定制。' },
         slope: { t: '护坡塑料模具', s: '六角形护坡块、工字型生态块、拱架型模具及空心护坡——用于堤坝和水工加固。', sub: '工程级<strong>护坡塑料模具</strong>，用于边坡稳定、河道护岸和水利工程。包括六角形、工字型、拱架型、空心护坡块等结构，适用于公路、铁路和水利项目的防冲刷需求。' },

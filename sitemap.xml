@@ -50,7 +50,13 @@
   </url>
   <url>
     <loc>https://zhihuamoulds.com/products/manhole-cover-moulds</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zhihuamoulds.com/products/manhole-shaft-brick-moulds</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -319,4 +325,5 @@
   <url><loc>https://zhihuamoulds.com/products/hollow-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zhihuamoulds.com/products/hexagonal-paver-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zhihuamoulds.com/blog/hollow-block-vs-hexagonal-paver-moulds-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/manhole-cover-and-shaft-brick-moulds-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
