@@ -6,5 +6,10 @@
 # Redirect removed ballast-block page to photovoltaic-pier-moulds
 /products/photovoltaic-ballast-block-moulds  /products/photovoltaic-pier-moulds  301
 
+# 2026-08-25: Thin/duplicate OEM blog (255 words) consolidated into the full
+# /custom-mould-process page (571 words). 301 preserves any existing link equity
+# and removes the keyword-cannibalisation risk against the main process page.
+/blog/oem-custom-moulds-complete-process-from-design-to-production  /custom-mould-process  301
+
 # Custom 404 page
 /* /404.html 404
