@@ -56,7 +56,6 @@
   const GA_MEASUREMENT_ID = 'G-K3ZCK1MBSZ';
   const GA_LEAD_EVENTS = {
     whatsapp: 'whatsapp_click',
-    telegram: 'telegram_click',
     email: 'email_click',
     phone: 'phone_click',
     request_quote: 'request_quote_click',
@@ -67,7 +66,6 @@
   const GA_COMPATIBILITY_EVENTS = {
     request_quote_click: ['qualify_lead'],
     whatsapp_click: [],
-    telegram_click: ['qualify_lead'],
     email_click: ['qualify_lead'],
     phone_click: ['qualify_lead'],
     contact_form_submit: ['form_submit'],
@@ -143,7 +141,7 @@
       link_url: href,
       link_text: text,
       lead_intent: element?.dataset?.leadIntent || kind
-    }, ['whatsapp', 'telegram', 'email', 'phone'].includes(kind), callback);
+    }, ['whatsapp', 'email', 'phone'].includes(kind), callback);
   }
 
   function classifyLeadLink(link) {
@@ -151,8 +149,7 @@
     const text = (link.textContent || '').toLowerCase();
     const intent = (link.dataset.leadIntent || '').toLowerCase();
     if (href.includes('wa.me') || href.includes('whatsapp.com')) return 'whatsapp';
-    if (href.includes('t.me/') || href.includes('telegram')) return 'telegram';
-    if (href.startsWith('mailto:')) return 'email';
+        if (href.startsWith('mailto:')) return 'email';
     if (href.startsWith('tel:')) return 'phone';
     if (intent.includes('catalog') || text.includes('catalogue') || text.includes('catalog')) return 'get_catalogue';
     if (intent.includes('drawing') || text.includes('drawing') || text.includes('sample photo') || text.includes('send photo')) return 'send_drawing';
@@ -307,7 +304,7 @@
         if (form.querySelector('.cf-turnstile') && !formData.get('cf-turnstile-response')) {
           setLoading(false);
           if (formError) {
-            formError.textContent = '❌ Please complete the anti-spam check, then submit again. You can also contact us by Telegram/email.';
+            formError.textContent = '❌ Please complete the anti-spam check, then submit again. You can also contact us by WhatsApp/email.';
             showMessage(formError, 6000);
           }
           return;
@@ -339,7 +336,7 @@
           setLoading(false);
           resetTurnstile();
           if (formError) {
-            formError.textContent = error.message || '❌ Submit failed. Please contact us by Telegram or email.';
+            formError.textContent = error.message || '❌ Submit failed. Please contact us by WhatsApp or email.';
             showMessage(formError, 6000);
           }
         });
@@ -404,7 +401,7 @@
             'Company: ' + (data.get('company') || ''),
             'Country: ' + (data.get('country') || ''),
             'Email: ' + (data.get('email') || ''),
-            'Phone / Telegram: ' + (data.get('phone') || ''),
+            'Phone / WhatsApp: ' + (data.get('phone') || ''),
             'Product: ' + (data.get('product') || ''),
             'Quantity: ' + (data.get('quantity') || ''),
             'Budget: ' + (data.get('budget') || ''),

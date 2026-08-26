@@ -18,7 +18,7 @@
         about: 'Learn about Jiaxing Zhihua Technology — 10+ years manufacturing plastic moulds for precast concrete. 50,000 m² facility, 1,000+ SKUs, OEM & custom design.',
         products: 'Browse 1 000+ plastic mould SKUs for precast concrete: manhole covers, kerbstones, pavers, slope protection, drainage covers, tree grates, planters, cable troughs. OEM & custom.',
         industries: 'Zhihua Moulds serve municipal works, highways, railways, hydraulic engineering, and urban landscaping projects worldwide.',
-        contact: 'Contact Jiaxing Zhihua Technology for a quote on plastic moulds for precast concrete. Telegram @jiexikauk, phone +86 16621391202, email 354909745@qq.com.'
+        contact: 'Contact Jiaxing Zhihua Technology for a quote on plastic moulds for precast concrete. phone +86 16621391202, email 354909745@qq.com.'
       },
       og: {
         home: 'Zhihua Moulds — Plastic Moulds for Precast Concrete',
@@ -32,7 +32,7 @@
         about: '10+ years of expertise in plastic moulds for precast concrete. OEM, custom design, 30+ export markets.',
         products: '1 000+ plastic mould SKUs for precast concrete. Manhole covers, kerbstones, pavers, slope protection and more.',
         industries: 'Our moulds produce precast concrete elements for municipal, highway, railway, hydraulic, and landscaping projects.',
-        contact: 'Get a quote on plastic moulds for precast concrete. Telegram, email, and inquiry form available.'
+        contact: 'Get a quote on plastic moulds for precast concrete. WhatsApp, email, and inquiry form available.'
       },
 
       /* Utility bar */
@@ -92,7 +92,7 @@
         pours: { h: '300+ Pours per Mould', p: 'PP and ABS raw materials with controlled wall thickness deliver consistent shape retention over hundreds of pour cycles.' },
         container: { h: 'Container Loading', p: 'We pack for flat-rack, open-top, or standard 20\'/40\' containers — mixed SKUs in one shipment to lower your landed cost.' },
         markets: { h: '30+ Export Markets', p: 'Active shipments to the Middle East, Southeast Asia, Africa, CIS, and Latin America with documented loading photos.' },
-        support: { h: 'After-Sales Support', p: 'Mould repair, replacement cavities, and usage guidance via Telegram — we respond within 4 hours during business days.' }
+        support: { h: 'After-Sales Support', p: 'Mould repair, replacement cavities, and usage guidance via WhatsApp — we respond within 4 hours during business days.' }
       },
 
       /* Industries home */
@@ -265,12 +265,12 @@
         emailLabel: 'Email',
         hotlineLabel: 'Domestic Hotline (China)',
         hoursLabel: 'Business Hours',
-        hoursLine: 'Mon – Sat, 08:30 – 18:00 (GMT+8)<br>WhatsApp and Telegram messages are checked every business day.',
+        hoursLine: 'Mon – Sat, 08:30 – 18:00 (GMT+8)<br>WhatsApp messages are checked every business day.',
         mapPlaceholder: '🗺️ Google Maps embed — replace with your share link iframe',
         formTitle: 'Request a Quote',
-        fastTitle: 'Fastest response: WhatsApp or Telegram',
+        fastTitle: 'Fastest response: WhatsApp',
         fastText: 'Send drawings, sizes, quantity, destination country, and target standard. We can quickly check feasibility and quote direction.',
-        fastButton: 'Chat on Telegram',
+        fastButton: 'Chat on WhatsApp',
         nameLabel: 'Your Name *',
         namePh: 'John Smith',
         companyLabel: 'Company',
@@ -279,7 +279,7 @@
         countryPh: 'Saudi Arabia',
         emailFormLabel: 'Email *',
         emailPh: 'you@company.com',
-        phoneLabel: 'Phone / WhatsApp / Telegram *',
+        phoneLabel: 'Phone / WhatsApp *',
         phonePh: '+966 5xx xxx xxx',
         productLabel: 'Product of Interest',
         productPh: '-- Select category --',
@@ -387,7 +387,7 @@
         about: '了解嘉兴市志华科技股份有限公司——10年+混凝土预制件塑料模具制造经验。5万m²厂房，1000+规格，支持OEM与定制设计。',
         products: '浏览1000+混凝土预制件塑料模具规格：井盖模具、路沿石模具、平石模具、护坡模具、水沟盖板模具、围树模具、花盆模具、其他模具。支持OEM与定制。',
         industries: '志华模具服务于市政工程、公路建设、铁路工程、水利水电、园林景观等领域，产品远销全球。',
-        contact: '联系嘉兴市志华科技股份有限公司获取混凝土预制件塑料模具报价。Telegram @jiexikauk, phone +86 16621391202，邮箱 354909745@qq.com。'
+        contact: '联系嘉兴市志华科技股份有限公司获取混凝土预制件塑料模具报价。phone +86 16621391202，邮箱 354909745@qq.com。'
       },
       og: {
         home: '志华模具 — 混凝土预制件塑料模具',
@@ -401,7 +401,7 @@
         about: '10年+混凝土预制件塑料模具专业制造经验，支持OEM定制，出口30+国家。',
         products: '1000+混凝土预制件塑料模具规格，井盖模具、路沿石模具、平石模具、护坡模具等。',
         industries: '我们的模具用于市政工程、公路建设、铁路工程、水利水电、园林景观等领域的混凝土预制件生产。',
-        contact: '获取混凝土预制件塑料模具报价。支持Telegram、邮件和在线询盘表单。'
+        contact: '获取混凝土预制件塑料模具报价。支持WhatsApp、邮件和在线询盘表单。'
       },
 
       /* Utility bar */
@@ -461,7 +461,7 @@
         pours: { h: '单模300+次浇筑', p: 'PP和ABS原生料，精准控制壁厚，确保数百次浇筑后尺寸稳定。' },
         container: { h: '集装箱整柜装运', p: '支持平板柜、开顶柜及标准20\'/40\'柜——混装多规格，降低到岸成本。' },
         markets: { h: '30+出口市场', p: '中东、东南亚、非洲、独联体、拉美持续出货，附装箱实拍照片。' },
-        support: { h: '售后服务保障', p: '模具维修、替换型腔、使用指导，Telegram即时响应——工作日4小时内回复。' }
+        support: { h: '售后服务保障', p: '模具维修、替换型腔、使用指导，WhatsApp即时响应——工作日4小时内回复。' }
       },
 
       /* Industries home */
@@ -633,12 +633,12 @@
         emailLabel: '邮箱',
         hotlineLabel: '国内热线',
         hoursLabel: '营业时间',
-        hoursLine: '周一至周六 08:30 – 18:00（GMT+8）<br>Telegram消息工作日及时查看。',
+        hoursLine: '周一至周六 08:30 – 18:00（GMT+8）<br>WhatsApp消息工作日及时查看。',
         mapPlaceholder: '🗺️ Google地图嵌入——替换为您的分享链接iframe',
         formTitle: '询盘表单',
-        fastTitle: '最快响应：WhatsApp 或 Telegram',
+        fastTitle: '最快响应：WhatsApp',
         fastText: '请发送图纸、尺寸、数量、目的国和目标标准。我们可以快速判断可行性并给出报价方向。',
-        fastButton: 'Telegram 咨询',
+        fastButton: 'WhatsApp 咨询',
         nameLabel: '姓名 *',
         namePh: '张三',
         companyLabel: '公司名称',
@@ -647,7 +647,7 @@
         countryPh: '沙特阿拉伯',
         emailFormLabel: '邮箱 *',
         emailPh: 'you@company.com',
-        phoneLabel: '电话 / WhatsApp / Telegram *',
+        phoneLabel: '电话 / WhatsApp *',
         phonePh: '+966 5xx xxx xxx',
         productLabel: '感兴趣的产品',
         productPh: '-- 请选择类别 --',

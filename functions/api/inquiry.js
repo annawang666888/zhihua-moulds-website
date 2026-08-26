@@ -63,7 +63,7 @@ function buildEmailHtml(inquiry) {
     ["Company", inquiry.company],
     ["Country", inquiry.country],
     ["Email", inquiry.email],
-    ["Phone / Telegram", inquiry.phone],
+    ["Phone / WhatsApp", inquiry.phone],
     ["Product", inquiry.product],
     ["Estimated Quantity", inquiry.quantity],
     ["Estimated Budget", inquiry.budget],
@@ -104,7 +104,7 @@ function buildEmailText(inquiry) {
     `Company: ${inquiry.company}`,
     `Country: ${inquiry.country}`,
     `Email: ${inquiry.email}`,
-    `Phone / Telegram: ${inquiry.phone}`,
+    `Phone / WhatsApp: ${inquiry.phone}`,
     `Product: ${inquiry.product}`,
     `Estimated Quantity: ${inquiry.quantity}`,
     `Estimated Budget: ${inquiry.budget}`,
@@ -156,7 +156,7 @@ export async function onRequestPost(context) {
   const errors = {};
   if (!required(inquiry.name)) errors.name = "Name is required.";
   if (!required(inquiry.email) || !/^\S+@\S+\.\S+$/.test(inquiry.email)) errors.email = "Valid email is required.";
-  if (!required(inquiry.phone)) errors.phone = "Phone / Telegram is required.";
+  if (!required(inquiry.phone)) errors.phone = "Phone / WhatsApp is required.";
   if (!required(inquiry.message)) errors.message = "Message is required.";
   if (Object.keys(errors).length) return json({ ok: false, errors, message: "Please fill in the required fields." }, 400);
 
@@ -175,7 +175,7 @@ export async function onRequestPost(context) {
 
   if (!resendApiKey) {
     console.error("RESEND_API_KEY is not configured.");
-    return json({ ok: false, message: "Submit failed. Please contact us by Telegram or email." }, 500);
+    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 500);
   }
 
   const subjectName = inquiry.name ? ` from ${inquiry.name}` : "";
@@ -200,13 +200,13 @@ export async function onRequestPost(context) {
     });
   } catch (error) {
     console.error("Resend network error", error);
-    return json({ ok: false, message: "Submit failed. Please contact us by Telegram or email." }, 502);
+    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 502);
   }
 
   if (!resendResponse.ok) {
     const detail = await resendResponse.text().catch(() => "");
     console.error("Resend email failed", resendResponse.status, detail.slice(0, 1000));
-    return json({ ok: false, message: "Submit failed. Please contact us by Telegram or email." }, 502);
+    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 502);
   }
 
   return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours." });
