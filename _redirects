@@ -11,5 +11,12 @@
 # and removes the keyword-cannibalisation risk against the main process page.
 /blog/oem-custom-moulds-complete-process-from-design-to-production  /custom-mould-process  301
 
+# 2026-08-26: Thin D400 vs F900 "comparison" blog (324 words) removed. It claimed
+# our plastic moulds are "manufactured to EN 124" with "load simulation" testing,
+# which is misleading: load class is a property of the cured concrete mix,
+# reinforcement and slab thickness, NOT of the mould. The topic is already covered
+# correctly in the full manhole guide's FAQ, so 301 there.
+/blog/d400-vs-f900-manhole-cover-mould-comparison  /blog/manhole-cover-and-shaft-brick-moulds-guide  301
+
 # Custom 404 page
 /* /404.html 404
