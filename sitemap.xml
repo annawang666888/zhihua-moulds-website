@@ -43,6 +43,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zhihuamoulds.com/products/flat-kerb-stone-moulds</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zhihuamoulds.com/products/concrete-spacer-block-moulds</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -147,6 +152,11 @@
   <url>
     <loc>https://zhihuamoulds.com/blog/kerbstone-curbstone-moulds-buying-guide</loc>
     <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zhihuamoulds.com/blog/flat-kerb-strip-stone-moulds-buying-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
