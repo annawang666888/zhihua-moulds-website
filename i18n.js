@@ -18,7 +18,7 @@
         about: 'Learn about Jiaxing Zhihua Technology — 10+ years manufacturing plastic moulds for precast concrete. 50,000 m² facility, 1,000+ SKUs, OEM & custom design.',
         products: 'Browse 1 000+ plastic mould SKUs for precast concrete: manhole covers, kerbstones, pavers, slope protection, drainage covers, tree grates, planters, cable troughs. OEM & custom.',
         industries: 'Zhihua Moulds serve municipal works, highways, railways, hydraulic engineering, and urban landscaping projects worldwide.',
-        contact: 'Contact Jiaxing Zhihua Technology for a quote on plastic moulds for precast concrete. phone +86 16621391202, email 354909745@qq.com.'
+        contact: 'Contact Jiaxing Zhihua Technology for a quote on plastic moulds for precast concrete. phone +86 16621391202, email anna@zhihuamoulds.com.'
       },
       og: {
         home: 'Zhihua Moulds — Plastic Moulds for Precast Concrete',
@@ -387,7 +387,7 @@
         about: '了解嘉兴市志华科技股份有限公司——10年+混凝土预制件塑料模具制造经验。5万m²厂房，1000+规格，支持OEM与定制设计。',
         products: '浏览1000+混凝土预制件塑料模具规格：井盖模具、路沿石模具、平石模具、护坡模具、水沟盖板模具、围树模具、花盆模具、其他模具。支持OEM与定制。',
         industries: '志华模具服务于市政工程、公路建设、铁路工程、水利水电、园林景观等领域，产品远销全球。',
-        contact: '联系嘉兴市志华科技股份有限公司获取混凝土预制件塑料模具报价。phone +86 16621391202，邮箱 354909745@qq.com。'
+        contact: '联系嘉兴市志华科技股份有限公司获取混凝土预制件塑料模具报价。phone +86 16621391202，邮箱 anna@zhihuamoulds.com。'
       },
       og: {
         home: '志华模具 — 混凝土预制件塑料模具',

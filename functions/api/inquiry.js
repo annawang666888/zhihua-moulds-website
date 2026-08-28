@@ -170,7 +170,7 @@ export async function onRequestPost(context) {
   }
 
   const resendApiKey = env.RESEND_API_KEY;
-  const toEmail = env.INQUIRY_TO_EMAIL || "354909745@qq.com";
+  const toEmail = env.INQUIRY_TO_EMAIL || "anna@zhihuamoulds.com";
   const fromEmail = env.INQUIRY_FROM_EMAIL || "Zhihua Moulds <noreply@zhihuamoulds.com>";
 
   if (!resendApiKey) {

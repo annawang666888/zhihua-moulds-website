@@ -415,7 +415,7 @@
           if (formSuccess) {
             showMessage(formSuccess, 5000);
           }
-          window.location.href = 'mailto:354909745@qq.com?subject=' + subject + '&body=' + body;
+          window.location.href = 'mailto:anna@zhihuamoulds.com?subject=' + subject + '&body=' + body;
         }, 300);
       }
     });

@@ -42,7 +42,7 @@ Send your block drawing, size, quantity and destination country for a factory qu
 
 WhatsApp: +86 16621391202
 Telegram: @jiexikauk
-Email: 354909745@qq.com
+Email: anna@zhihuamoulds.com
 
 Product pages:
 https://zhihuamoulds.com/products/stepped-slope-block-moulds
