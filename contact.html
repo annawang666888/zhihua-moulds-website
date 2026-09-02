@@ -302,7 +302,8 @@
           </div>
 
           <div class="turnstile-wrap" aria-label="Spam protection check">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAADi0kCvqD80PGvtP" data-theme="dark"></div>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADi0kCvqD80PGvtP" data-theme="dark" data-callback="zhTsCallback" data-error-callback="zhTsError" data-timeout-callback="zhTsError" data-expired-callback="zhTsExpired"></div>
+            <p id="turnstileHint" style="display:none;font-size:12px;color:#fca5a5;margin:8px 0 0;">⚠️ Anti-spam check is reloading… if it keeps failing, you can still submit the form or message us directly on WhatsApp/email.</p>
           </div>
 
           <button type="submit" class="btn-primary" id="submitBtn" style="width:100%;justify-content:center" data-i18n="contact.submitBtn" >

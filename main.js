@@ -2,6 +2,31 @@
 (function () {
   'use strict';
 
+  /* ---------- Turnstile resilience (UX) ----------
+     If the human-check widget errors/expires/times out (network, ad-blocker,
+     Cloudflare hiccup), automatically reset it and show a friendly hint.
+     The backend fails OPEN on a missing/broken token so a real buyer can still
+     submit, but a working widget gives the best spam protection. */
+  window.zhTsCallback = function () {
+    var hint = document.getElementById('turnstileHint');
+    if (hint) hint.style.display = 'none';
+  };
+  function zhTsReload() {
+    var hint = document.getElementById('turnstileHint');
+    if (hint) hint.style.display = 'block';
+    try {
+      if (window.turnstile) {
+        window.turnstile.reset();
+        // Retry once more after a short delay if it still hasn't rendered.
+        setTimeout(function () {
+          try { window.turnstile.reset(); } catch (e) {}
+        }, 4000);
+      }
+    } catch (e) {}
+  }
+  window.zhTsError = zhTsReload;
+  window.zhTsExpired = zhTsReload;
+
   /* ---------- Hamburger Toggle ---------- */
   const hamburger = document.querySelector('.hamburger');
   const navLinks  = document.querySelector('.nav-links');
@@ -301,14 +326,9 @@
       // Handle different form types
       if (formType === 'api') {
         const formData = new FormData(form);
-        if (form.querySelector('.cf-turnstile') && !formData.get('cf-turnstile-response')) {
-          setLoading(false);
-          if (formError) {
-            formError.textContent = '❌ Please complete the anti-spam check, then submit again. You can also contact us by WhatsApp/email.';
-            showMessage(formError, 6000);
-          }
-          return;
-        }
+        // Note: if the Turnstile widget fails to load (sitekey/domain issue),
+        // the backend fails OPEN for genuine submissions rather than blocking
+        // real buyers, so we still POST instead of hard-blocking here.
 
         fetch(formAction || '/api/inquiry', {
           method: 'POST',

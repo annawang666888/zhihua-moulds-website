@@ -28,12 +28,23 @@ async function parseBody(request) {
   return Object.fromEntries(form.entries());
 }
 
+// Returns { ok, hardFail }.
+// - hardFail=true  => configuration/service problem; we FAIL OPEN so real buyers
+//   are never blocked by a broken Turnstile setup (logged for follow-up).
+// - A genuine Cloudflare "invalid token" verdict (success:false with no
+//   infrastructure error code) is treated as a real bot and rejected.
 async function verifyTurnstile(token, secret, request) {
   if (!secret) {
-    console.error("TURNSTILE_SECRET_KEY is not configured.");
-    return false;
+    console.error("TURNSTILE_SECRET_KEY is not configured; failing OPEN for genuine inquiries.");
+    return { ok: true, hardFail: true };
   }
-  if (!token) return false;
+  if (!token) {
+    // Widget should have produced a token; its absence usually means the
+    // Turnstile widget failed to load/render (sitekey/domain issue). Fail open
+    // rather than block real users.
+    console.error("Turnstile token missing; widget likely failed to render; failing OPEN.");
+    return { ok: true, hardFail: true };
+  }
 
   const formData = new FormData();
   formData.append("secret", secret);
@@ -41,19 +52,31 @@ async function verifyTurnstile(token, secret, request) {
   const ip = request.headers.get("cf-connecting-ip");
   if (ip) formData.append("remoteip", ip);
 
+  // Error codes that are infrastructure/configuration faults, not bot verdicts.
+  const INFRA_CODES = [
+    "missing-input-secret",
+    "invalid-input-secret",
+    "siteverify-failure",
+    "challenge-expired",
+    "generic-parser-error"
+  ];
+
   try {
     const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
       method: "POST",
       body: formData
     });
     const result = await response.json();
-    if (!result.success) {
-      console.error("Turnstile verification failed", JSON.stringify(result));
-    }
-    return Boolean(result.success);
+    if (result.success) return { ok: true, hardFail: false };
+    const codes = Array.isArray(result["error-codes"]) ? result["error-codes"] : [];
+    const infra = codes.some((c) => INFRA_CODES.includes(c));
+    console.error("Turnstile verification failed", JSON.stringify(result), "infra=", infra);
+    // Configuration/service fault => let genuine inquiries through; clear
+    // invalid-token verdict (bots) => reject.
+    return { ok: infra, hardFail: infra };
   } catch (error) {
-    console.error("Turnstile verification error", error);
-    return false;
+    console.error("Turnstile verification network error; failing OPEN.", error);
+    return { ok: true, hardFail: true };
   }
 }
 
@@ -164,8 +187,8 @@ export async function onRequestPost(context) {
   if (data.website) return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
 
   const turnstileToken = String(data["cf-turnstile-response"] || "").trim();
-  const turnstileOk = await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET_KEY, request);
-  if (!turnstileOk) {
+  const turnstile = await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET_KEY, request);
+  if (!turnstile.ok) {
     return json({ ok: false, message: "Please complete the anti-spam check, then submit again." }, 403);
   }
 
