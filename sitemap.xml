@@ -327,7 +327,7 @@
     <priority>0.78</priority>
   </url>
   <url><loc>https://zhihuamoulds.com/products/stepping-stone-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zhihuamoulds.com/products/breeze-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/breeze-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://zhihuamoulds.com/products/traditional-chinese-architecture-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zhihuamoulds.com/products/tree-ring-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zhihuamoulds.com/blog/garden-landscape-concrete-moulds-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zhihuamoulds.com/products/hollow-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
