@@ -1,333 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://zhihuamoulds.com/</loc>
+  <url><loc>https://zhihuamoulds.com/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/about</loc>
+    <priority>1.0</priority></url>
+  <url><loc>https://zhihuamoulds.com/about</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/buyer-faq</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/buyer-faq</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/custom-mould-process</loc>
+    <priority>0.82</priority></url>
+  <url><loc>https://zhihuamoulds.com/custom-mould-process</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/resources</loc>
+    <priority>0.82</priority></url>
+  <url><loc>https://zhihuamoulds.com/resources</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products</loc>
+    <priority>0.80</priority></url>
+  <url><loc>https://zhihuamoulds.com/products</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/kerbstone-moulds</loc>
+    <priority>0.9</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/kerbstone-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/flat-kerb-stone-moulds</loc>
+    <priority>0.9</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/flat-kerb-stone-moulds</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/colored-paver-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/colored-paver-moulds</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/concrete-spacer-block-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/concrete-spacer-block-moulds</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/manhole-cover-moulds</loc>
+    <priority>0.9</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/manhole-cover-moulds</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/manhole-shaft-brick-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/manhole-shaft-brick-moulds</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/paver-block-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/paver-block-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/drainage-channel-moulds</loc>
+    <priority>0.9</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/drainage-channel-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/cable-trench-moulds</loc>
+    <priority>0.9</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/cable-trench-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/power-engineering-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/power-engineering-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/photovoltaic-pier-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/photovoltaic-pier-moulds</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/industries</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/contact</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/industries</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/how-to-choose-the-right-precast-concrete-mould</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/contact</loc>
+    <priority>0.6</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/plastic-vs-steel-moulds-5-key-factors</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/how-to-choose-the-right-precast-concrete-mould</loc>
+    <priority>0.6</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/why-zhihua-moulds-last-300-plus-casting-cycles</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/plastic-vs-steel-moulds-5-key-factors</loc>
+    <priority>0.6</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/drainage-channel-moulds-u-drain-cover-buying-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/why-zhihua-moulds-last-300-plus-casting-cycles</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/concrete-paver-block-moulds-buying-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/drainage-channel-moulds-u-drain-cover-buying-guide</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/concrete-paver-block-moulds-buying-guide</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/concrete-spacer-block-moulds-buying-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/concrete-spacer-block-moulds-buying-guide</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/kerbstone-curbstone-moulds-buying-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/kerbstone-curbstone-moulds-buying-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/flat-kerb-strip-stone-moulds-buying-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/flat-kerb-strip-stone-moulds-buying-guide</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/colored-decorative-grass-paver-moulds-buying-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/colored-decorative-grass-paver-moulds-buying-guide</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/cable-trench-moulds-buying-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/cable-trench-moulds-buying-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/power-engineering-concrete-moulds-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/power-engineering-concrete-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/photovoltaic-pier-moulds-solar-foundation-guide</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/photovoltaic-pier-moulds-solar-foundation-guide</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/slope-protection-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/slope-protection-moulds</loc>
+    <priority>0.82</priority></url><url><loc>https://zhihuamoulds.com/products/arch-framework-slope-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/stepped-slope-block-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url><url><loc>https://zhihuamoulds.com/products/arch-framework-slope-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/stepped-slope-block-moulds</loc>
+    <priority>0.78</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/hollow-interlocking-slope-block-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/hollow-interlocking-slope-block-moulds</loc>
+    <priority>0.78</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/slope-protection-concrete-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/slope-protection-concrete-moulds-guide</loc>
+    <priority>0.70</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/rail-transit-concrete-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/rail-transit-concrete-moulds</loc>
+    <priority>0.82</priority></url><url><loc>https://zhihuamoulds.com/products/concrete-post-pile-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://zhihuamoulds.com/products/bridge-cap-road-shoulder-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/rail-transit-precast-concrete-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url><url><loc>https://zhihuamoulds.com/products/concrete-post-pile-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://zhihuamoulds.com/products/bridge-cap-road-shoulder-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/rail-transit-precast-concrete-moulds-guide</loc>
+    <priority>0.70</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/custom-precast-concrete-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/custom-precast-concrete-moulds</loc>
+    <priority>0.82</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/custom-precast-concrete-moulds-oem-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/custom-precast-concrete-moulds-oem-guide</loc>
+    <priority>0.70</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/diamond-pattern-drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/diamond-pattern-drainage-cover-moulds</loc>
+    <priority>0.80</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/diamond-pattern-drainage-cover-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/diamond-pattern-drainage-cover-moulds-guide</loc>
+    <priority>0.68</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/dot-pattern-drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.68</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/dot-pattern-drainage-cover-moulds</loc>
+    <priority>0.80</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/dot-pattern-drainage-cover-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/dot-pattern-drainage-cover-moulds-guide</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.68</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/decorative-drainage-cover-moulds</loc>
+    <priority>0.68</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/decorative-drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/hollow-block-hexagon-moulds</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/hollow-block-hexagon-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/decorative-drainage-cover-moulds-guide</loc>
+    <priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/decorative-drainage-cover-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/blog/hollow-block-hexagon-concrete-moulds-guide</loc>
+    <priority>0.6</priority></url>
+  <url><loc>https://zhihuamoulds.com/blog/hollow-block-hexagon-concrete-moulds-guide</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/notched-drainage-cover-moulds</loc>
+    <priority>0.6</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/notched-drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/striped-drainage-cover-moulds</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/striped-drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/cobblestone-drainage-cover-moulds</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/cobblestone-drainage-cover-moulds</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/flat-stone-drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/flat-stone-drainage-cover-moulds</loc>
+    <priority>0.7</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/drainage-cover-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/drainage-cover-moulds</loc>
+    <priority>0.78</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/drainage-collection-channel-moulds</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/diversion-channel-moulds</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/drainage-collection-channel-moulds</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
-  <url>
-    <loc>https://zhihuamoulds.com/products/diversion-channel-moulds</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.78</priority>
-  </url>
+    <priority>0.78</priority></url>
   <url><loc>https://zhihuamoulds.com/products/stepping-stone-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zhihuamoulds.com/products/breeze-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://zhihuamoulds.com/products/traditional-chinese-architecture-moulds</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zhihuamoulds.com/products/breeze-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url><url><loc>https://zhihuamoulds.com/products/traditional-chinese-architecture-moulds</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zhihuamoulds.com/products/tree-ring-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zhihuamoulds.com/blog/garden-landscape-concrete-moulds-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zhihuamoulds.com/products/hollow-block-moulds</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
