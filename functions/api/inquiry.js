@@ -21,6 +21,50 @@ function required(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
 
+// Content-level spam detector. These inquiries pass field validation (they
+// fill name/email/phone/message) but carry no buying intent: phishing/jackpot
+// lures, anonymous-link domains and giveaway language. Real buyers mention a
+// product, size, quantity or application — never these patterns.
+// Only block anonymous content hosts that never appear in a legitimate
+// concrete-mould RFQ. Do NOT block trade channels (wa.me, t.me) or generic
+// shorteners (bit.ly, tinyurl) — buyers legitimately share those for contacts
+// or reference-photo links, and blocking them would cost real inquiries.
+const SPAM_LINK_DOMAINS = [
+  "telegra.ph",   // anonymous Telegram article host used in the jackpot scams
+  "telegra.ac"    // Telegram telegra.ph mirror
+];
+const SPAM_PHRASES = [
+  "promo code", "jackpot", "winner", "you won", "you have won", "claim your",
+  "crypto airdrop", "airdrop", "btc", "usdt", "investment opportunity",
+  "make money fast", "work from home", "loan offer", "quick loan",
+  "casino", "betting tips", "hot singles", "adult dating", "get rich"
+];
+// Amount lures like "$25,000 promo" / "1,000,000 jackpot".
+const MONEY_LURE = /\$\s?\d{1,3}(,\d{3})+|\d{1,3}(,\d{3}){2,}/i;
+
+function looksLikeSpam(inquiry) {
+  const hay = `${inquiry.message} ${inquiry.company} ${inquiry.name}`.toLowerCase();
+  // Anonymous/phishing link domains in the message.
+  for (const d of SPAM_LINK_DOMAINS) {
+    if (d && hay.includes(d)) return true;
+  }
+  // Classic scam/giveaway phrases.
+  for (const p of SPAM_PHRASES) {
+    if (hay.includes(p)) return true;
+  }
+  // Big-money lures only count when paired with giveaway wording.
+  if (MONEY_LURE.test(hay) && /(promo|jackpot|win|won|prize|reward|bonus|cash)/.test(hay)) {
+    return true;
+  }
+  // Junk company names: bots fill company with a search engine / portal name.
+  const company = (inquiry.company || "").toLowerCase().trim();
+  if (["google", "facebook", "amazon", "microsoft", "apple", "test", "none"]
+      .includes(company) && /http|promo|jackpot|win|prize|click|link/.test(hay)) {
+    return true;
+  }
+  return false;
+}
+
 async function parseBody(request) {
   const contentType = request.headers.get("content-type") || "";
   if (contentType.includes("application/json")) return await request.json();
@@ -29,21 +73,27 @@ async function parseBody(request) {
 }
 
 // Returns { ok, hardFail }.
-// - hardFail=true  => configuration/service problem; we FAIL OPEN so real buyers
-//   are never blocked by a broken Turnstile setup (logged for follow-up).
-// - A genuine Cloudflare "invalid token" verdict (success:false with no
-//   infrastructure error code) is treated as a real bot and rejected.
+// - hardFail=true  => a Cloudflare-side configuration/service fault (secret
+//   missing, siteverify unreachable, infra error code); we FAIL OPEN so a
+//   Cloudflare outage or a broken secret never blocks a real buyer.
+// - ok=false, hardFail=false => a bot verdict: a MISSING token or a genuine
+//   Cloudflare "invalid token" verdict. Bots POST without rendering the widget,
+//   so they send no token at all; that is now REJECTED, not allowed through.
+//   (A real buyer whose widget genuinely fails to load is told on the front
+//   end to use WhatsApp/email instead — see main.js.)
 async function verifyTurnstile(token, secret, request) {
   if (!secret) {
     console.error("TURNSTILE_SECRET_KEY is not configured; failing OPEN for genuine inquiries.");
     return { ok: true, hardFail: true };
   }
   if (!token) {
-    // Widget should have produced a token; its absence usually means the
-    // Turnstile widget failed to load/render (sitekey/domain issue). Fail open
-    // rather than block real users.
-    console.error("Turnstile token missing; widget likely failed to render; failing OPEN.");
-    return { ok: true, hardFail: true };
+    // No token means either a bot that POSTed directly (never rendered the
+    // widget) or a browser where the widget failed to load. Both are sent to
+    // the anti-spam retry message; a real buyer in the latter case falls back
+    // to WhatsApp/email via the front-end hint. We no longer fail open here,
+    // because direct no-token POSTs are exactly how spam gets through.
+    console.warn("Turnstile token missing on POST; rejecting (bot or unloaded widget).");
+    return { ok: false, hardFail: false };
   }
 
   const formData = new FormData();
@@ -183,13 +233,30 @@ export async function onRequestPost(context) {
   if (!required(inquiry.message)) errors.message = "Message is required.";
   if (Object.keys(errors).length) return json({ ok: false, errors, message: "Please fill in the required fields." }, 400);
 
-  // Honeypot: if the hidden website field is filled by bots, reject silently.
-  if (data.website) return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
+  // Honeypot: hidden field real buyers never see; if filled it is a bot.
+  // Check both the new field name and the legacy "website" name. Reject
+  // silently with a fake success so the bot believes it went through.
+  const honeypot = data.company_url || data.website;
+  if (honeypot && String(honeypot).trim().length > 0) {
+    console.warn("Inquiry rejected: honeypot tripped.", { name: inquiry.name, email: inquiry.email });
+    return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
+  }
+
+  // Content-level spam filter: phishing/jackpot/giveaway lures with no buying
+  // intent. Silently accepted (fake success) so bots do not retry with edits.
+  if (looksLikeSpam(inquiry)) {
+    console.warn("Inquiry rejected: content spam filter.", {
+      name: inquiry.name, email: inquiry.email,
+      country: inquiry.country, ip: inquiry.ip_country,
+      snippet: String(inquiry.message).slice(0, 120)
+    });
+    return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
+  }
 
   const turnstileToken = String(data["cf-turnstile-response"] || "").trim();
   const turnstile = await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET_KEY, request);
   if (!turnstile.ok) {
-    return json({ ok: false, message: "Please complete the anti-spam check, then submit again." }, 403);
+    return json({ ok: false, message: "Please complete the anti-spam check, then submit again. If it keeps failing, message us directly on WhatsApp or email." }, 403);
   }
 
   const resendApiKey = env.RESEND_API_KEY;
