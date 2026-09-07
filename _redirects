@@ -27,3 +27,7 @@
 
 # Custom 404 page
 /* /404.html 404
+
+# 2026-09-07: duplicate paver pages consolidated into the strong paver-block URL
+/products/colored-paver-moulds  /products/paver-block-moulds  301
+/blog/concrete-paver-block-moulds-buying-guide  /blog/colored-decorative-grass-paver-moulds-buying-guide  301
