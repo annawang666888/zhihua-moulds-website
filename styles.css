@@ -813,3 +813,9 @@ img.lazy-loaded.loaded {
 /* Lead-generation helpers */
 .quote-helper-box{margin-top:14px;padding:14px 16px;border:1px solid rgba(96,165,250,.35);border-radius:10px;background:rgba(15,39,66,.72);color:#cbd5e1;font-size:14px;line-height:1.55}
 .quote-helper-box strong{display:block;color:#f8fafc;margin-bottom:6px}.quote-helper-box ul{margin:0;padding-left:18px}.quote-helper-box li{margin:3px 0;color:#94a3b8}
+
+/* === catalog download center (2026-09-14) === */
+.catalog-group-title{margin:44px 0 18px;font-size:24px;color:#0a4396;border-left:4px solid #0a4396;padding-left:12px;}
+.catalog-card h3{font-size:16px;margin:0 0 12px;line-height:1.45;}
+.catalog-card-links{display:flex;flex-direction:column;gap:6px;}
+.catalog-card-links a{font-size:14px;}
