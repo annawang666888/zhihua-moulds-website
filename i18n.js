@@ -89,7 +89,7 @@
         subtitle: 'Six reasons overseas buyers trust us for their precast mould supply.',
         factory: { h: 'Integrated Factory', p: '9,213 m² production base with injection moulding, assembly, and QC under one roof — no subcontracting surprises.' },
         oem: { h: 'OEM & Custom Design', p: 'Send us a drawing or sample; we design the mould cavity, produce a prototype, and iterate until you approve.' },
-        pours: { h: '300+ Pours per Mould', p: 'PP and ABS raw materials with controlled wall thickness deliver consistent shape retention over hundreds of pour cycles.' },
+        pours: { h: '150+ Pours per Mould', p: 'PP and ABS raw materials with controlled wall thickness deliver consistent shape retention over hundreds of pour cycles.' },
         container: { h: 'Container Loading', p: 'We pack for flat-rack, open-top, or standard 20\'/40\' containers — mixed SKUs in one shipment to lower your landed cost.' },
         markets: { h: '30+ Export Markets', p: 'Active shipments to the Middle East, Southeast Asia, Africa, CIS, and Latin America with documented loading photos.' },
         support: { h: 'After-Sales Support', p: 'Mould repair, replacement cavities, and usage guidance via WhatsApp — we respond within 4 hours during business days.' }
@@ -146,7 +146,7 @@
         makeTree: { h: 'Tree Grate & Planter Moulds', p: 'Urban landscaping moulds — tree grates, concrete planters, and decorative elements.' },
         mfgTitle: 'Manufacturing Capability',
         mfgP1: 'Our facility houses injection moulding machines from 200 T to 1 500 T clamping force, enabling us to produce moulds ranging from small paver inserts (200 mm) to large manhole cover moulds (Ø 1 200 mm).',
-        mfgP2: 'We use <strong>virgin PP (polypropylene)</strong> and <strong>ABS</strong> resins — never recycled regrind — to ensure each mould withstands 300+ pour cycles without dimensional drift.',
+        mfgP2: 'We use <strong>virgin PP (polypropylene)</strong> and <strong>ABS</strong> resins — never recycled regrind — to ensure each mould withstands 150+ pour cycles without dimensional drift.',
         qcTitle: 'Quality Control',
         qcP1: 'Every production batch follows a three-step protocol:',
         qcRaw: '<strong style="color:#e2e8f0">Raw material verification</strong> — MFI and density testing on incoming resin.',
@@ -208,7 +208,7 @@
         },
         highway: {
           h: '🛣️ Highway Construction',
-          p: 'Highway projects consume large volumes of kerbstones, median barriers, drainage covers, and slope protection blocks. Zhihua\'s moulds are designed for high-cycle production — each mould withstands 300+ pours with minimal dimensional change.',
+          p: 'Highway projects consume large volumes of kerbstones, median barriers, drainage covers, and slope protection blocks. Zhihua\'s moulds are designed for high-cycle production — each mould withstands 150+ pours with minimal dimensional change.',
           li1: 'L-type and slope-type kerbstone moulds for road edging',
           li2: 'Guardrail post moulds for median barriers',
           li3: 'Drainage cover moulds for roadside gutters',
@@ -323,7 +323,7 @@
           q1: { q: 'Which paver pattern is best for driveways vs. plazas?', a: 'Interlocking Z-shape and I-shape pavers offer the best load distribution for driveways and parking. Holland rectangular and decorative flagstone patterns are ideal for plazas and pedestrian areas.' },
           q2: { q: 'What is the standard thickness for paver blocks?', a: '60 mm for pedestrian areas, 80 mm for light vehicles, and 100 mm for heavy traffic. Custom thicknesses are available.' },
           q3: { q: 'Are your paver moulds compatible with coloured concrete?', a: 'Yes. Our PP material does not react with iron-oxide pigments, so vibrant coloured pavers can be produced without staining the mould.' },
-          q4: { q: 'How many cycles can a paver mould produce?', a: 'With virgin PP and standard vibration-table demoulding, our paver moulds reliably deliver 300+ cycles, often more with careful handling.' }
+          q4: { q: 'How many cycles can a paver mould produce?', a: 'With virgin PP and standard vibration-table demoulding, our paver moulds reliably deliver 150+ cycles, often more with careful handling.' }
         }
       },
 
@@ -458,7 +458,7 @@
         subtitle: '海外买家信赖我们的六大理由。',
         factory: { h: '一体化工厂', p: '5万m²生产基地，注塑、组装、品控一站式完成——无外包风险。' },
         oem: { h: 'OEM与定制设计', p: '提供图纸或样品，我们设计模具型腔、制作样品、反复迭代至您确认。' },
-        pours: { h: '单模300+次浇筑', p: 'PP和ABS原生料，精准控制壁厚，确保数百次浇筑后尺寸稳定。' },
+        pours: { h: '单模150+次浇筑', p: 'PP和ABS原生料，精准控制壁厚，确保数百次浇筑后尺寸稳定。' },
         container: { h: '集装箱整柜装运', p: '支持平板柜、开顶柜及标准20\'/40\'柜——混装多规格，降低到岸成本。' },
         markets: { h: '30+出口市场', p: '中东、东南亚、非洲、独联体、拉美持续出货，附装箱实拍照片。' },
         support: { h: '售后服务保障', p: '模具维修、替换型腔、使用指导，WhatsApp即时响应——工作日4小时内回复。' }
@@ -515,7 +515,7 @@
         makeTree: { h: '围树及花盆模具', p: '城市景观模具——围树箅、混凝土花盆及装饰构件。' },
         mfgTitle: '制造能力',
         mfgP1: '工厂配备200T至1500T锁模力的注塑机，可生产从小型平石嵌件（200mm）到大型井盖模具（Ø1200mm）的各类模具。',
-        mfgP2: '全部采用<strong>全新PP（聚丙烯）</strong>和<strong>ABS</strong>原料——绝不使用回收料——确保每件模具可承受300+次浇筑无尺寸偏差。',
+        mfgP2: '全部采用<strong>全新PP（聚丙烯）</strong>和<strong>ABS</strong>原料——绝不使用回收料——确保每件模具可承受150+次浇筑无尺寸偏差。',
         qcTitle: '质量控制',
         qcP1: '每批生产遵循三步品控流程：',
         qcRaw: '<strong style="color:#e2e8f0">原料检验</strong>——进料树脂MFI和密度测试。',
@@ -576,7 +576,7 @@
         },
         highway: {
           h: '🛣️ 公路建设',
-          p: '公路项目消耗大量路沿石、中央隔离带、排水盖板和护坡块。志华模具专为高循环生产设计——每件模具可承受300+次浇筑，尺寸几乎无变化。',
+          p: '公路项目消耗大量路沿石、中央隔离带、排水盖板和护坡块。志华模具专为高循环生产设计——每件模具可承受150+次浇筑，尺寸几乎无变化。',
           li1: 'L型和斜面型路沿石模具——道路边缘',
           li2: '护栏立柱模具——中央隔离带',
           li3: '排水盖板模具——路边排水沟',
@@ -691,7 +691,7 @@
           q1: { q: 'Which paver pattern is best for driveways vs. plazas?', a: 'Interlocking Z-shape and I-shape pavers offer the best load distribution for driveways and parking. Holland rectangular and decorative flagstone patterns are ideal for plazas and pedestrian areas.' },
           q2: { q: 'What is the standard thickness for paver blocks?', a: '60 mm for pedestrian areas, 80 mm for light vehicles, and 100 mm for heavy traffic. Custom thicknesses are available.' },
           q3: { q: 'Are your paver moulds compatible with coloured concrete?', a: 'Yes. Our PP material does not react with iron-oxide pigments, so vibrant coloured pavers can be produced without staining the mould.' },
-          q4: { q: 'How many cycles can a paver mould produce?', a: 'With virgin PP and standard vibration-table demoulding, our paver moulds reliably deliver 300+ cycles, often more with careful handling.' }
+          q4: { q: 'How many cycles can a paver mould produce?', a: 'With virgin PP and standard vibration-table demoulding, our paver moulds reliably deliver 150+ cycles, often more with careful handling.' }
         }
       },
 
