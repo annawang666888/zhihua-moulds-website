@@ -15,7 +15,7 @@
       },
       meta: {
         home: 'Jiaxing Zhihua Technology — leading manufacturer of plastic moulds for precast concrete products. Manhole covers, kerbstones, pavers, slope protection, drainage covers and more. 10+ years, 1000+ SKUs, 30+ countries.',
-        about: 'Learn about Jiaxing Zhihua Technology — 10+ years manufacturing plastic moulds for precast concrete. 50,000 m² facility, 1,000+ SKUs, OEM & custom design.',
+        about: 'Learn about Jiaxing Zhihua Technology — 10+ years manufacturing plastic moulds for precast concrete. 9,213 m² facility, 1,000+ SKUs, OEM & custom design.',
         products: 'Browse 1 000+ plastic mould SKUs for precast concrete: manhole covers, kerbstones, pavers, slope protection, drainage covers, tree grates, planters, cable troughs. OEM & custom.',
         industries: 'Zhihua Moulds serve municipal works, highways, railways, hydraulic engineering, and urban landscaping projects worldwide.',
         contact: 'Contact Jiaxing Zhihua Technology for a quote on plastic moulds for precast concrete. phone +86 16621391202, email anna@zhihuamoulds.com.'
@@ -87,7 +87,7 @@
       why: {
         title: 'Why Choose <span>Zhihua</span>',
         subtitle: 'Six reasons overseas buyers trust us for their precast mould supply.',
-        factory: { h: 'Integrated Factory', p: '50 000 m² production base with injection moulding, assembly, and QC under one roof — no subcontracting surprises.' },
+        factory: { h: 'Integrated Factory', p: '9,213 m² production base with injection moulding, assembly, and QC under one roof — no subcontracting surprises.' },
         oem: { h: 'OEM & Custom Design', p: 'Send us a drawing or sample; we design the mould cavity, produce a prototype, and iterate until you approve.' },
         pours: { h: '300+ Pours per Mould', p: 'PP and ABS raw materials with controlled wall thickness deliver consistent shape retention over hundreds of pour cycles.' },
         container: { h: 'Container Loading', p: 'We pack for flat-rack, open-top, or standard 20\'/40\' containers — mixed SKUs in one shipment to lower your landed cost.' },
@@ -134,7 +134,7 @@
         whoTitle: 'Who We Are',
         whoP1: 'Jiaxing Zhihua Technology Co., Ltd. is a specialised manufacturer of <strong>plastic moulds for precast concrete products</strong>, headquartered in Haiyan County, Jiaxing City, Zhejiang Province, China.',
         whoP2: 'Our moulds are used to produce concrete elements for municipal infrastructure, highways, railways, hydraulic engineering, and urban landscaping — from manhole covers and kerbstones to slope protection blocks and drainage channel covers.',
-        whoP3: 'With a production base of approximately 50 000 m², we operate our own injection moulding lines, assembly workshops, and quality control laboratories. Every mould that leaves our factory has passed dimensional inspection and a sample pour test.',
+        whoP3: 'With a production base of 9,213 m², we operate our own injection moulding lines, assembly workshops, and quality control laboratories. Every mould that leaves our factory has passed dimensional inspection and a sample pour test.',
         whoP4: 'We serve precast factories, municipal contractors, railway project procurement teams, and construction-material importers across the Middle East, Southeast Asia, Africa, the CIS, and Latin America.',
         makeTitle: 'What We <span>Make</span>',
         makeSub: 'Eight product lines — over 1 000 standard SKUs — plus unlimited custom designs from your drawings.',
@@ -157,7 +157,7 @@
         journeyExpansion: { h: 'Product Line Expansion', p: 'Expanded from basic kerbstone and paver moulds to include manhole covers, slope protection, and drainage covers — reaching 500+ SKUs.' },
         journeyExport: { h: 'Export Milestone', p: 'First container shipments to the Middle East and Southeast Asia. Implemented English-language documentation and container loading photography.' },
         journeyOem: { h: 'OEM / Custom Design Service', p: 'Launched full custom mould design service — clients send drawings, we prototype and produce. SKUs pass 1 000+.' },
-        journeyToday: { h: 'Today', p: '50 000 m² facility (approx.), 30+ export markets, ongoing investment in larger injection presses and quality lab equipment.' },
+        journeyToday: { h: 'Today', p: '9,213 m² facility, 30+ export markets, ongoing investment in larger injection presses and quality lab equipment.' },
         ctaTitle: 'Want to Visit Our Factory?',
         ctaSub: 'We welcome factory audits and video-call tours. Schedule a visit or get a quote today.',
         ctaBtn: 'Contact Us'
@@ -330,7 +330,7 @@
       /* --- Facility Gallery --- */
       facility: {
         title: 'Our <span>Facility</span>',
-        subtitle: 'A look inside our 50 000 m² production base — from injection moulding workshops to organised warehousing.',
+        subtitle: 'A look inside our 9,213 m² production base — from injection moulding workshops to organised warehousing.',
         subtitleAbout: 'Take a closer look at where our moulds are designed, produced, and shipped — click any photo to enlarge.',
         exterior: 'Production Base Exterior',
         entrance: 'Workshop Entrance',
