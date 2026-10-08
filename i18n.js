@@ -55,6 +55,7 @@
         subtitle: 'Zhihua manufactures manhole cover, kerbstone, paver, slope protection and drainage moulds for overseas precast factories and infrastructure contractors — with video factory audit, OEM design and export packing support.',
         btnQuote: 'Request a Quote',
         btnProducts: 'View Products',
+        sendPhoto: "📷 Don't know the mould name? Send us a photo",
         trustFactory: 'Factory direct manufacturer',
         trustAudit: 'Video factory audit available',
         trustOem: 'OEM from drawings or samples'
@@ -424,6 +425,7 @@
         subtitle: '志华为海外预制厂和基建承包商生产井盖、路沿石、平石、护坡和水沟盖板模具，支持视频验厂、OEM定制和出口装柜服务。',
         btnQuote: '获取报价',
         btnProducts: '浏览产品',
+        sendPhoto: '📷 不知道模具叫什么？发张照片给我们',
         trustFactory: '源头工厂直供',
         trustAudit: '支持视频验厂',
         trustOem: '支持图纸/样品定制'
