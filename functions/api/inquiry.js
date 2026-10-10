@@ -101,28 +101,26 @@ async function parseBody(request) {
   return Object.fromEntries(form.entries());
 }
 
-// Returns { ok, hardFail }.
-// - hardFail=true  => a Cloudflare-side configuration/service fault (secret
-//   missing, siteverify unreachable, infra error code); we FAIL OPEN so a
-//   Cloudflare outage or a broken secret never blocks a real buyer.
-// - ok=false, hardFail=false => a bot verdict: a MISSING token or a genuine
-//   Cloudflare "invalid token" verdict. Bots POST without rendering the widget,
-//   so they send no token at all; that is now REJECTED, not allowed through.
-//   (A real buyer whose widget genuinely fails to load is told on the front
-//   end to use WhatsApp/email instead — see main.js.)
+// Returns { ok, hardFail, status }.
+// - status "verified" => a real Turnstile success verdict.
+// - status "absent"   => NO token was submitted. This is ambiguous: it can be a
+//   bot POSTing directly, OR a genuine buyer whose browser could not load the
+//   widget — challenges.cloudflare.com is commonly unreachable on networks in
+//   mainland China, so rejecting missing tokens silently discarded real leads.
+//   We ACCEPT (honeypot + content filter still catch junk) and flag the lead
+//   as unverified in KV so it can be reviewed manually.
+// - status "invalid"  => a token WAS presented but Turnstile returned a clear
+//   non-infra failure verdict => a bot/tampered request, REJECTED.
+// - status "infra"    => configuration/service fault (bad secret, siteverify
+//   down): FAIL OPEN so our own outage never blocks a real buyer.
 async function verifyTurnstile(token, secret, request) {
   if (!secret) {
     console.error("TURNSTILE_SECRET_KEY is not configured; failing OPEN for genuine inquiries.");
-    return { ok: true, hardFail: true };
+    return { ok: true, hardFail: true, status: "infra" };
   }
   if (!token) {
-    // No token means either a bot that POSTed directly (never rendered the
-    // widget) or a browser where the widget failed to load. Both are sent to
-    // the anti-spam retry message; a real buyer in the latter case falls back
-    // to WhatsApp/email via the front-end hint. We no longer fail open here,
-    // because direct no-token POSTs are exactly how spam gets through.
-    console.warn("Turnstile token missing on POST; rejecting (bot or unloaded widget).");
-    return { ok: false, hardFail: false };
+    console.warn("Turnstile token missing on POST; accepting as unverified (widget blocked or direct POST). Honeypot/content filter still apply.");
+    return { ok: true, hardFail: false, status: "absent" };
   }
 
   const formData = new FormData();
@@ -146,16 +144,16 @@ async function verifyTurnstile(token, secret, request) {
       body: formData
     });
     const result = await response.json();
-    if (result.success) return { ok: true, hardFail: false };
+    if (result.success) return { ok: true, hardFail: false, status: "verified" };
     const codes = Array.isArray(result["error-codes"]) ? result["error-codes"] : [];
     const infra = codes.some((c) => INFRA_CODES.includes(c));
     console.error("Turnstile verification failed", JSON.stringify(result), "infra=", infra);
     // Configuration/service fault => let genuine inquiries through; clear
     // invalid-token verdict (bots) => reject.
-    return { ok: infra, hardFail: infra };
+    return { ok: infra, hardFail: infra, status: infra ? "infra" : "invalid" };
   } catch (error) {
     console.error("Turnstile verification network error; failing OPEN.", error);
-    return { ok: true, hardFail: true };
+    return { ok: true, hardFail: true, status: "infra" };
   }
 }
 
@@ -286,6 +284,7 @@ export async function onRequestPost(context) {
   if (!turnstile.ok) {
     return json({ ok: false, message: "Please complete the anti-spam check, then submit again. If it keeps failing, message us directly on WhatsApp or email." }, 403);
   }
+  const turnstileStatus = turnstile.status || "verified";
 
   // Recipients: comma-separated env list, default = enterprise mailbox AND the
   // owner's QQ mailbox, so a single-mailbox outage can never swallow leads.
@@ -301,7 +300,7 @@ export async function onRequestPost(context) {
   // Persist the lead BEFORE sending — even if the worker crashes mid-fetch the
   // buyer is already captured in KV (status updated once email result is known).
   const leadId = newLeadId();
-  await saveLead(env, leadId, { ...publicRecord(inquiry), email_status: "sending", recipients: toEmails });
+  await saveLead(env, leadId, { ...publicRecord(inquiry), turnstile: turnstileStatus, email_status: "sending", recipients: toEmails });
 
   const subjectName = inquiry.name ? ` from ${inquiry.name}` : "";
   const payload = {
@@ -337,6 +336,7 @@ export async function onRequestPost(context) {
 
   await saveLead(env, leadId, {
     ...publicRecord(inquiry),
+    turnstile: turnstileStatus,
     email_status: emailOk ? "sent" : "email_failed",
     email_error: emailOk ? "" : emailError,
     recipients: toEmails

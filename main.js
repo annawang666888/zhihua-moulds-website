@@ -27,6 +27,25 @@
   window.zhTsError = zhTsReload;
   window.zhTsExpired = zhTsReload;
 
+  /* Watchdog: if the Turnstile script/iframe never renders (common on networks
+     where challenges.cloudflare.com is blocked), there is no error callback at
+     all — the box just sits blank and buyers think the form is broken. After
+     8s, surface a clear hint that they can still submit or use WhatsApp. */
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+      var box = document.querySelector('.cf-turnstile');
+      if (!box) return;
+      var rendered = box.querySelector('iframe');
+      if (!rendered) {
+        var hint = document.getElementById('turnstileHint');
+        if (hint) {
+          hint.textContent = '⚠️ Anti-spam check did not load on this network — you can still press Send, or reach us directly on WhatsApp/email.';
+          hint.style.display = 'block';
+        }
+      }
+    }, 8000);
+  });
+
   /* ---------- Hamburger Toggle ---------- */
   const hamburger = document.querySelector('.hamburger');
   const navLinks  = document.querySelector('.nav-links');
