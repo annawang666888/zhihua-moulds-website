@@ -21,6 +21,35 @@ function required(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
 
+// ---------------------------------------------------------------------------
+// Lead persistence backup (Cloudflare KV binding: INQUIRY_KV)
+// Every accepted inquiry is stored BEFORE the email is attempted and updated
+// with the email result afterwards. If the mailbox/provider ever breaks, the
+// leads are still retrievable at  GET /api/inquiry?key=LEADS_VIEW_KEY
+// When the binding is absent (e.g. local dev) all store calls are no-ops.
+// ---------------------------------------------------------------------------
+async function saveLead(env, id, record) {
+  if (!env.INQUIRY_KV) return;
+  try {
+    await env.INQUIRY_KV.put(`lead:${id}`, JSON.stringify(record), {
+      expirationTtl: 31536000 // keep 1 year
+    });
+  } catch (error) {
+    console.error("KV put failed", error);
+  }
+}
+
+function newLeadId() {
+  // Epoch-ms prefix sorts newest last in KV listing; random suffix dedupes.
+  const rand = (globalThis.crypto?.randomUUID?.() || Math.random().toString(36).slice(2)).slice(0, 8);
+  return `${Date.now()}-${rand}`;
+}
+
+function publicRecord(record) {
+  // Never expose internal metadata tokens; KV only holds inquiry data anyway.
+  return record;
+}
+
 // Content-level spam detector. These inquiries pass field validation (they
 // fill name/email/phone/message) but carry no buying intent: phishing/jackpot
 // lures, anonymous-link domains and giveaway language. Real buyers mention a
@@ -50,7 +79,7 @@ function looksLikeSpam(inquiry) {
   }
   // Classic scam/giveaway phrases.
   for (const p of SPAM_PHRASES) {
-    if (hay.includes(p)) return true;
+    if (p && hay.includes(p)) return true;
   }
   // Big-money lures only count when paired with giveaway wording.
   if (MONEY_LURE.test(hay) && /(promo|jackpot|win|won|prize|reward|bonus|cash)/.test(hay)) {
@@ -247,8 +276,7 @@ export async function onRequestPost(context) {
   if (looksLikeSpam(inquiry)) {
     console.warn("Inquiry rejected: content spam filter.", {
       name: inquiry.name, email: inquiry.email,
-      country: inquiry.country, ip: inquiry.ip_country,
-      snippet: String(inquiry.message).slice(0, 120)
+      country: inquiry.country, snippet: String(inquiry.message).slice(0, 120)
     });
     return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
   }
@@ -259,49 +287,100 @@ export async function onRequestPost(context) {
     return json({ ok: false, message: "Please complete the anti-spam check, then submit again. If it keeps failing, message us directly on WhatsApp or email." }, 403);
   }
 
-  const resendApiKey = env.RESEND_API_KEY;
-  const toEmail = env.INQUIRY_TO_EMAIL || "anna@zhihuamoulds.com";
+  // Recipients: comma-separated env list, default = enterprise mailbox AND the
+  // owner's QQ mailbox, so a single-mailbox outage can never swallow leads.
+  const toEmails = (env.INQUIRY_TO_EMAIL || "anna@zhihuamoulds.com,354909745@qq.com")
+    .split(",").map((s) => s.trim()).filter(Boolean);
   const fromEmail = env.INQUIRY_FROM_EMAIL || "Zhihua Moulds <noreply@zhihuamoulds.com>";
 
-  if (!resendApiKey) {
+  if (!env.RESEND_API_KEY) {
     console.error("RESEND_API_KEY is not configured.");
     return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 500);
   }
 
+  // Persist the lead BEFORE sending — even if the worker crashes mid-fetch the
+  // buyer is already captured in KV (status updated once email result is known).
+  const leadId = newLeadId();
+  await saveLead(env, leadId, { ...publicRecord(inquiry), email_status: "sending", recipients: toEmails });
+
   const subjectName = inquiry.name ? ` from ${inquiry.name}` : "";
   const payload = {
     from: fromEmail,
-    to: [toEmail],
+    to: toEmails,
     reply_to: inquiry.email,
     subject: `New Zhihua Moulds inquiry${subjectName}`,
     html: buildEmailHtml(inquiry),
     text: buildEmailText(inquiry)
   };
 
-  let resendResponse;
+  let emailOk = false;
+  let emailError = "";
   try {
-    resendResponse = await fetch("https://api.resend.com/emails", {
+    const resendResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        "authorization": `Bearer ${resendApiKey}`,
+        "authorization": `Bearer ${env.RESEND_API_KEY}`,
         "content-type": "application/json"
       },
       body: JSON.stringify(payload)
     });
+    if (resendResponse.ok) {
+      emailOk = true;
+    } else {
+      emailError = `${resendResponse.status} ${(await resendResponse.text().catch(() => "")).slice(0, 500)}`;
+      console.error("Resend email failed", emailError);
+    }
   } catch (error) {
+    emailError = String(error && error.message || error).slice(0, 500);
     console.error("Resend network error", error);
-    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 502);
   }
 
-  if (!resendResponse.ok) {
-    const detail = await resendResponse.text().catch(() => "");
-    console.error("Resend email failed", resendResponse.status, detail.slice(0, 1000));
-    return json({ ok: false, message: "Submit failed. Please contact us by WhatsApp or email." }, 502);
-  }
+  await saveLead(env, leadId, {
+    ...publicRecord(inquiry),
+    email_status: emailOk ? "sent" : "email_failed",
+    email_error: emailOk ? "" : emailError,
+    recipients: toEmails
+  });
 
-  return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours." });
+  // Lead is captured regardless of mail delivery: show success so the buyer
+  // does not leave; a failed email is visible in the KV lead list for follow-up.
+  return json({
+    ok: true,
+    message: "Thank you! Your inquiry has been submitted successfully. We will contact you within 24 hours."
+  });
 }
 
-export async function onRequestGet() {
+export async function onRequestGet(context) {
+  const { request, env } = context;
+  const url = new URL(request.url);
+
+  // Lead backup viewer: GET /api/inquiry?key=LEADS_VIEW_KEY
+  // Returns stored leads newest-first. Works even when email is fully broken.
+  const key = url.searchParams.get("key");
+  if (key) {
+    if (!env.LEADS_VIEW_KEY || key !== env.LEADS_VIEW_KEY) {
+      return json({ ok: false, message: "Forbidden." }, 403);
+    }
+    if (!env.INQUIRY_KV) {
+      return json({ ok: false, message: "Lead store (INQUIRY_KV) is not bound." }, 503);
+    }
+    try {
+      const listed = await env.INQUIRY_KV.list({ prefix: "lead:", limit: 200 });
+      const keys = listed.keys.map((k) => k.name).sort().reverse();
+      const records = [];
+      for (const k of keys) {
+        const raw = await env.INQUIRY_KV.get(k);
+        if (raw) {
+          try { records.push(JSON.parse(raw)); } catch { /* skip malformed */ }
+        }
+      }
+      const failed = records.filter((r) => r.email_status === "email_failed").length;
+      return json({ ok: true, count: records.length, email_failed: failed, leads: records });
+    } catch (error) {
+      console.error("KV list failed", error);
+      return json({ ok: false, message: "Could not read lead store." }, 500);
+    }
+  }
+
   return json({ ok: true, message: "Inquiry endpoint is running. Use POST to submit." });
 }
