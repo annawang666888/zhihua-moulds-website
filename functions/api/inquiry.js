@@ -73,6 +73,19 @@ const MONEY_LURE = /\$\s?\d{1,3}(,\d{3})+|\d{1,3}(,\d{3}){2,}/i;
 
 function looksLikeSpam(inquiry) {
   const hay = `${inquiry.message} ${inquiry.company} ${inquiry.name}`.toLowerCase();
+
+  // 2026-10-19 RobertTaike campaign: fixed name+company persona, rotating
+  // email/IP/country, Baltic-language "what is your price" one-liners, no
+  // product. Hard-blocked by signature so it works even without the KV rate
+  // limiter (per-isolate memory counters cannot coordinate across colos).
+  const CAMPAIGN_SIGNATURES = [
+    { name: "roberttaike", company: "google" }
+  ];
+  const sigName = (inquiry.name || "").toLowerCase().trim();
+  const sigCompany = (inquiry.company || "").toLowerCase().trim();
+  if (CAMPAIGN_SIGNATURES.some((s) => sigName === s.name && sigCompany === s.company)) {
+    return true;
+  }
   // Anonymous/phishing link domains in the message.
   for (const d of SPAM_LINK_DOMAINS) {
     if (d && hay.includes(d)) return true;
@@ -95,7 +108,11 @@ function looksLikeSpam(inquiry) {
     if (/http|promo|jackpot|win|won|prize|click|link/.test(hay)) return true;
     const msg = (inquiry.message || "").trim();
     const noProduct = !(inquiry.product || "").trim();
-    if (noProduct && msg.length > 0 && msg.length < 200 && !/\d/.test(msg)) return true;
+    // A genuine concrete-mould buyer never registers company as a search
+    // engine and submits a product-less one-liner. Digit-bearing or long
+    // messages from junk-company names are still allowed through to the rate
+    // limiter; only the short generic price-question bot signature is blocked.
+    if (noProduct && msg.length > 0 && msg.length < 200) return true;
   }
   return false;
 }
