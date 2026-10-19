@@ -86,10 +86,16 @@ function looksLikeSpam(inquiry) {
     return true;
   }
   // Junk company names: bots fill company with a search engine / portal name.
+  // Genuine B2B concrete-mould buyers never register as "google" with no
+  // product selected and a short, digit-free generic price question — that is
+  // the exact signature of the RobertTaike form-flood campaign.
   const company = (inquiry.company || "").toLowerCase().trim();
-  if (["google", "facebook", "amazon", "microsoft", "apple", "test", "none"]
-      .includes(company) && /http|promo|jackpot|win|prize|click|link/.test(hay)) {
-    return true;
+  const JUNK_COMPANIES = ["google", "facebook", "amazon", "microsoft", "apple"];
+  if (JUNK_COMPANIES.includes(company)) {
+    if (/http|promo|jackpot|win|won|prize|click|link/.test(hay)) return true;
+    const msg = (inquiry.message || "").trim();
+    const noProduct = !(inquiry.product || "").trim();
+    if (noProduct && msg.length > 0 && msg.length < 200 && !/\d/.test(msg)) return true;
   }
   return false;
 }
@@ -163,19 +169,27 @@ async function rateLimitDecision(env, request, inquiry) {
   const contentKey = `flood:content:${contentFp}`;
   if (await kvOrMem(env, contentKey)) return { block: true, reason: "duplicate_content" };
 
-  // 2) Identity cap: same name+email => max 3 ACCEPTED submissions per day
+  // 2) Persona cap: same NAME+COMPANY => max 3 per day even when the bot
+  //    rotates email/phone per submission (the 2026-10-19 RobertTaike/google
+  //    campaign used a fixed persona with a fresh mailbox on every POST).
+  const personaFp = await fingerprint([inquiry.name, inquiry.company]);
+  const personaDay = await kvOrMem(env, `flood:persona:${personaFp}:${dayBucket}`);
+  if (parseInt(personaDay || "0", 10) >= 3) return { block: true, reason: "persona_daily_cap" };
+
+  // 3) Identity cap: same name+email => max 3 ACCEPTED submissions per day
   //    (real buyers might follow up twice; bots submit dozens).
   const identFp = await fingerprint([inquiry.name, inquiry.email]);
   const identDay = await kvOrMem(env, `flood:ident:${identFp}:${dayBucket}`);
   if (parseInt(identDay || "0", 10) >= 3) return { block: true, reason: "identity_daily_cap" };
 
-  // 3) IP caps: 6 POSTs/hour or 20/day from one address (NAT/office safety).
+  // 4) IP caps: 6 POSTs/hour or 20/day from one address (NAT/office safety).
   const ipHour = await incrKvOrMem(env, `flood:ip:${ip}:${hourBucket}`, HOUR);
   const ipDay = await incrKvOrMem(env, `flood:ip:${ip}:d:${dayBucket}`, DAY);
   if (ipHour > 6 || ipDay > 20) return { block: true, reason: "ip_rate_limit" };
 
-  // Accepted: stamp content + identity counters (content key blocks repeats).
+  // Accepted: stamp content + persona + identity counters (content key blocks repeats).
   await setKvOrMem(env, contentKey, "1", 7 * DAY);
+  await incrKvOrMem(env, `flood:persona:${personaFp}:${dayBucket}`, DAY);
   await incrKvOrMem(env, `flood:ident:${identFp}:${dayBucket}`, DAY);
   return { block: false, contentKey };
 }
