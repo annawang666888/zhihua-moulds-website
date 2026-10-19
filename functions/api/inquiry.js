@@ -74,16 +74,18 @@ const MONEY_LURE = /\$\s?\d{1,3}(,\d{3})+|\d{1,3}(,\d{3}){2,}/i;
 function looksLikeSpam(inquiry) {
   const hay = `${inquiry.message} ${inquiry.company} ${inquiry.name}`.toLowerCase();
 
-  // 2026-10-19 RobertTaike campaign: fixed name+company persona, rotating
-  // email/IP/country, Baltic-language "what is your price" one-liners, no
-  // product. Hard-blocked by signature so it works even without the KV rate
-  // limiter (per-isolate memory counters cannot coordinate across colos).
-  const CAMPAIGN_SIGNATURES = [
-    { name: "roberttaike", company: "google" }
+  // 2026-10-19 RobertTaike campaign: fixed name, rotating company values
+  // ("google" and others), rotating email/IP/country, Baltic/Bengali-language
+  // "what is your price" one-liners, sometimes a product category selected to
+  // slip past product-required rules. The NAME is the one invariant across
+  // every submission, so it is hard-blocked by name alone — no other field
+  // condition and no KV dependency (per-isolate memory counters cannot
+  // coordinate across colos anyway).
+  const CAMPAIGN_NAMES = [
+    "roberttaike"
   ];
   const sigName = (inquiry.name || "").toLowerCase().trim();
-  const sigCompany = (inquiry.company || "").toLowerCase().trim();
-  if (CAMPAIGN_SIGNATURES.some((s) => sigName === s.name && sigCompany === s.company)) {
+  if (CAMPAIGN_NAMES.includes(sigName)) {
     return true;
   }
   // Anonymous/phishing link domains in the message.
