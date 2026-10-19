@@ -94,6 +94,92 @@ function looksLikeSpam(inquiry) {
   return false;
 }
 
+// ---------------------------------------------------------------------------
+// Rate limiting + duplicate suppression (2026-10-19 RobertTaike form flood)
+// Bots POST the endpoint directly with no Turnstile token, and missing-token
+// requests are deliberately accepted (genuine China buyers often cannot load
+// the widget). So the last line of defence is here: cap accepted submissions
+// per IP and per name+email identity, and never email the same content twice.
+// Primary store is KV (durable across isolates); an in-process Map is a
+// best-effort fallback when the INQUIRY_KV binding is not configured.
+// ---------------------------------------------------------------------------
+const memStore = new Map();
+
+async function kvOrMem(env, key) {
+  if (env.INQUIRY_KV) {
+    try { return await env.INQUIRY_KV.get(key); } catch (e) { console.error("rl kv get", e); }
+  }
+  const hit = memStore.get(key);
+  if (hit && hit.exp > Date.now()) return hit.val;
+  return null;
+}
+
+async function incrKvOrMem(env, key, ttlSeconds) {
+  if (env.INQUIRY_KV) {
+    let n = 1;
+    try {
+      const cur = await env.INQUIRY_KV.get(key);
+      n = (parseInt(cur || "0", 10) || 0) + 1;
+      await env.INQUIRY_KV.put(key, String(n), { expirationTtl: ttlSeconds });
+    } catch (e) { console.error("rl kv incr", e); }
+    return n;
+  }
+  const now = Date.now();
+  const hit = memStore.get(key);
+  const n = hit && hit.exp > now ? (parseInt(hit.val, 10) || 0) + 1 : 1;
+  memStore.set(key, { val: String(n), exp: now + ttlSeconds * 1000 });
+  if (memStore.size > 5000) {
+    for (const [k, v] of memStore) if (v.exp <= now) memStore.delete(k);
+  }
+  return n;
+}
+
+async function setKvOrMem(env, key, val, ttlSeconds) {
+  if (env.INQUIRY_KV) {
+    try { await env.INQUIRY_KV.put(key, val, { expirationTtl: ttlSeconds }); return; }
+    catch (e) { console.error("rl kv set", e); }
+  }
+  memStore.set(key, { val, exp: Date.now() + ttlSeconds * 1000 });
+}
+
+async function fingerprint(parts) {
+  const text = parts.map((p) => String(p || "").trim().toLowerCase()).join("|");
+  const buf = await crypto.subtle.digest("SHA-1", new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+// Hour/day buckets are UTC; boundaries let one extra burst through, which is
+// acceptable — limits are deliberately above any real-buyer pace.
+const HOUR = 3600;
+const DAY = 86400;
+async function rateLimitDecision(env, request, inquiry) {
+  const ip = request.headers.get("cf-connecting-ip") || "unknown";
+  const hourBucket = Math.floor(Date.now() / 1000 / HOUR);
+  const dayBucket = Math.floor(Date.now() / 1000 / DAY);
+
+  // 1) Exact-content dedupe: same name+email+message can only ever email once
+  //    within 7 days. Flood bots resubmit identical payloads.
+  const contentFp = await fingerprint([inquiry.name, inquiry.email, inquiry.phone, inquiry.message]);
+  const contentKey = `flood:content:${contentFp}`;
+  if (await kvOrMem(env, contentKey)) return { block: true, reason: "duplicate_content" };
+
+  // 2) Identity cap: same name+email => max 3 ACCEPTED submissions per day
+  //    (real buyers might follow up twice; bots submit dozens).
+  const identFp = await fingerprint([inquiry.name, inquiry.email]);
+  const identDay = await kvOrMem(env, `flood:ident:${identFp}:${dayBucket}`);
+  if (parseInt(identDay || "0", 10) >= 3) return { block: true, reason: "identity_daily_cap" };
+
+  // 3) IP caps: 6 POSTs/hour or 20/day from one address (NAT/office safety).
+  const ipHour = await incrKvOrMem(env, `flood:ip:${ip}:${hourBucket}`, HOUR);
+  const ipDay = await incrKvOrMem(env, `flood:ip:${ip}:d:${dayBucket}`, DAY);
+  if (ipHour > 6 || ipDay > 20) return { block: true, reason: "ip_rate_limit" };
+
+  // Accepted: stamp content + identity counters (content key blocks repeats).
+  await setKvOrMem(env, contentKey, "1", 7 * DAY);
+  await incrKvOrMem(env, `flood:ident:${identFp}:${dayBucket}`, DAY);
+  return { block: false, contentKey };
+}
+
 async function parseBody(request) {
   const contentType = request.headers.get("content-type") || "";
   if (contentType.includes("application/json")) return await request.json();
@@ -285,6 +371,23 @@ export async function onRequestPost(context) {
     return json({ ok: false, message: "Please complete the anti-spam check, then submit again. If it keeps failing, message us directly on WhatsApp or email." }, 403);
   }
   const turnstileStatus = turnstile.status || "verified";
+
+  // Final flood wall: duplicate suppression + per-IP/per-identity rate limits.
+  // Silently accepted so bots believe every submission went through. Blocked
+  // attempts are still recorded in KV for audit, but never emailed.
+  const flood = await rateLimitDecision(env, request, inquiry);
+  if (flood.block) {
+    console.warn("Inquiry suppressed by flood control:", flood.reason, { name: inquiry.name, email: inquiry.email });
+    const blockId = newLeadId();
+    await saveLead(env, blockId, {
+      ...inquiry,
+      turnstile: turnstileStatus,
+      email_status: "blocked",
+      blocked_reason: flood.reason,
+      recipients: []
+    });
+    return json({ ok: true, message: "Thank you! Your inquiry has been submitted successfully." });
+  }
 
   // Recipients: comma-separated env list, default = enterprise mailbox AND the
   // owner's QQ mailbox, so a single-mailbox outage can never swallow leads.
