@@ -25,6 +25,10 @@
 # correctly in the full manhole guide's FAQ, so 301 there.
 /blog/d400-vs-f900-manhole-cover-mould-comparison  /blog/manhole-cover-and-shaft-brick-moulds-guide  301
 
+# 2026-10-24: public PDF catalogues removed (competitor protection). All 35
+# catalogue URLs 301 to the request-only catalogue page.
+/catalog/*  /catalog  301
+
 # Custom 404 page
 /* /404.html 404
 
