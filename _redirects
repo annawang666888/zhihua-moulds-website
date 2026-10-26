@@ -29,6 +29,11 @@
 # catalogue URLs 301 to the request-only catalogue page.
 /catalog/*  /catalog  301
 
+# 2026-10-26: thin/orphan blogs consolidated into full guides
+/blog/decorative-drainage-cover-moulds-guide  /blog/drainage-channel-moulds-u-drain-cover-buying-guide  301
+/blog/hollow-block-hexagon-concrete-moulds-guide  /blog/hollow-block-vs-hexagonal-paver-moulds-guide  301
+/blog/custom-precast-concrete-moulds-oem-guide  /custom-mould-process  301
+
 # Custom 404 page
 /* /404.html 404
 
